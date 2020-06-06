@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="831" it="0" lt="831" ct="443" ts="1590843831289" s="true" lb="登录_用户名为IDO" rc="200" rm="OK" tn="登录模块 1-1" dt="text" de="" by="744" sby="222" sc="1" ec="0" ng="1" na="1" hn="LAPTOP-3Q9JU4KS">
+  <assertionResult>
+    <name>json.login_name是否为IDO</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Sat, 30 May 2020 13:03:51 GMT
+Content-Type: application/json
+Content-Length: 514
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 50
+Host: httpbin.org
+User-Agent: Apache-HttpClient/4.5.7 (Java/1.8.0_161)
+</requestHeader>
+  <responseData class="java.lang.String">{
+  &quot;args&quot;: {}, 
+  &quot;data&quot;: &quot;{\r\n\t\&quot;login_name\&quot;: \&quot;IDO\&quot;,\r\n\t\&quot;password\&quot;: \&quot;123456\&quot;\r\n}&quot;, 
+  &quot;files&quot;: {}, 
+  &quot;form&quot;: {}, 
+  &quot;headers&quot;: {
+    &quot;Content-Length&quot;: &quot;50&quot;, 
+    &quot;Content-Type&quot;: &quot;application/json&quot;, 
+    &quot;Host&quot;: &quot;httpbin.org&quot;, 
+    &quot;User-Agent&quot;: &quot;Apache-HttpClient/4.5.7 (Java/1.8.0_161)&quot;, 
+    &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-5ed259b7-253604a69b59e864ec8b4b82&quot;
+  }, 
+  &quot;json&quot;: {
+    &quot;login_name&quot;: &quot;IDO&quot;, 
+    &quot;password&quot;: &quot;123456&quot;
+  }, 
+  &quot;origin&quot;: &quot;112.97.246.110&quot;, 
+  &quot;url&quot;: &quot;http://httpbin.org/post&quot;
+}
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;login_name&quot;: &quot;IDO&quot;,&#xd;
+	&quot;password&quot;: &quot;123456&quot;&#xd;
+}</queryString>
+  <java.net.URL>http://httpbin.org/post</java.net.URL>
+</httpSample>
+<httpSample t="381" it="0" lt="381" ct="0" ts="1590843832180" s="false" lb="登录_用户名为ID" rc="200" rm="OK" tn="登录模块 1-1" dt="text" de="" by="742" sby="221" sc="1" ec="1" ng="1" na="1" hn="LAPTOP-3Q9JU4KS">
+  <assertionResult>
+    <name>json.login_name是否为IDO</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Value expected to match regexp &apos;IDO&apos;, but it did not match: &apos;ID&apos;</failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Sat, 30 May 2020 13:03:51 GMT
+Content-Type: application/json
+Content-Length: 512
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 49
+Host: httpbin.org
+User-Agent: Apache-HttpClient/4.5.7 (Java/1.8.0_161)
+</requestHeader>
+  <responseData class="java.lang.String">{
+  &quot;args&quot;: {}, 
+  &quot;data&quot;: &quot;{\r\n\t\&quot;login_name\&quot;: \&quot;ID\&quot;,\r\n\t\&quot;password\&quot;: \&quot;123456\&quot;\r\n}&quot;, 
+  &quot;files&quot;: {}, 
+  &quot;form&quot;: {}, 
+  &quot;headers&quot;: {
+    &quot;Content-Length&quot;: &quot;49&quot;, 
+    &quot;Content-Type&quot;: &quot;application/json&quot;, 
+    &quot;Host&quot;: &quot;httpbin.org&quot;, 
+    &quot;User-Agent&quot;: &quot;Apache-HttpClient/4.5.7 (Java/1.8.0_161)&quot;, 
+    &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-5ed259b7-9cddc2e8d81a71004d4c00f4&quot;
+  }, 
+  &quot;json&quot;: {
+    &quot;login_name&quot;: &quot;ID&quot;, 
+    &quot;password&quot;: &quot;123456&quot;
+  }, 
+  &quot;origin&quot;: &quot;112.97.246.110&quot;, 
+  &quot;url&quot;: &quot;http://httpbin.org/post&quot;
+}
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;login_name&quot;: &quot;ID&quot;,&#xd;
+	&quot;password&quot;: &quot;123456&quot;&#xd;
+}</queryString>
+  <java.net.URL>http://httpbin.org/post</java.net.URL>
+</httpSample>
+
+</testResults>

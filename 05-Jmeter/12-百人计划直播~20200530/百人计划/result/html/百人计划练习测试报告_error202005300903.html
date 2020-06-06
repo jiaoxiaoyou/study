@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>接口测试报告</title>
+<style type="text/css">
+                    body { font:normal 68% verdana,arial,helvetica; color:#000000; }
+                    table tr td, table tr th { font-size: 68%; }
+                    table.details tr th { color: #ffffff; font-weight: bold; text-align:center; background:#2674a6; white-space: pre-wrap; }
+                    table.details tr td { background:#eeeee0; white-space: pre-wrap; }
+                    h1 { margin: 0px 0px 5px; font: 165% verdana,arial,helvetica }
+                    h2 { margin-top: 1em; margin-bottom: 0.5em; font: bold 125% verdana,arial,helvetica }
+                    h3 { margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica }
+                    .Failure { font-weight:bold; color:red; }
+                    img { border-width: 0px; }
+                    .expand_link { position: absolute; right: 0px; width: 27px; top: 1px; height: 27px; }
+                    .page_details { display: none; }
+                    .page_details_expanded { display: block; display/* hide this definition from  IE5/6 */: table-row; }
+                    .key { min-width: 108px; width: 15%; }
+                    .detail, #tdetail { display: none; }
+                </style>
+<script language="JavaScript">
+                function toggle_details(details_id) {
+                    var objImg = document.getElementById(details_id+"_image");
+                    var objTable = document.getElementById(details_id);
+                    if(objImg.alt == "collapse") {
+                        objImg.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEALQADQANam36RQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wDDQ0hOymuu20AAAL5dEVYdENvbW1lbnQATGljZW5zZWQgdG8gdGhlIEFwYWNoZSBTb2Z0d2FyZSBGb3VuZGF0aW9uIChBU0YpIHVuZGVyIG9uZSBvciBtb3JlCmNvbnRyaWJ1dG9yIGxpY2Vuc2UgYWdyZWVtZW50cy4gIFNlZSB0aGUgTk9USUNFIGZpbGUgZGlzdHJpYnV0ZWQgd2l0aAp0aGlzIHdvcmsgZm9yIGFkZGl0aW9uYWwgaW5mb3JtYXRpb24gcmVnYXJkaW5nIGNvcHlyaWdodCBvd25lcnNoaXAuClRoZSBBU0YgbGljZW5zZXMgdGhpcyBmaWxlIHRvIFlvdSB1bmRlciB0aGUgQXBhY2hlIExpY2Vuc2UsIFZlcnNpb24gMi4wCih0aGUgIkxpY2Vuc2UiKTsgeW91IG1heSBub3QgdXNlIHRoaXMgZmlsZSBleGNlcHQgaW4gY29tcGxpYW5jZSB3aXRoCnRoZSBMaWNlbnNlLiAgWW91IG1heSBvYnRhaW4gYSBjb3B5IG9mIHRoZSBMaWNlbnNlIGF0CgogICBodHRwOi8vd3d3LmFwYWNoZS5vcmcvbGljZW5zZXMvTElDRU5TRS0yLjAKClVubGVzcyByZXF1aXJlZCBieSBhcHBsaWNhYmxlIGxhdyBvciBhZ3JlZWQgdG8gaW4gd3JpdGluZywgc29mdHdhcmUKZGlzdHJpYnV0ZWQgdW5kZXIgdGhlIExpY2Vuc2UgaXMgZGlzdHJpYnV0ZWQgb24gYW4gIkFTIElTIiBCQVNJUywKV0lUSE9VVCBXQVJSQU5USUVTIE9SIENPTkRJVElPTlMgT0YgQU5ZIEtJTkQsIGVpdGhlciBleHByZXNzIG9yIGltcGxpZWQuClNlZSB0aGUgTGljZW5zZSBmb3IgdGhlIHNwZWNpZmljIGxhbmd1YWdlIGdvdmVybmluZyBwZXJtaXNzaW9ucyBhbmQKbGltaXRhdGlvbnMgdW5kZXIgdGhlIExpY2Vuc2UuhUUAtwAAAC1JREFUOMtjVCtZ9p+BAsDEQCEYNYAKBrAgc252RxKlSb10OfVcwDiakIaDAQDXcQefpMw+jAAAAABJRU5ErkJggg==";
+                        objImg.alt = "expand";
+                        objTable.className = "page_details_expanded";
+                    } else {
+                        objImg.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEALQADQANam36RQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wDDQ0cLbeSRoIAAAL5dEVYdENvbW1lbnQATGljZW5zZWQgdG8gdGhlIEFwYWNoZSBTb2Z0d2FyZSBGb3VuZGF0aW9uIChBU0YpIHVuZGVyIG9uZSBvciBtb3JlCmNvbnRyaWJ1dG9yIGxpY2Vuc2UgYWdyZWVtZW50cy4gIFNlZSB0aGUgTk9USUNFIGZpbGUgZGlzdHJpYnV0ZWQgd2l0aAp0aGlzIHdvcmsgZm9yIGFkZGl0aW9uYWwgaW5mb3JtYXRpb24gcmVnYXJkaW5nIGNvcHlyaWdodCBvd25lcnNoaXAuClRoZSBBU0YgbGljZW5zZXMgdGhpcyBmaWxlIHRvIFlvdSB1bmRlciB0aGUgQXBhY2hlIExpY2Vuc2UsIFZlcnNpb24gMi4wCih0aGUgIkxpY2Vuc2UiKTsgeW91IG1heSBub3QgdXNlIHRoaXMgZmlsZSBleGNlcHQgaW4gY29tcGxpYW5jZSB3aXRoCnRoZSBMaWNlbnNlLiAgWW91IG1heSBvYnRhaW4gYSBjb3B5IG9mIHRoZSBMaWNlbnNlIGF0CgogICBodHRwOi8vd3d3LmFwYWNoZS5vcmcvbGljZW5zZXMvTElDRU5TRS0yLjAKClVubGVzcyByZXF1aXJlZCBieSBhcHBsaWNhYmxlIGxhdyBvciBhZ3JlZWQgdG8gaW4gd3JpdGluZywgc29mdHdhcmUKZGlzdHJpYnV0ZWQgdW5kZXIgdGhlIExpY2Vuc2UgaXMgZGlzdHJpYnV0ZWQgb24gYW4gIkFTIElTIiBCQVNJUywKV0lUSE9VVCBXQVJSQU5USUVTIE9SIENPTkRJVElPTlMgT0YgQU5ZIEtJTkQsIGVpdGhlciBleHByZXNzIG9yIGltcGxpZWQuClNlZSB0aGUgTGljZW5zZSBmb3IgdGhlIHNwZWNpZmljIGxhbmd1YWdlIGdvdmVybmluZyBwZXJtaXNzaW9ucyBhbmQKbGltaXRhdGlvbnMgdW5kZXIgdGhlIExpY2Vuc2UuhUUAtwAAADtJREFUOMtjVCtZ9p+BAsDEQCGgrQE3uyMZbnZHDmUvEAMYkaORkH9hQL10OY1cgC0W0G0c7rEwNL0AAJeCEpM4iWKGAAAAAElFTkSuQmCC";
+                        objImg.alt = "collapse";
+                        objTable.className = "page_details";
+                        var arrTable = document.getElementsByClassName("detail");
+                        for (var i=0; i<arrTable.length; i++) {
+                            arrTable[i].style.display = "none";
+                        }
+                    }
+                };
+                function toggle_detail(detail_id) {
+                    var objTitle = document.getElementById("tdetail");
+                    var arrTable = document.getElementsByClassName("detail");
+                    for (var i=0; i<arrTable.length; i++) {
+                        var table = arrTable[i];
+                        if (table.id != detail_id) {
+                            table.style.display = "none";
+                        } else {
+                            if (table.style.display == "none" || table.style.display == "") {
+                                table.style.display = "table";
+                                objTitle.style.display = "block";
+                            } else {
+                                table.style.display = "none";
+                                objTitle.style.display = "none";
+                            }
+                        }
+                    }
+                };
+            </script>
+</head>
+<body>
+<h1>接口测试报告</h1>
+<hr size="1">
+<h2>Summary</h2>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th># Samples</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th>Median</th><th>90% Line</th><th>95% Line</th><th>99% Line</th><th>QPS/TPS</th><th>Throughput KB/Sec</th>
+</tr>
+<tr valign="top" class="Failure">
+<td align="center">2</td><td align="center">1</td><td align="center">50.00%</td><td align="center">606 ms</td><td align="center">381 ms</td><td align="center">831 ms</td><td align="center">381 ms</td><td align="center">831 ms</td><td align="center">831 ms</td><td align="center">831 ms</td><td align="center">1.57 /s</td><td align="center">1.14</td>
+</tr>
+</table>
+<hr align="center" width="95%" size="1">
+<h2>Pages</h2>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th>URL</th><th># Samples</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th>Median</th><th>90% Line</th><th>95% Line</th><th>99% Line</th><th>QPS/TPS</th><th>Throughput KB/Sec</th><th></th>
+</tr>
+<tr valign="top" class="Failure">
+<td>登录_用户名为ID</td><td align="center">1</td><td align="center">1</td><td align="center">0.00%</td><td align="center">381 ms</td><td align="center">381 ms</td><td align="center">381 ms</td><td align="center">381 ms</td><td align="center">381 ms</td><td align="center">381 ms</td><td align="center">381 ms</td><td align="center">2.62 /s</td><td align="center">1.90</td><td align="center"><a href="javascript:toggle_details('page_details_2')"><img alt="collapse" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEALQADQANam36RQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wDDQ0cLbeSRoIAAAL5dEVYdENvbW1lbnQATGljZW5zZWQgdG8gdGhlIEFwYWNoZSBTb2Z0d2FyZSBGb3VuZGF0aW9uIChBU0YpIHVuZGVyIG9uZSBvciBtb3JlCmNvbnRyaWJ1dG9yIGxpY2Vuc2UgYWdyZWVtZW50cy4gIFNlZSB0aGUgTk9USUNFIGZpbGUgZGlzdHJpYnV0ZWQgd2l0aAp0aGlzIHdvcmsgZm9yIGFkZGl0aW9uYWwgaW5mb3JtYXRpb24gcmVnYXJkaW5nIGNvcHlyaWdodCBvd25lcnNoaXAuClRoZSBBU0YgbGljZW5zZXMgdGhpcyBmaWxlIHRvIFlvdSB1bmRlciB0aGUgQXBhY2hlIExpY2Vuc2UsIFZlcnNpb24gMi4wCih0aGUgIkxpY2Vuc2UiKTsgeW91IG1heSBub3QgdXNlIHRoaXMgZmlsZSBleGNlcHQgaW4gY29tcGxpYW5jZSB3aXRoCnRoZSBMaWNlbnNlLiAgWW91IG1heSBvYnRhaW4gYSBjb3B5IG9mIHRoZSBMaWNlbnNlIGF0CgogICBodHRwOi8vd3d3LmFwYWNoZS5vcmcvbGljZW5zZXMvTElDRU5TRS0yLjAKClVubGVzcyByZXF1aXJlZCBieSBhcHBsaWNhYmxlIGxhdyBvciBhZ3JlZWQgdG8gaW4gd3JpdGluZywgc29mdHdhcmUKZGlzdHJpYnV0ZWQgdW5kZXIgdGhlIExpY2Vuc2UgaXMgZGlzdHJpYnV0ZWQgb24gYW4gIkFTIElTIiBCQVNJUywKV0lUSE9VVCBXQVJSQU5USUVTIE9SIENPTkRJVElPTlMgT0YgQU5ZIEtJTkQsIGVpdGhlciBleHByZXNzIG9yIGltcGxpZWQuClNlZSB0aGUgTGljZW5zZSBmb3IgdGhlIHNwZWNpZmljIGxhbmd1YWdlIGdvdmVybmluZyBwZXJtaXNzaW9ucyBhbmQKbGltaXRhdGlvbnMgdW5kZXIgdGhlIExpY2Vuc2UuhUUAtwAAADtJREFUOMtjVCtZ9p+BAsDEQCGgrQE3uyMZbnZHDmUvEAMYkaORkH9hQL10OY1cgC0W0G0c7rEwNL0AAJeCEpM4iWKGAAAAAElFTkSuQmCC" id="page_details_2_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_2">
+<td bgcolor="#FF0000" colspan="14">
+<div align="center">
+<b>Details for Page "登录_用户名为ID"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td align="center"><a href="javascript:toggle_detail('%E7%99%BB%E5%BD%95_%E7%94%A8%E6%88%B7%E5%90%8D%E4%B8%BAID_detail_1')">登录模块 1-1</a></td><td align="center">1</td><td align="center">381 ms</td><td align="center">742</td><td align="center">false</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<hr align="center" width="95%" size="1">
+<h2 id="tdetail">Details</h2>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details detail" align="center" id="登录_用户名为IDO_detail_1">
+<tr valign="top">
+<th colspan="2">登录_用户名为IDO # 登录模块 1-1</th>
+</tr>
+<tr>
+<td class="key">Time</td><td>831 ms</td>
+</tr>
+<tr>
+<td class="key">Latency</td><td>831 ms</td>
+</tr>
+<tr>
+<td class="key">Bytes</td><td>744</td>
+</tr>
+<tr>
+<td class="key">Sample Count</td><td>1</td>
+</tr>
+<tr>
+<td class="key">Error Count</td><td>0</td>
+</tr>
+<tr>
+<td class="key">Response Code</td><td>200</td>
+</tr>
+<tr>
+<td class="key">Response Message</td><td>OK</td>
+</tr>
+<tr>
+<td class="key">Failure Message</td><td></td>
+</tr>
+<tr>
+<td class="key">Method/Url</td><td>POST http://httpbin.org/post</td>
+</tr>
+<tr>
+<td class="key">Query String</td><td>{&#13;
+	"login_name": "IDO",&#13;
+	"password": "123456"&#13;
+}</td>
+</tr>
+<tr>
+<td class="key">Cookies</td><td></td>
+</tr>
+<tr>
+<td class="key">Request Headers</td><td>Connection: keep-alive
+Content-Type: application/json
+Content-Length: 50
+Host: httpbin.org
+User-Agent: Apache-HttpClient/4.5.7 (Java/1.8.0_161)
+</td>
+</tr>
+<tr>
+<td class="key">Response Headers</td><td>HTTP/1.1 200 OK
+Date: Sat, 30 May 2020 13:03:51 GMT
+Content-Type: application/json
+Content-Length: 514
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+</td>
+</tr>
+<tr>
+<td class="key">Response Data</td><td>{
+  "args": {}, 
+  "data": "{\r\n\t\"login_name\": \"IDO\",\r\n\t\"password\": \"123456\"\r\n}", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Content-Length": "50", 
+    "Content-Type": "application/json", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Apache-HttpClient/4.5.7 (Java/1.8.0_161)", 
+    "X-Amzn-Trace-Id": "Root=1-5ed259b7-253604a69b59e864ec8b4b82"
+  }, 
+  "json": {
+    "login_name": "IDO", 
+    "password": "123456"
+  }, 
+  "origin": "112.97.246.110", 
+  "url": "http://httpbin.org/post"
+}
+</td>
+</tr>
+<tr>
+<td class="key">Response File</td><td></td>
+</tr>
+</table>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details detail" align="center" id="登录_用户名为ID_detail_1">
+<tr valign="top">
+<th colspan="2">登录_用户名为ID # 登录模块 1-1</th>
+</tr>
+<tr>
+<td class="key">Time</td><td>381 ms</td>
+</tr>
+<tr>
+<td class="key">Latency</td><td>381 ms</td>
+</tr>
+<tr>
+<td class="key">Bytes</td><td>742</td>
+</tr>
+<tr>
+<td class="key">Sample Count</td><td>1</td>
+</tr>
+<tr>
+<td class="key">Error Count</td><td>1</td>
+</tr>
+<tr>
+<td class="key">Response Code</td><td>200</td>
+</tr>
+<tr>
+<td class="key">Response Message</td><td>OK</td>
+</tr>
+<tr>
+<td class="key">Failure Message</td><td>Value expected to match regexp 'IDO', but it did not match: 'ID'</td>
+</tr>
+<tr>
+<td class="key">Method/Url</td><td>POST http://httpbin.org/post</td>
+</tr>
+<tr>
+<td class="key">Query String</td><td>{&#13;
+	"login_name": "ID",&#13;
+	"password": "123456"&#13;
+}</td>
+</tr>
+<tr>
+<td class="key">Cookies</td><td></td>
+</tr>
+<tr>
+<td class="key">Request Headers</td><td>Connection: keep-alive
+Content-Type: application/json
+Content-Length: 49
+Host: httpbin.org
+User-Agent: Apache-HttpClient/4.5.7 (Java/1.8.0_161)
+</td>
+</tr>
+<tr>
+<td class="key">Response Headers</td><td>HTTP/1.1 200 OK
+Date: Sat, 30 May 2020 13:03:51 GMT
+Content-Type: application/json
+Content-Length: 512
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+</td>
+</tr>
+<tr>
+<td class="key">Response Data</td><td>{
+  "args": {}, 
+  "data": "{\r\n\t\"login_name\": \"ID\",\r\n\t\"password\": \"123456\"\r\n}", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Content-Length": "49", 
+    "Content-Type": "application/json", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Apache-HttpClient/4.5.7 (Java/1.8.0_161)", 
+    "X-Amzn-Trace-Id": "Root=1-5ed259b7-9cddc2e8d81a71004d4c00f4"
+  }, 
+  "json": {
+    "login_name": "ID", 
+    "password": "123456"
+  }, 
+  "origin": "112.97.246.110", 
+  "url": "http://httpbin.org/post"
+}
+</td>
+</tr>
+<tr>
+<td class="key">Response File</td><td></td>
+</tr>
+</table>
+</body>
+</html>

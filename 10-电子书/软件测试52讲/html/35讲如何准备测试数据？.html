@@ -1,0 +1,336 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.5;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x">所有最新极客时间课程请加QQ群170701297</p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                35讲如何准备测试数据？
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/f9/29/f9486e604f4c8bd81a6185c2b8c69929.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>你好，我是茹炳晟，今天我和你分享的主题是：如何准备测试数据。</p>
+<p>从今天开始，我们将一起进入测试数据准备这个新的系列了。我会用四篇文章，和你详细探讨软件测试过程中关于测试数据准备的话题。我会依次分享测试数据创建的基本方法、测试数据准备的痛点、自行开发的测试数据工具，以及目前业内最先进的统一测试数据平台。</p>
+<p>你我都非常清楚，测试数据的准备是软件测试过程中非常重要的一个环节，无论是手工测试，还是自动化测试，无论是GUI测试，还是API测试，无论是功能测试，还是性能测试，都避不开测试数据准备的工作。</p>
+<p>所以，如果你想要成长为一名优秀的测试工程师，那就非常有必要深入理解测试数据准备的方法，以及它们各自的优缺点、适用场景了。</p>
+<p>今天，我们就先从测试数据准备的基本方法开始吧。</p>
+<p>从创建测试数据的维度来看，测试数据准备方法主要可以分为四类：</p>
+<ul>
+<li>基于GUI操作生成测试数据；</li>
+<li>通过API调用生成测试数据；</li>
+<li>通过数据库操作生成测试数据；</li>
+<li>综合运用API和数据库的方式生成测试数据。</li>
+</ul>
+<p>这时，相信你已经回想起我曾在第15篇文章<a href="https://time.geekbang.org/column/article/12399">《过不了的坎：聊聊GUI自动化过程中的测试数据》</a>中从创建测试数据的维度和你分享过这些内容，这次的分享只不过是多了“通过GUI调用生成测试数据”的方法。</p><!-- [[[read_end]]] -->
+<p>其实，我在第15篇文章的分享内容，只是简单的介绍了GUI测试数据准备的方法，并没有详细展开。事后，你可能也感觉不太过瘾，想知道一些更深入、更细节、更贴近业务场景的测试数据准备的知识。所以，也就有了我今天的这次分享。</p>
+<p>那么，接下来我们就赶紧开始吧，一起聊聊这四种测试数据准备的方法。</p>
+<h2>基于GUI操作生成测试数据</h2>
+<p>基于GUI操作生成测试数据，是最原始的创建测试数据的方法。简单地说，它就是采用E2E的方式来执行业务场景，然后生成数据的方法。</p>
+<p>比如，你想要测试用户登录功能，那么首先就要准备一个已经注册的用户，为此你可以直接通过GUI界面来注册一个新用户，然后用这个新创建的用户完成用户登录功能的测试。</p>
+<p>这个方法的优点是简单直接，在技术上没有任何复杂性，而且所创建的数据完全来自于真实的业务流程，可以最大程度保证数据的正确性。但是，该方法的缺点也十分明显，主要体现在以下这四个方面：</p>
+<ol>
+<li>
+<p><strong>创建测试数据的效率非常低</strong>。一是因为每次执行GUI业务操作都只能创建一条数据，二是因为基于GUI操作的执行过程比较耗时。</p>
+</li>
+<li>
+<p><strong>基于GUI的测试数据创建方法不适合封装成测试数据工具</strong>。由于测试数据的创建是通过GUI操作实现的，所以把这种数据创建方法封装成测试数据准备工具的过程，其实就是在开发GUI自动化测试用例。无论是从开发工作量，还是从执行效率来讲，把基于GUI操作的测试数据创建方法封装成测试数据准备工具都不是最佳的选择。</p>
+</li>
+<li>
+<p><strong>测试数据成功创建的概率不会太高</strong>。因为，测试数据准备的成功率受限于GUI自动化执行的稳定性，而且任何界面的变更都有可能引发测试数据创建的失败。</p>
+</li>
+<li>
+<p><strong>会引入不必要的测试依赖</strong>。比如，你的被测对象是用户登录功能，通过GUI页面操作准备这个已经注册的用户，就首先要保证用户注册功能没有问题，而这显然是不合理的。</p>
+</li>
+</ol>
+<p>鉴于以上四方面的原因，在实际的测试过程中，我们很少直接使用基于GUI的操作生成测试数据。只有在万不得已的情况下，比如没有其他更好的方式可以创建正确可靠的测试数据时，我们才会使用这个方法。</p>
+<p>而且，这里我需要说明的是，基于GUI操作生成测试数据的方法一般只用于手工测试，因为自动化测试中使用这种数据准备方法，基本相当于要开发一个完整的GUI自动化测试用例，代价太大。</p>
+<p>那我为什么还要介绍这个方法呢？其实，这个方法更重要的应用场景是，帮助我们找到创建一个测试数据的过程中，后端调用了哪些API，以及修改了哪些数据库的业务表，是“通过API调用生成测试数据”，以及“通过数据库操作生成测试数据”这两种方法的基础。</p>
+<h2>通过API调用生成测试数据</h2>
+<p>通过API调用生成测试数据，是目前主流的测试数据生成方法。其实，当我们通过操作GUI界面生成测试数据时，实际的业务操作往往是由后端的API调用完成的。所以，我们完全可以通过直接调用后端API生成测试数据。</p>
+<p>还是以用户登录功能的测试为例，我们通过GUI界面注册新用户时，实际上就是调用了createUser这个API。既然知道了具体要调用哪个API，那么我们就可以跳过在GUI界面的操作，直接调用createUser生成“已经注册的用户”这个测试数据了。</p>
+<p><strong>为了规避在创建测试数据时过于在乎实现细节的问题，在实际工程实践中，我们往往会把调用API生成测试数据的过程封装成测试数据准备函数</strong>。那问题是，我怎么才能知道前端新用户注册这个操作到底调用了哪些后端API呢？这里，我推荐三种方式：</p>
+<ol>
+<li>
+<p>直接询问开发人员，这是最直接的方法；</p>
+</li>
+<li>
+<p>如果你有一定的代码基础，可以直接阅读源代码，这个方法也可以作为直接询问方法的补充；</p>
+</li>
+<li>
+<p>在一个你可以独占的环境上执行GUI操作创建测试数据，与此同时监控服务器端的调用日志，分析这个过程到底调用了哪些API。</p>
+</li>
+</ol>
+<p>通过API调用生成测试数据的方法，优点主要体现在以下几个方面：</p>
+<ul>
+<li>可以保证创建的测试数据的准确性，原因是使用了和GUI操作同样的API调用；</li>
+<li>测试数据准备的执行效率更高，因为该方法跳过了耗时的GUI操作；</li>
+<li>把创建测试数据的API调用过程，封装成测试数据函数更方便，因为这个调用过程的代码逻辑非常清晰；</li>
+<li>测试数据的创建可以完全依赖于API调用，当创建测试数据的内部逻辑有变更时，由于此时API内部的实现逻辑也会由开发人员同步更新，所以我们依旧可以通过调用API来得到逻辑变更后的测试数据，而这个过程对使用来说是完全透明的。</li>
+</ul>
+<p>但是，该方法也不是完美无瑕的，其缺点主要表现在：</p>
+<ol>
+<li>
+<p>并不是所有的测试数据创建都有对应的API支持。也就是说，并不是所有的数据都可以通过API调用的方式创建，有些操作还是必须依赖于数据库的CRUD操作。那么，这时，我们就不得不在测试数据准备函数中加入数据库的CRUD操作生成测试数据了。</p>
+</li>
+<li>
+<p>有时，创建一条业务线上的测试数据，往往需要按一定的顺序依次调用多个API，并且会在多个API调用之间传递数据，这也无形中增加了测试数据准备函数的复杂性。</p>
+</li>
+<li>
+<p>虽然相比于GUI操作方式，基于API调用的方式在执行速度上已经得到了大幅提升，并且还可以很方便地实现并发执行（比如，使用JMeter或者Locust），但是对于需要批量创建海量数据的场景，还是会力不从心。</p>
+</li>
+</ol>
+<p>因此，业界往往还会通过数据库的CRUD操作生成测试数据。</p>
+<h2>通过数据库操作生成测试数据</h2>
+<p>通过数据库操作生成测试数据，也是目前主流的测试数据生成方法。这个方法的实现原理很简单，就是直接通过数据库操作，将测试数据插入到被测系统的后台数据库中。</p>
+<p><strong>常见的做法是，将创建数据需要用到的SQL语句封装成一个个的测试数据准备函数，当我们需要创建数据时，直接调用这些封装好的函数即可。</strong></p>
+<p>还是以用户登录功能测试为例，当我们通过GUI界面注册新用户时，实际上是在后端调用了createUser这个API，而这个API的内部实现逻辑是，将用户的详细信息插入到了userTable和userRoleTable这两张业务表中。</p>
+<p>那么此时，我们就可以直接在userTable和userRoleTable这两张业务表中插入数据，然后完成这个新用户的注册工作。</p>
+<p><strong>这样做的前提是，你需要知道前端用户通过GUI操作注册新用户时，到底修改了哪些数据库的业务表</strong>。这里，我也推荐三种方式：</p>
+<ol>
+<li>
+<p>直接向开发人员索要使用到的SQL语句；</p>
+</li>
+<li>
+<p>直接阅读产品源代码；</p>
+</li>
+<li>
+<p>在一个你可以独占的环境上执行GUI操作产生测试数据，与此同时，监控独占环境的数据库端业务表的变化，找到哪些业务表发生了变化。</p>
+</li>
+</ol>
+<p>通过数据库操作生成测试数据的方法，主要优点是测试数据的生成效率非常高，可以在较短的时间内创建大批量的测试数据。</p>
+<p>当然，这个方法的缺点也非常明显，主要体现在以下几个方面：</p>
+<ul>
+<li>很多时候，一个前端操作引发的数据创建，往往会修改很多张表，因此封装的数据准备函数的维护成本要高得多；</li>
+<li>容易出现数据不完整的情况，比如一个业务操作，实际上在一张主表和一张附表中插入了记录，但是基于数据库操作的数据创建可能只在主表中插入了记录，这种错误一般都会比较隐蔽，往往只在一些特定的操作下才会发生异常；</li>
+<li>当业务逻辑发生变化时，即SQL语句有变化时，需要维护和更新已经封装的数据准备函数。</li>
+</ul>
+<h2>综合运用API和数据库的方式生成测试数据</h2>
+<p>目前，在实际的工程实践中，很少使用单一的方法生成测试数据，基本都是采用API和数据库相结合的方式。<strong>最典型的应用场景是，先通过API调用生成基础的测试数据，然后使用数据库的CRUD操作生成符合特殊测试需求的数据</strong>。所以，你经常会看到很多的数据准备函数中，既有API操作，又有数据库操作。</p>
+<p>我以创建用户为例，和你分享一下如何综合运用API和数据库两种方式创建测试数据吧。</p>
+<p>假设，我们需要封装一个创建用户的函数，这个函数需要对外暴露“用户国家”和“支付方式”这两个参数。由于实际创建用户是通过后台createUser API完成的，但是这个API并不支持指定“用户国家”和“支付方式”，所以我们就需要自己封装一个创建用户的函数。</p>
+<p>自己封装用户创建函数的方法，你可以通过下面这个思路实现：</p>
+<ul>
+<li>首先，调用createUser API完成基本用户的创建；</li>
+<li>然后，调用paymentMethod API实现用户对于不同支付方式的绑定，其中paymentMethod API使用的userID就是上一步中createUser API产生的用户ID；</li>
+<li>最后，通过数据库的SQL语句更新“用户国家”。</li>
+</ul>
+<p>在这个例子中，createUser API和paymentMethod API只是为了说明如何综合运用API的顺序调用，而其具体参数并不是我要阐述的关键内容，所以我并没有和你详细说明这两个API的参数、实现方式等问题。另外，我在最后一步综合运用了数据库的CRUD操作，完成了创建测试数据的全部工作。</p>
+<p>这，就是一个封装测试数据准备函数的典型例子了。</p>
+<h2>总结</h2>
+<p>今天，我从测试数据创建的角度，和你分享了准备测试数据的四种方法。</p>
+<p>其中，基于GUI操作生成测试数据是最原始的方法，但是效率很低，而且会引入不必要的依赖；通过API调用以及数据库操作的方式生成测试数据是目前主流的做法，通过API调用的方式具有数据准确度高但是创建效率较低的特点，而通过数据库的方式具有创建效率高但是维护复杂度也高的特点。</p>
+<p>所以，在实际项目中，业界往往会综合采用API和数据库的方式生成测试数据，即通过API调用生成基础数据，然后使用数据库的CRUD操作进一步生成符合特殊测试需求的数据。</p>
+<h2>思考题</h2>
+<p>目前，我们需要创建的测试数据并不仅仅局限于数据库，很多时候还需要创建消息队列里面的数据。你在实际工作中遇到过这类测试数据吗？你又是如何处理的呢？</p>
+<p>感谢你的收听，欢迎你给我留言。</p>
+<p><img src="https://static001.geekbang.org/resource/image/0f/c2/0ffe4c8cc7f61280f42c57db2ccc90c2.jpg" alt="" /></p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/4c/b0/f22017b0.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">楚耳</span>
+                            </div>
+                            <div class="bd">老师，你文中提到的在一个你可以独占的环境上执监控服务器端的调用日志，和数据库日志，这其中分别用的是什么工具进行监控的 <br></div>
+                            <span class="time">2018-10-31 08:28</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/8c/95/14d4d0eb.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">sylan215</span>
+                            </div>
+                            <div class="bd">1.如果使用非 GUI 操作获取测试数据，一定要保证使用的方法和 GUI 操作路径&#47;逻辑是一致的，不然没法保证测试的一致性了；<br><br>2.如果是一次性操作，其实 GUI 操作的成本并不高(或者使用 GUI 操作的接口，而不是额外开发的接口)，其他方法可能会涉及单独的开发工作量吧，特别是数据库，大部分业务的数据库表都是关联的，如果改不好，可能定位问题就需要很长时间；<br><br>3.另外也需要关注测试数据的恢复，保证数据的一致性。<br><br>以上，欢迎沟通交流，公众号「sylan215」 <br></div>
+                            <span class="time">2018-09-17 19:54</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/8f/c7/3939bfd0.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">wenjun</span>
+                            </div>
+                            <div class="bd">测试数据这个问题困扰了我很久，基本上成为团队进一步发展的瓶颈之一。 想请教一下老师，对于前台和中台团队，下面难点怎么突破:<br>1.最终数据，部分数据不是实时生成的，例如需要后台清算才能产生。<br>2.依赖于多个后台系统，他们分别产生不同的数据，存储在不同的数据库中。中台需要整个这些数据。<br><br>以上两个方面需要如何高效的产生和维护真实可靠的测试数据呢？(目前是搞一套完整的系统，自动化跑清算，感觉成本太高) <br></div>
+                            <span class="time">2018-11-01 07:29</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/95/96/0020bd67.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">夏洛克的救赎</span>
+                            </div>
+                            <div class="bd">“基于 GUI 的测试数据创建方法不适合封装成测试数据工具”<br><br>测试数据工具？用JavaScript实现？ <br></div>
+                            <span class="time">2018-10-01 12:34</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">如果基于gui来封装测试数据工具，就会变成用gui来创建测试数据，这样的效率非常差。测试数据工具一般采用java或者python实现居多，当然用js也是可以的，这要取决于你们公司的技术架构和技术栈</p>
+                                <p class="reply-time">2018-10-05 08:25</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/76/3e/ccca2e26.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Sphinx</span>
+                            </div>
+                            <div class="bd">开发在做UT测试的时候也会需要准备测试数据，若是底层服务，会直接在测试用例中通过ORM来创建所需数据；若是上层服务，通常会调用底层服务的API来创建所需数据，微服务架构下，我觉得使用API方式来构建测试数据会比较理想，这样更利于测试代码的抽象与实现。 <br></div>
+                            <span class="time">2018-11-19 22:00</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c0/bc/c49e1eaa.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">静静张</span>
+                            </div>
+                            <div class="bd">我们是在测试用例执行前通过api创建数据,执行后清除数据的方式。 <br></div>
+                            <span class="time">2018-11-18 17:24</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">完全可行，取决被测系统的特性</p>
+                                <p class="reply-time">2018-11-29 13:41</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/2f/f4/2dede51a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">小老鼠</span>
+                            </div>
+                            <div class="bd">测试数据<br>1、在测试执行前创建完毕<br>2、在测试前通过setup来创建<br>这两个方法各有什么利弊？ <br></div>
+                            <span class="time">2018-11-07 17:25</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/2f/f4/2dede51a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">小老鼠</span>
+                            </div>
+                            <div class="bd">各位作自动化测试的时候，测试数据是实先存在系统数据库中还是在运行测试程序开始生成，完成以后再删除，有没有必要一批测试用例执行完毕，不侵犯系统中原有的数据。今天我发现我以前写的一些测试用例只接操纵产品数据库，但是忘了启动web server，但启动了DB server，然后运行测试代码往DB server里写数据了，但由于web server没有启动，测试用例运行失败，结果写进数据库中的数据没有及时处理干净，形成了垃圾测试数据，你平时在测试中是如何处理的？ <br></div>
+                            <span class="time">2018-11-04 18:38</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/cc/9c/ec71155f.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">胖虫子</span>
+                            </div>
+                            <div class="bd">遇到过一次测试，很多的测试数据需要操作很多步骤才能得到，只是为了测试方便，也为了节约时间，采用katalon提供的web录制回访，虽然也是gui的，但因为是录制回访，所以也没花太多的时间 <br></div>
+                            <span class="time">2018-11-01 09:15</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/eb/a3/b41b4430.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">雨注金池</span>
+                            </div>
+                            <div class="bd">茹老师，请问如果通过api更新数据库业务上需要发消息给上游，那么通过CRUD数据库的方法直接构造特殊数据并不会发消息，那是需要再构造Q么？这样成本会不会很高 <br></div>
+                            <span class="time">2018-10-25 10:17</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/ca/e9/6e863bc3.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">深邃</span>
+                            </div>
+                            <div class="bd">我现在还是不懂怎么用GUI测试 <br></div>
+                            <span class="time">2018-09-17 11:07</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

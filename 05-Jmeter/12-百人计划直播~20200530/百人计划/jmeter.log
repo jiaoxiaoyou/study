@@ -1,0 +1,45 @@
+2020-05-30 17:59:05,098 INFO o.a.j.u.JMeterUtils: Setting Locale to zh_CN
+2020-05-30 17:59:05,112 INFO o.a.j.JMeter: Loading user properties from: D:\Apache-jmeter-5.1.1\bin\user.properties
+2020-05-30 17:59:05,113 INFO o.a.j.JMeter: Loading system properties from: D:\Apache-jmeter-5.1.1\bin\system.properties
+2020-05-30 17:59:05,117 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
+2020-05-30 17:59:05,117 INFO o.a.j.JMeter: Version 5.1.1 r1855137
+2020-05-30 17:59:05,117 INFO o.a.j.JMeter: java.version=1.8.0_161
+2020-05-30 17:59:05,117 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2020-05-30 17:59:05,117 INFO o.a.j.JMeter: os.name=Windows 10
+2020-05-30 17:59:05,117 INFO o.a.j.JMeter: os.arch=amd64
+2020-05-30 17:59:05,117 INFO o.a.j.JMeter: os.version=10.0
+2020-05-30 17:59:05,117 INFO o.a.j.JMeter: file.encoding=GBK
+2020-05-30 17:59:05,117 INFO o.a.j.JMeter: java.awt.headless=true
+2020-05-30 17:59:05,117 INFO o.a.j.JMeter: Max memory     =2147483648
+2020-05-30 17:59:05,117 INFO o.a.j.JMeter: Available Processors =8
+2020-05-30 17:59:05,120 INFO o.a.j.JMeter: Default Locale=English (EN)
+2020-05-30 17:59:05,120 INFO o.a.j.JMeter: JMeter  Locale=Chinese (China)
+2020-05-30 17:59:05,120 INFO o.a.j.JMeter: JMeterHome=D:\Apache-jmeter-5.1.1
+2020-05-30 17:59:05,120 INFO o.a.j.JMeter: user.dir  =C:\Users\ixixi\Desktop\百人计划
+2020-05-30 17:59:05,121 INFO o.a.j.JMeter: PWD       =C:\Users\ixixi\Desktop\百人计划
+2020-05-30 17:59:05,123 INFO o.a.j.JMeter: IP: 192.168.43.143 Name: LAPTOP-3Q9JU4KS FullName: LAPTOP-3Q9JU4KS
+2020-05-30 17:59:05,125 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'C:\Users\ixixi\Desktop\百人计划\result\html'
+2020-05-30 17:59:05,127 INFO o.a.j.s.FileServer: Default base='C:\Users\ixixi\Desktop\百人计划'
+2020-05-30 17:59:05,131 INFO o.a.j.s.FileServer: Set new base='C:\Users\ixixi\Desktop\百人计划'
+2020-05-30 17:59:05,228 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2020-05-30 17:59:05,239 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2020-05-30 17:59:05,243 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2020-05-30 17:59:05,248 INFO o.a.j.s.SaveService: Loading file: 百人计划demo.jmx
+2020-05-30 17:59:05,297 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-05-30 17:59:05,297 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-05-30 17:59:05,297 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-05-30 17:59:05,298 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-05-30 17:59:05,298 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2020-05-30 17:59:05,298 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2020-05-30 17:59:05,311 INFO o.a.j.JMeter: Creating summariser <summary>
+2020-05-30 17:59:05,316 ERROR o.a.j.JMeter: Error in NonGUIDriver
+java.lang.IllegalArgumentException: Report generation requires csv output format, check 'jmeter.save.saveservice.output_format' property
+	at org.apache.jmeter.report.dashboard.ReportGenerator.<init>(ReportGenerator.java:125) ~[ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.JMeter.runNonGui(JMeter.java:1059) [ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.JMeter.startNonGui(JMeter.java:991) [ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.JMeter.start(JMeter.java:563) [ApacheJMeter_core.jar:5.1.1 r1855137]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_161]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:253) [ApacheJMeter.jar:5.1.1 r1855137]

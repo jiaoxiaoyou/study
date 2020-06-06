@@ -1,0 +1,201 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.5;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x">所有最新极客时间课程请加QQ群170701297</p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                49讲深入浅出网站高性能架构设计
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/60/7d/60f95cf425a16588c7f4bf082d203d7d.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>你好，我是茹炳晟。今天我和你分享的主题是：深入浅出网站高性能架构设计。</p>
+<p>在上一篇文章中，我从全局的角度和你分享了测试人员学习架构知识的重要性、应该学到什么程度，以及怎么学的问题，希望你可以借此明白网站架构的why、what、how。</p>
+<p>接下来，我将站在测试人员的视角，通过这个专栏的最后四篇文章，和你分享网站的高性能架构、高可用架构、伸缩性架构以及扩展性架构。希望借此机会，可以让你对网站的架构设计做到心中有数，在设计测试用例时可以做到有的放矢。</p>
+<p>今天我们就先从网站高性能架构的设计开始吧。</p>
+<p>性能是网站的重要指标，如果一个网站的访问速度很慢，就会直接导致大量用户的流失。所以说，性能是设计网站架构时要考虑的关键因素。也因此，网站的性能问题成了网站架构升级、优化的导火索。</p>
+<p>目前，为了优化网站性能，业界出现了很多相关的架构改进方案和技术手段。而包括了这些升级、优化网站性能的方案、技术手段在内的高性能架构设计，是个很大的话题，单单依靠几篇文章是很难讲清楚的。所以，我从中精选了一些对测试工程师比较关键的概念和技术，和你展开今天的分享。</p>
+<p>如果你想了解更细节的技术实现的话，可以参考我在上一篇文章中推荐的学习资料，也可以直接在留言区给我留言。</p><!-- [[[read_end]]] -->
+<p>从全局来看，网站的高性能架构设计包括两大部分内容：一是前端性能，二是后端服务器相关的性能优化和架构设计。</p>
+<h2>前端的高性能架构</h2>
+<p>关于什么是前端性能，以及如何设计针对前端性能的测试，你可以直接参考第31篇文章<a href="https://time.geekbang.org/column/article/17935">《工欲善其事必先利其器：前端性能测试工具原理与行业常用工具简介》</a>中的相关内容。</p>
+<p>相对来说，<strong>前端高性能架构比较直观易懂，其本质就是通过各种技术手段去优化用户实际感受到的前端页面展现时间。</strong></p>
+<p>目前，业内的标准实践是来自于雅虎前端性能团队提出的35条原则，我已经在第29篇文章<a href="https://time.geekbang.org/column/article/14832">《聊聊性能测试的基本方法与应用领域》</a>中，为你解读了其中几个比较典型的规则，你可以再回顾下。同时，你还可以访问<a href="https://developer.yahoo.com/performance/rules.html?guccounter=1">雅虎网站</a>查看经典的35条规则，以及对各规则的详细解读。</p>
+<p>前端的高性能架构相对于后端来讲比较容易实现，因为前端性能优化的方法是相对标准的。而且，目前的前端性能测试工具，比如我在前面文章中曾经介绍过的WebPageTest和YSlow之类的工具等，都能系统性地分析前端的性能问题，并给出对应的解决方案建议。</p>
+<p>可以说，我们只要在项目开发过程中，把前端性能优化纳入了测试范围，那么一般来讲都能获得比较理想的性能优化结果。</p>
+<h2>后端服务器的高性能架构</h2>
+<p>后端服务器的高性能架构，业内采用的最主要的技术手段是缓存。同时，集群也可以从计算能力的角度，提升后端的处理性能。</p>
+<h3>缓存</h3>
+<p>可以说，在计算机的世界中，凡是想要提高性能的场合都会使用到缓存的思想。缓存是指将数据存储在访问速度相对较快的存储介质中，所以从缓存中读取数据的速度更快。</p>
+<p>另外，如果缓存中的数据是经过复杂计算得到的，那么再次使用被缓存的数据时，就无需再重复计算即可直接使用。从这个意义上讲，缓存还具有降低后端运算负载的作用。</p>
+<p>可见，缓存在软件系统和网站架构中几乎无处不在。当然了，在系统和软件的不同级别对应有不同层级的缓存：</p>
+<ul>
+<li>浏览器级别的缓存，会用来存储之前在网络上下载过的静态资源；</li>
+<li>CDN本质也是缓存，属于部署在网络服务供应商机房中的缓存；</li>
+<li>反向代理服务器本质上同样也是缓存，属于用户数据中心最前端的缓存；</li>
+<li>数据库中的“热点”数据，在应用服务器集群中有一级缓存，在缓存服务集群中有二级缓存；</li>
+<li>甚至是用于URL和服务器IP地址转换DNS服务器，为了减少重复查询的次数也采用了缓存。</li>
+</ul>
+<p>启用了缓存后，当应用程序需要读取数据时，会先试图从缓存中读取：</p>
+<ul>
+<li>如果读取成功，我们称为缓存命中，此时就可以在很大程度上降低访问数据库的时间开销。</li>
+<li>如果没有读取到数据或者缓存中的数据已经过期失效，那么应用程序就会访问数据库去获取相应的数据。获取到数据后，在把数据返回给应用程序的同时，还会把该数据写入到缓存中，以备下次使用。</li>
+</ul>
+<p><strong>缓存主要用来存储那些相对变化较少，并且遵从“二八原则”的数据。这里的“二八原则”指的是80%的数据访问会集中在20%的数据上</strong>。</p>
+<p>也就是说，如果我们将这20%的数据缓存起来，那么这些数据就会具有非常高的读写比。读写比越高，说明缓存中的数据被使用的次数也就越多，从而节省的数据库访问也就越多，缓存的优势也就越明显。</p>
+<p>需要特别注意的是，<strong>缓存技术并不适用于那些需要频繁修改的数据</strong>。对于这种需要频繁修改的数据来说，经常会出现刚刚写入缓存的数据还没来得及被读取就已经失效了的场景。所以，在这种情况下，缓存不仅不会带来性能提升，反而会增加系统开销。</p>
+<p>从理论上来讲，缓存的作用是辅助提升数据的读取性能，缓存数据丢失或者缓存不可用不应该影响整个系统的可用性，因为即使没有了缓存，数据依旧可以从数据库中获得。但是，现在的数据库已经习惯了有缓存的日子，假如哪天缓存系统奔溃了，就会在短时间内有大量的请求来访问数据库，数据库就很可能会因为无法承受这样的并发压力而宕机。</p>
+<p>为了解决这个问题，有些网站会使用缓存热备等技术手段来提供缓存的高可用性，即：当某台缓存服务器宕机的时候，会将缓存访问切换到热备的缓存服务器上。</p>
+<p>另外，如果你采用了分布式缓存服务器集群的话，那么缓存的数据将被分布到集群中的多台服务器上，当其中一台服务器宕机的时候，也只会丢失一部分缓存数据，此时通过访问数据库来重建这些缓存数据的开销并不算太大。</p>
+<p>目前，分布式缓存架构的主流技术方案有两种：</p>
+<ul>
+<li><strong>一种是，在企业级应用中广泛采用的JBoss Cache</strong>。JBoss Cache需要在缓存集群中的每台机器上同步所有缓存的副本，当集群规模比较大的时候，同步代价会很高。而且，多份副本也会造成存储资源的浪费。但其最大的优点是速度非常快，所以JBoss Cache更适用于企业级规模不是很大的缓存集群。这种企业级的集群一般在几台到十几台服务器的规模。</li>
+<li><strong>另一种是，在互联网应用的主流Memcached</strong>。Memcached属于互不通信的分布式架构，集群中各个节点缓存的数据都不一样，缓存使用者基于Hash一致性算法来定位具体的内容到底缓存在集群中的哪个节点。<br />
+因此，Memcached具有缓存容量大，存储效率高，可以很方便地支持集群的扩展，但是速度相对较慢的特点。这些特点决定了Memcached非常适用于现如今的互联网产品架构，几乎成为了网站分布式缓存架构的代名词。</li>
+</ul>
+<p>互联网产品架构的应用服务器集群规模一般都很大，即使小规模的应用集群也有上百台机器，规模大的话可以达到上万台，这种架构下的缓存集群规模要求也非常大。</p>
+<p>通过上面这些些缓存的基础知识，再结合着你在平时项目中积累的相关经验，相信你已经理解了缓存的原理。那么，接下来我们再从测试人员的视角来看看，在执行测试时需要考虑到哪些与缓存相关的测试场景：</p>
+<ul>
+<li>对于前端的测试场景，需要分别考虑缓存命中和缓存不命中情况下的页面加载时间。</li>
+<li>基于缓存过期测试策略的设计，需要考虑到必须要重新获取数据的测试场景。</li>
+<li>需要针对可能存在的缓存“脏数据”，进行有针对性的测试。缓存“脏数据”，是指数据库中的数据已经更新，但是缓存中的数据还没来得及更新的场景。</li>
+<li>需要针对可能的缓存穿透进行必要的测试。缓存穿透，是指访问的数据并不存在，所以这部分数据永远不会有被缓存的机会，因此此类请求会一直重复访问数据库。</li>
+<li>系统冷启动后，在缓存预热阶段的数据库访问压力是否会超过数据库实际可以承载的压力。</li>
+<li>对于分布式缓存集群来说，由于各集群使用的缓存算法不同，那么如果要在缓存集群中增加更多节点进行扩容的话，扩容对原本已经缓存数据的影响也会不同。所以，我们需要针对缓存集群扩容的场景，进行必要的测试和性能评估。</li>
+</ul>
+<h3>集群</h3>
+<p>集群也是提升网站性能和并发处理能力的典型架构设计方法。</p>
+<p>当一台服务器不足以满足日益增长的用户流量时，我们就可以考虑使用多台服务器来组成一个集群：外部请求将统一和负载均衡器打交道；负载均衡器根据不同的负载调度算法，将访问请求传递给集群中的某台服务器处理。</p>
+<p>需要注意的是，在这种模式下，集群中的任何一台服务器宕机都不会给整个系统带来明显的影响。此时，每台服务器的地位也都不怎么高，我们可以直接替换掉出现了问题的某台服务器。同样地，当需要支持更大的系统负载时，我们就可以在集群中添加更多的服务器。</p>
+<p>这时，集群中的每台服务器都可以被随时替换或者淘汰掉，就像“牲口”似的可以任人宰割。所以，这种模式，就有点类似于“牲口”模式。</p>
+<p>与“牲口”模式对应的是“宠物”模式，比如一些企业级的应用，它们往往不通过集群来扩展系统的能力和提高系统的性能，而是采用更为强劲的服务器。</p>
+<p>这种性能非常强大的单台服务器，价格往往十分昂贵，所以通常都会被特别关照，比如给其配备最好的机房和UPS等等。另外，大家都不敢对这样的服务器有任何大的动作，生怕把它们搞坏了。此时，这些价格昂贵的服务器更像是“宠物”。</p>
+<p>综上所述，现今的互联网应用采用的都是“牲口”模式。在这种模式下，我们在开展测试时，相应地需要额外关注以下这些测试点：</p>
+<ul>
+<li>集群容量扩展。也就是说，集群中加入新的节点后，是否会对原有的session产生影响。</li>
+<li>对于无状态应用，是否可以实现灵活的实效转移。</li>
+<li>对于基于session的有状态应用，需要根据不同的session机制验证会话是否可以正常保持，即保证同一session始终都有同一个确定的节点在处理。</li>
+<li>当集群中的一个或者多个节点宕机时，对在线用户的影响是否符合设计预期。</li>
+<li>对于无状态应用来说，系统吞吐量是否能够随着集群中节点的数量呈线性增长。</li>
+<li>负载均衡算法的实际效果，是否符合预期。</li>
+<li>高并发场景下，集群能够承载的最大容量。</li>
+</ul>
+<h2>总结</h2>
+<p>今天，我以测试人员的视角，和你分享了网站高性能架构设计中，需要重点关注的点。</p>
+<p>首先，网站的性能，在很大程度上和用户的体量有直接关系。因此，开发人员在设计网站架构时，必须要重点考虑与性能相关的架构设计。相应地，测试人员在测试网站性能时，也要考虑到这其中的架构设计。</p>
+<p>其次，网站高性能架构设计，主要包括前端性能优化和后端服务器的性能调优。所以，我从这两个方面，和你展开了今天的分享。测试人员在理解了两大部分知识的基础上，在设计具体的测试时，要考虑到这些网站高性能架构设计的方案、技术手段，以此制定出需要额外增加的测试点，以及对应的测试方法。</p>
+<p>最后，关于网站性能测试的理论与方法，你可以参考我在第28~34篇文章（也就是性能测试系列文章）中的相关内容。</p>
+<h2>思考题</h2>
+<p>在你接触过的项目中，都遇到过哪些系统层面的高性能架构设计方案？从测试的角度来看，你又会设计怎样的测试场景和用例？</p>
+<p>感谢你的收听，欢迎你给我留言。</p>
+<p><img src="https://static001.geekbang.org/resource/image/0f/c2/0ffe4c8cc7f61280f42c57db2ccc90c2.jpg" alt="" /></p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/ce/a3/1385ba21.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">乔木有天堂</span>
+                            </div>
+                            <div class="bd">您好，有个问题最近一直困扰着我，我们的产品经过了一年左右的时间开发，最近上线开始面向客户使用，在使用过程中出现了很多的bug，很影响用户体验，我和我的测试小伙伴们也很自责，现在压力也很大，我们应该怎么走出这样的困境呢？ <br></div>
+                            <span class="time">2018-10-25 12:13</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/2f/f4/2dede51a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">小老鼠</span>
+                            </div>
+                            <div class="bd">测试工程师发现性能缺陷如何帮助开发人员定位和优化系统。 <br></div>
+                            <span class="time">2018-12-01 14:07</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c2/a7/1c707274.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">涅槃Ls</span>
+                            </div>
+                            <div class="bd">打卡49 <br></div>
+                            <span class="time">2018-10-24 08:11</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.5;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x">所有最新极客时间课程请加QQ群170701297</p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                46讲安全第一：渗透测试
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/07/68/07ab87a7ab0de1b0363b5972722e8168.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>你好，我是茹炳晟。今天我和你分享的主题是：安全第一之渗透测试。</p>
+<p>随着互联网的发展，网络环境越来越复杂，各类软件涉及的领域也越来越多，这时系统与软件的安全问题就愈加重要了。各类隐私信息、财务信息等的泄露，稍有不慎就会造成难以挽回的损失。</p>
+<p>所以，大多数的公司，尤其是中大型的公司，已经针对系统与软件的安全采取了很多手段。比如，安装杀毒软件、定期给系统打补丁、定期进行漏洞及安全扫描、测试并封杀应用自身的安全漏洞等等。</p>
+<p>虽说这些措施已经可以防止大部分的安全漏洞了，但却还不足以完全保证系统的安全性。这个时候，渗透测试便以其独立的“风姿”出现在了你我的视野里。</p>
+<p>那么，接下来我们就一起看看什么是渗透测试，以及具体如何执行渗透测试吧。</p>
+<h2>渗透测试的定义</h2>
+<p>渗透测试指的是，由专业安全人员模拟黑客，从其可能存在的位置对系统进行攻击测试，在真正的黑客入侵前找到隐藏的安全漏洞，从而达到保护系统安全的目的。</p>
+<p>或许你会有这样的疑问，软件系统在研发阶段已经用了各种手段保证安全性，为什么还需要进行渗透测试呢？</p>
+<p>其实，这就好比让开发人员自己做测试一样，虽说他们对自己一手开发出来的软件产品再熟悉不过了，但却也是最难测出漏洞的。因为，开发人员的惯性思维，会使得他们在面对很多的潜在问题时，都误以为这不是问题的，所以我们需要引入独立的测试人员。</p><!-- [[[read_end]]] -->
+<p>同样的道理，面对自己开发的系统，开发人员总是习惯性地去处理比较容易出现安全漏洞的地方，而对于一些隐藏的、不容易被发现的漏洞，却很难发现。</p>
+<p>另外，<strong>除了惯性思维之外，开发人员通常并不是安全领域的专家，因此往往会缺少专业的安全知识，不了解常用的系统攻击手段，从而导致他们并不能对安全相关的场景进行充分、客观的测试。</strong></p>
+<p>这里，为了便于理解，我们可以将软件系统比喻成一座房子。</p>
+<p>当房子建好后，我们会为其配备防盗门、防盗窗，甚至是安全警报器等，这时我们自认为这个房子足够安全了。但，我们永远都不知道，意图侵入者会使用什么样的方式找到漏洞从而攻克我们布置的安全防线。</p>
+<p>所以，为了保证这座房子足够安全，我们会考虑聘请外部的安全专家来进行一系列的检测。比如，检测防盗门是否足够牢固、门锁是否容易被破坏、报警器是否在发生异常时能够正常发出警报、窗户和通道是否容易被侵入，或者从根本上判定我们所布下的安全防线，在安全机制上是否存在系统性的问题，以及需不需要更新等等。</p>
+<p>我们甚至可以找人模拟入侵这座房子，在这个模拟过程中，由其发现这所房子是否还存在安全漏洞，以此验证房子真实的安全性。</p>
+<p>那么，这个由外部的安全专家验证房子安全性的过程，便可以说是对这座房子进行渗透测试的过程。其中，这个房子便是我们的软件系统；而我们为验证房子安全性采取的这一系列方法，就是我们所说的安全渗透测试。</p>
+<h2>渗透测试的常用方法</h2>
+<p>那么，安全渗透测试应该怎样进行呢？在这里，我总结了渗透测试的五种常用测试方法，包括：</p>
+<ul>
+<li>有针对性的测试；</li>
+<li>外部测试；</li>
+<li>内部测试；</li>
+<li>盲测；</li>
+<li>双盲测试。</li>
+</ul>
+<p>接下来，我们就一起看看，具体每种测试方法，要如何开展吧。</p>
+<ol>
+<li><strong>有针对性的测试</strong></li>
+</ol>
+<p>有针对性的测试，是由公司内部员工和专业渗透测试团队共同完成的。其中，公司内部员工不仅要负责提供安全测试所需要的基础信息，同时也要负责业务层面的安全测试；而专业渗透测试团队，则更多关注业务以外的、更普适的安全测试。</p>
+<p>有针对性的测试，属于研发层面的渗透测试。参与这类测试的人员，可以得到被测系统的内部资料，包括部署信息、网络信息、详细架构设计，甚至是产品代码。</p>
+<p>有时，我们也把这种测试方法叫作“开灯”测试。之所以称为“开灯”测试，是因为有针对性的测试，是在测试人员完全了解系统内部情况的前提下开展的，有区别于外部人员完全不知道系统内部细节而进行的渗透测试。</p>
+<ol start="2">
+<li><strong>外部测试</strong></li>
+</ol>
+<p>外部测试，是针对外部可见的服务器和设备（包括：域名服务器（DNS）、Web服务器或防火墙、电子邮箱服务器等等），模拟外部攻击者对其进行攻击，检查它们是否能够被入侵，以及如果被成功入侵了，会被入侵到系统的哪一部分、又会泄露多少资料。</p>
+<p>一般情况下，外部测试是由内部的测试人员或者专业渗透测试团队，在假定完全不清楚系统内部情况的前提下开展的。</p>
+<ol start="3">
+<li><strong>内部测试</strong></li>
+</ol>
+<p>内部测试是由测试工程师模拟内部人员，在内网（防火墙以内）进行攻击，因此测试人员会拥有较高的系统权限，也能够查看各种内部资料，目的是检查内部攻击可以给系统造成什么程度的损害。</p>
+<p>所以，内部测试是为了防止系统的内部员工对系统进行内部攻击，同时以此来制定系统内部员工的权限管理策略。</p>
+<ol start="4">
+<li><strong>盲测</strong></li>
+</ol>
+<p>盲测，指的是在严格限制提供给测试执行人员或团队信息的前提下，由他们来模拟真实攻击者的行为和上下文。通常，测试人员可能只被告知被测系统公开的信息，而对系统细节以及内部实现一无所知。</p>
+<p>因为这种类型的测试可能需要相当长的时间进行侦察，所以代价会相对昂贵。而且，这类测试的效果，将在很大程度上取决于测试人员的技术水平。一般来讲，盲测是由专业渗透测试团队在测试后期开展的，通常会借助很多黑客攻击工具。</p>
+<p>可以想象，如果测试人员拥有专业黑客的技术水平，同时结合各类渗透和黑客工具，一定能发现安全漏洞；但是，如果测试人员并不具备专业的安全测试以及系统攻击知识，那么可想而知，他们能够发现的问题就非常有限了。</p>
+<ol start="5">
+<li><strong>双盲测试</strong></li>
+</ol>
+<p>双盲测试比盲测更进一步，也叫作“隐秘测试”。</p>
+<p>在这类测试中，不光测试人员对系统内部知之甚少，而且被测系统内部也只有极少数人知道正在进行安全测试。因此，双盲测试可以反映软件系统最真实的安全状态，能够有效地检测系统在正常情况下，对安全事件的监控和处理能力是否合格。</p>
+<p>因此，双盲测试可以用于测试系统以及组织的安全监控和事故识别能力，及其响应过程。一般来说，双盲测试一般是由外部的专业渗透测试专家团队完成，所以实际开展双盲测试的项目并不多。</p>
+<h2>执行渗透测试的步骤</h2>
+<p>了解了渗透测试的常用方法，那么到底要怎样具体开展呢？现在，我就和你分享一下开展渗透测试的5个主要步骤：</p>
+<p><strong>第一步：规划和侦察</strong>。这一步包含了定义测试的范围和目标、初步确定要使用的工具和方法、明确需要收集的情报（例如，网络和域名，邮件服务器），以更好地了解目标的工作方式及其潜在的安全漏洞。</p>
+<p><strong>第二步：安全扫描</strong>。安全扫描包括静态分析和动态分析两个阶段。</p>
+<ul>
+<li>
+<p>静态分析阶段，是通过扫描所有代码来估计其运行时的方式。这里，我们可以借助一些工具来一次性地扫描所有代码。目前，主流工具有Fortify SCA和Checkmarx Suite。</p>
+</li>
+<li>
+<p>动态分析阶段，则是在代码运行时进行扫描。这样的扫描更能真实反映程序的行为，可以实时提供应用程序的运行时视图，比静态扫描更准确、实用。</p>
+</li>
+</ul>
+<p><strong>第三步：获取访问权限</strong>。在这一步，测试人员将模拟黑客对应用程序进行网络攻击，例如使用SQL注入或者XSS跨站脚本攻击等，以发现系统漏洞。然后，利用找到的漏洞，通过升级自己的权限、窃取数据、拦截流量等方式了解其可能对系统造成的损害。</p>
+<p>至于到底什么是SQL注入，什么是XSS跨站脚本攻击，你可以自行查阅一些资料，也可以给我留言一起讨论。</p>
+<p><strong>第四步：维持访问权限</strong>。这个阶段的目的是，查看被发现的漏洞是否可以长期存在于系统中，如果漏洞能够被持久化，那么在很长的一段时间内入侵者都可以对系统进行深入访问或进行破坏。</p>
+<p>这个阶段模仿的是高级持续性威胁。这类威胁，通常在系统中可以存在数月之久，入侵者可以借此获取组织内较高级别的敏感数据。</p>
+<p><strong>第五步：入侵分析</strong>。完成以上的四步之后，我们就要分析得到的结果了。通常情况下，我们需要将测试结果汇总成一份详尽的测试报告，并详细说明：</p>
+<ul>
+<li>
+<p>可以被利用的特定漏洞；</p>
+</li>
+<li>
+<p>利用该漏洞的具体步骤；</p>
+</li>
+<li>
+<p>能够被访问的敏感数据；</p>
+</li>
+<li>
+<p>渗透测试人员能够在系统中不被侦测到的存在时间。</p>
+</li>
+</ul>
+<p>专业的安全人员会分析这些信息，以指导和帮助我们配置企业的WAF(Web Application Firewall)，同时提供对其他应用程序的安全解决方案，以修补安全漏洞并防范未来的恶意攻击。</p>
+<h2>渗透测试的常用工具</h2>
+<p>目前，在实际的渗透测试中，我们通常会使用大量的工具来完成测试。为此，我挑选了Nmap、Aircrack-ng、SQLmap、Wifiphisher、AppScan这五种常用工具，和你分享一下它们的功能，以及适用的场景。</p>
+<p>这里需要特别注意的是，这些工具本身就具有黑客属性，所以很多杀毒软件会阻止该类软件的运行。同时，你也一定不要在非官方的网站下载和使用这类工具，以防被意图不轨的人预先注入了危险的攻击点，请务必小心。</p>
+<ol>
+<li><strong>Nmap</strong></li>
+</ol>
+<p>Nmap是进行主机检测和网络扫描的重要工具。它不仅可以收集信息，还可以进行漏洞探测和安全扫描，从主机发现、端口扫描到操作系统检测和IDS规避/欺骗。</p>
+<p>Nmap这类工具是渗透测试过程中最先要用到的，用来获取后续渗透测试过程中需要用到的系统基本信息，比如IP和端口等。</p>
+<p>同时，Nmap适用于各大操作系统，包括Windows、Linux、OSX等，因此是一款非常强大、实用的安全检测工具。</p>
+<ol start="2">
+<li><strong>Aircrack-ng</strong></li>
+</ol>
+<p>Aircrack-ng是评估Wi-Fi网络安全性的一整套工具。它侧重于WiFi安全的领域，主要功能有：网络侦测、数据包嗅探、WEP和WPA/WPA2-PSK破解。</p>
+<p>Aircrack-ng可以工作在任何支持监听模式的无线网卡上并嗅探802.11a、802.11b、802.11g的数据。</p>
+<p>Aircrack-ng的执行是通过命令行或者脚本文件的方式，并且可以运行在Linux和Windows操作系统上。它的典型应用场景，主要包括数据包注入重播攻击、解除身份验证、虚假接入点等，也可以用于破解WEP和WPA PSK。</p>
+<ol start="3">
+<li><strong>sqlmap</strong></li>
+</ol>
+<p>sqlmap是一种开源的基于命令行的渗透测试工具。它能够自动进行SQL注入和数据库接入，并且支持所有常见并广泛使用的数据库平台，包括Oracle、MySQL、Microsoft SQL Server、SQLite、Microsoft Access、IBM DB2、FireBird、Sybase和SAP Max DB等，使用的SQL注入技术也几乎涵盖了所有的攻击手段。</p>
+<p>如果你不采用AppScan这类全面的商用安全测试工具，我的建议是通过sqlmap来确保系统数据库的安全性。</p>
+<ol start="4">
+<li><strong>Wifiphisher</strong></li>
+</ol>
+<p>Wifiphisher是一种恶意接入点工具，可以对WiFi网络进行自动钓鱼攻击。</p>
+<p>渗透测试执行人员，可以通过Wifiphisher执行有针对性的WiFi关联攻击，轻松实现无线客户端的渗透测试。</p>
+<p>Wifiphisher还可以用于对连接的客户端进行受害者定制的网络钓鱼攻击，用来获取凭证（例如，从第三方登录页面或WPA/WPA2预共享密钥）或用恶意软件感染受害者站点。</p>
+<ol start="5">
+<li><strong>AppScan</strong></li>
+</ol>
+<p>AppScan是IBM公司的一款企业级商业Web应用安全测试工具，采用的是黑盒测试，可以扫描常见的Web应用安全漏洞。</p>
+<p>AppScan的工作原理是：</p>
+<ul>
+<li>首先，从起始页爬取站下所有的可见页面，同时测试常见的管理后台；</li>
+<li>然后，利用SQL注入原理测试所有可见页面，是否在注入点和跨站脚本攻击的可能；</li>
+<li>同时，检测Cookie管理、会话周期等常见的Web安全漏洞。</li>
+</ul>
+<p>AppScan的功能十分强大，几乎涵盖了目前所有已知的攻击手段，而且攻击库还在不断地升级更新。此外，从AppScan的扫描结果中，我们不仅可以看到扫描的漏洞，还提供了详尽的漏洞原理、修改建议、手动验证等。</p>
+<p>可以说，AppScan是目前最完美的渗透测试商用解决方案，但是其最大的问题在于其价格昂贵，一般只有中大型的企业才会购买使用。</p>
+<h2>渗透测试的收益</h2>
+<p>现在，你已经清楚了开展渗透测试的必要性，也大致清楚了具体要如何开展渗透测试。那么，接下来，为了让你对开展渗透测试的信心更足，我再为你总结一下它能解决的问题：</p>
+<p>通过渗透测试，公司可以识别出主要漏洞，并决定修补漏洞的优先级，同时合理分配系统补丁安装的时间，以确系统环境的安全性。</p>
+<p>避免了安全漏洞，也就是避免了不必要的损失。因为，从安全漏洞中恢复出来，公司往往要花费巨大的代价去补救公司和客户的损失，甚至可能因此吃官司。而，渗透测试能够很好地避免这类问题，帮助公司树立良好的企业形象，因此赢得更高的信任度。</p>
+<p>总的来说，我们应该按需选择适合自己产品的渗透测试方案，期间需要考虑到产品安全隐患和执行渗透测试的成本之间的平衡。</p>
+<h2>总结</h2>
+<p>在今天的这次分享中，我介绍了与渗透测试相关的知识点。</p>
+<p>首先，渗透测试是指由专业安全人员模拟黑客，从其可能入侵的位置对系统进行攻击测试，以达到在真正的黑客攻击之前找到隐藏的安全漏洞，从而保护系统安全的目的。</p>
+<p>然后，我根据发起渗透测试的位置以及对系统信息的掌握程度，将渗透测试分为了有针对性的测试、外部测试、内部测试、盲测和双盲测试这五种。</p>
+<p>接着，我和你分享了开展渗透测试的5个步骤，分别包括了规划和侦察、安全扫描、获取访问权限、维持访问权限，以及入侵分析。</p>
+<p>最后，我给你汇总了五款常用的渗透测试工具，其中功能最强大的要数IBM的AppScan了，但是其价格比较昂贵，适用于中大型企业。而关于如何选择适合自己的渗透测试方案，我的建议还是要综合考虑产品安全隐患和执行渗透测试的成本。</p>
+<h2>思考题</h2>
+<p>你所在的公司或者团队是否开展了渗透测试？你们会使用哪些渗透测试工具呢？</p>
+<p>感谢你的收听，欢迎你给我留言一起讨论。</p>
+<p><img src="https://static001.geekbang.org/resource/image/0f/c2/0ffe4c8cc7f61280f42c57db2ccc90c2.jpg" alt="" /></p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c2/a2/846038bd.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Mark8287</span>
+                            </div>
+                            <div class="bd">感谢作者的讲解，如果每篇文章下面有相关或推荐的资源就好了，比如渗透测试有哪些学习网站，资源等，谢谢。 <br></div>
+                            <span class="time">2018-10-31 11:32</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c6/4f/0c215abf.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">红娟</span>
+                            </div>
+                            <div class="bd"> 打卡 扩展了测试的视野，现在公司的产品都安全加密这一个特殊模块和相关认证。 <br></div>
+                            <span class="time">2018-10-12 09:35</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/2f/f4/2dede51a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">小老鼠</span>
+                            </div>
+                            <div class="bd">对于一个中小型企业而言，安全测试需要配置安全测试工程师吗？另外安全工程师与安全测试工程师区别在哪儿？ <br></div>
+                            <span class="time">2018-12-01 13:07</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/d6/0e/7385ae15.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">SimonWong</span>
+                            </div>
+                            <div class="bd">滴滴，打卡。 <br></div>
+                            <span class="time">2018-11-03 08:16</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/9e/c4/e289b02c.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">🚫b b</span>
+                            </div>
+                            <div class="bd">渗透测试哦~ interesting <br></div>
+                            <span class="time">2018-10-13 12:38</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c2/a7/1c707274.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">涅槃Ls</span>
+                            </div>
+                            <div class="bd">打卡46 <br></div>
+                            <span class="time">2018-10-12 08:16</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

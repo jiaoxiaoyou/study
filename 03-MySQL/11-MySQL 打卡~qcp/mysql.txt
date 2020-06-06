@@ -1,0 +1,22 @@
+CREATE DATABASE mydb1;
+SHOW DATABASES;
+USE mydb1;
+CREATE table IF NOT EXISTS employee(
+id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(30),
+sex CHAR(5) DEFAULT '男',
+birthday DATE,
+job VARCHAR(50),
+salary DOUBLE,
+resume TEXT
+);
+DROP TABLE employee;
+INSERT INTO employee
+(name, birthday, job, salary, resume)
+VALUES
+('zhangsan','2020-06-01', 'IT', 8000, '摘要'),
+('lisi','2010-06-01', 'IT', 10000, '摘要'),
+('wangwu','2000-06-01', 'IT', 9000, '摘要');
+SELECT * FROM employee;
+UPDATE employee SET birthday='2000-01-01' WHERE id =1;
+DROP DATABASE mydb1;

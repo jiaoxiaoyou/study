@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.1.1 r1855137">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="百人计划demo" enabled="true">
+      <stringProp name="TestPlan.comments">演示jmeter的接口测试部分
+</stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="PROROCOL" elementType="Argument">
+            <stringProp name="Argument.name">PROROCOL</stringProp>
+            <stringProp name="Argument.value">http</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="HOST" elementType="Argument">
+            <stringProp name="Argument.name">HOST</stringProp>
+            <stringProp name="Argument.value">httpbin.org</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="PORT" elementType="Argument">
+            <stringProp name="Argument.name">PORT</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="USERNAME" elementType="Argument">
+            <stringProp name="Argument.name">USERNAME</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="PASSWORD" elementType="Argument">
+            <stringProp name="Argument.name">PASSWORD</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="接口名字" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="POST" elementType="Argument">
+            <stringProp name="Argument.name">POST</stringProp>
+            <stringProp name="Argument.value">post</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="GET" elementType="Argument">
+            <stringProp name="Argument.name">GET</stringProp>
+            <stringProp name="Argument.value">GET</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="察看结果树" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>true</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>true</responseData>
+            <samplerData>true</samplerData>
+            <xml>true</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>true</responseHeaders>
+            <requestHeaders>true</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <fileName>true</fileName>
+            <hostname>true</hostname>
+            <threadCounts>true</threadCounts>
+            <sampleCount>true</sampleCount>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="断言结果" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>true</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>true</responseData>
+            <samplerData>true</samplerData>
+            <xml>true</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>true</responseHeaders>
+            <requestHeaders>true</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <fileName>true</fileName>
+            <hostname>true</hostname>
+            <threadCounts>true</threadCounts>
+            <sampleCount>true</sampleCount>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="请求头部" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">Content-Type</stringProp>
+            <stringProp name="Header.value">application/json</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="登录模块" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="登录接口" enabled="true"/>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="登录_用户名为IDO" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+	&quot;login_name&quot;: &quot;IDO&quot;,&#xd;
+	&quot;password&quot;: &quot;123456&quot;&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${HOST}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">${PROROCOL}</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">${POST}</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="json.login_name是否为IDO" enabled="true">
+              <stringProp name="JSON_PATH">$.json.login_name</stringProp>
+              <stringProp name="EXPECTED_VALUE">IDO</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">true</boolProp>
+            </JSONPathAssertion>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="登录_用户名为ID" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+	&quot;login_name&quot;: &quot;ID&quot;,&#xd;
+	&quot;password&quot;: &quot;123456&quot;&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${HOST}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">${PROROCOL}</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">${POST}</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="json.login_name是否为IDO" enabled="true">
+              <stringProp name="JSON_PATH">$.json.login_name</stringProp>
+              <stringProp name="EXPECTED_VALUE">IDO</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">true</boolProp>
+            </JSONPathAssertion>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

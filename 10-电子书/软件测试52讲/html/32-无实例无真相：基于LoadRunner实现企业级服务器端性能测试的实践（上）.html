@@ -1,0 +1,306 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.5;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x">所有最新极客时间课程请加QQ群170701297</p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                32-无实例无真相：基于LoadRunner实现企业级服务器端性能测试的实践（上）
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/a7/79/a79a001b3645d893ed3a47171c357279.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>你好，我是茹炳晟。今天我和你分享的主题是：无实例无真相之基于LoadRunner实现企业级服务器端性能测试的实践（上）。</p>
+<p>从今天开始的两篇文章，我将介绍如何基于LoadRunner实际开展企业级服务器端的性能测试。分享这个主题时，我会从最开始的性能需求获取开始讲起，带你完整地经历一个实际服务器端性能测试项目。通过这个过程，我希望可以帮助你快速建立服务器端性能测试的全局观，并了解各主要步骤的关键技术细节。</p>
+<p>听到这里，你可能就有些困惑了。我在分享<a href="https://time.geekbang.org/column/article/16589">《工欲善其事必先利其器：后端性能测试工具原理与行业常用工具简介》</a>这个主题时，曾经说到：LoadRunner比较适合于传统软件企业开展性能测试，而JMeter更适用于互联网企业的软件性能测试。那么，为什么我没有选择以JMeter为例来展开后端性能测试呢？</p>
+<p>我选择LoadRunner，是经过深思熟虑的，主要原因包括：</p>
+<ol>
+<li>
+<p><strong>JMeter的官方文档对其使用方法介绍得很详细，而且其操作基本属于“傻瓜式”的</strong>。JMeter使用的难点在于：如何支持海量并发，以及实现更好的load控制，解决这个问题你可以参考LoadRunner的实现方式，然后从你所在企业的实际业务场景出发，进行二次开发。</p>
+</li>
+<li>
+<p><strong>互联网企业和传统软件企业的软件产品的后端性能测试，在原理以及基本方法上是基本一致的，区别较大的只是全链路压测</strong>。所以，我以传统企业的软件产品为例展开分享，你因此学到的原理以及测试方法将同样适用于互联网软件产品的性能测试。</p>
+</li>
+<li>
+<p><strong>关于互联网软件产品的全链路压测，由于需要实现海量并发以及流量隔离等操作，所以目前只有一些大型企业在做，比如饿了么、淘宝、ebay、美团等超级大的网站</strong>。但是，如果你也想了解全链路压测的话，我也会准备一篇“加餐”文章，和你分享开展全链路压测的难点，以及应对方案。我会更新完性能测试这个系列以后，为你准备这篇“加餐”文章。</p>
+</li>
+</ol><!-- [[[read_end]]] -->
+<p>为了让你在进行服务器端性能测试时更充分地利用好LoadRunner，所以在正式开始讲解这个测试案例前，我会先给你简单介绍一下LoadRunner的基本原理，以及主要的功能模块。这些功能模块不仅在这个案例中会用到，也会在实际工程项目被经常使用，所以如果你有什么不理解的地方，欢迎给我留言。</p>
+<h2>LoadRunner的基本原理</h2>
+<p>你还记得我在<a href="https://time.geekbang.org/column/article/16589">《工欲善其事必先利其器：后端性能测试工具原理与行业常用工具简介》</a>这个主题中，介绍过的后端性能测试工具的基本原理吗？</p>
+<p>我们先一起来回忆一下吧：</p>
+<blockquote>
+<p>后端性能测试工具首先通过<strong>虚拟用户脚本生成器</strong>生成基于协议的虚拟用户脚本，然后根据性能测试场景设计的要求，通过<strong>压力控制器</strong>控制协调各个<strong>压力产生器</strong>以并发的方式执行虚拟用户脚本，并且在测试执行过程中，通过<strong>系统监控器</strong>收集各种性能指标以及系统资源占用率，最后通过<strong>测试结果分析器</strong>展示测试结果数据。</p>
+</blockquote>
+<p>LoadRunner的基本原理，与上面的描述完全一致。在LoadRunner中，Virtual UserGenerator对应的就是虚拟用户脚本生成器，Controller</p>
+<p>对应的就是压力控制器和系统监控器，Load Generator对应的就是压力产生器，Analysis对应的就是测试结果分析器。</p>
+<p>为了帮助你理解LoadRunner的工作原理和模块，先撇开这些名词不谈，设想一下如果没有专用的后端性能测试工具，我们如何开展后端性能测试。</p>
+<p>其实，“人肉”开展后端性能测试也不算太难。这个过程大致是这样的：</p>
+<ul>
+<li>首先，我们需要一批测试机器，每台测试机器雇佣一个测试人员；</li>
+<li>然后，我们需要一个协调员拿着话筒发号施令，统一控制这些测试人员的步调，协调员会向所有测试人员喊话，比如“1号到100号测试人员现在开始执行登录操作，100号到1000号测试人员5分钟后开始执行搜索操作”，同时协调员还会要求每个测试人员记录操作花费的时间；</li>
+<li>测试完成后，测试协调员会要求性能工程师分析测试过程中记录的数据。</li>
+</ul>
+<p>这个过程，如图1所示。</p>
+<p><img src="https://static001.geekbang.org/resource/image/d9/43/d96d730ea9b63a9371149465af9d3143.png" alt="" /></p>
+<center>图1 如果没有专用的后端性能测试工具，如何“人肉”开展后端性能测试</center>
+<p>理解了这种“人肉”模式的后端性能测试后，我们再回过头来看LoadRunner的各个模块就豁然开朗了。</p>
+<ul>
+<li>测试协调员以及完成数据记录的部分就是Controller模块；</li>
+<li>大量的测试机器以及操作这些测试机器的人就是Load Generator模块；</li>
+<li>操作这些测试机器的人的行为就是Virtual User Generator产生的虚拟用户脚本；</li>
+<li>对测试数据的分析就是Analysis模块。</li>
+</ul>
+<h2>LoadRunner的主要模块</h2>
+<p>通过对“人肉”模式和LoadRunner工具的类比，我们可以很清楚的看到，使用LoadRunner进行性能测试，主要需要Virtual User Generator、Controller（这个模块包含了Load Generator），以及Analysis这三大模块组合使用。接下来，我再和你详细聊聊这三大模块的作用，以及需要注意的问题。</p>
+<p><strong>第一，Virtual User Generator</strong></p>
+<p>Virtual User Generator，用于生成模拟用户行为的测试脚本，生成的手段主要是基于协议的录制，也就是由性能测试脚本开发人员在通过GUI执行业务操作的同时，录制客户端和服务器之间的通信协议，并最终转化为代码化的LoadRunner的虚拟用户脚本。</p>
+<p>这样转化得到的虚拟脚本往往并不能被直接使用，还需要经历数据参数化（Parameterization）、关联建立（Correlation），以及运行时设置（Run Time Settings）等操作，然后才能用于性能测试场景中。</p>
+<p>具体什么是数据参数化、什么是关联建立、运行时设置都有哪些可选项，我会在分享实例时再详细展开。</p>
+<p><strong>第二，LoadRunner Controller</strong></p>
+<p>Controller相当于性能测试执行的控制管理中心，负责控制Load Generator产生测试负载，以执行预先设定好的性能测试场景；同时，它还负责收集各类监控数据。</p>
+<p>在实际执行性能测试时，Controller是和性能工程师打交道最多的模块，性能工程师会在Controller的UI界面上完成性能测试场景的设计、运行时的实时监控、测试负载的开始与结束等操作。</p>
+<p><strong>第三，LoadRunner Analysis</strong></p>
+<p>Analysis是LoadRunner中一个强大的分析插件。它不仅能图形化展示测试过程中收集的数据，还能很方便地对多个指标做关联分析，找出它们之间的因果关系。它最根本的目的就是，分析出系统可能的性能瓶颈点以及潜在的性能问题。</p>
+<p>现在，你已经了解了LoadRunner的原理和各个模块了，接下来我们就开始实战吧。通过这个实战，我希望你可以掌握如何基于LoadRunner进行企业级的性能测试。</p>
+<p>从宏观角度来讲，基于LoadRunner完成企业级性能测试，可以划分为五个阶段：</p>
+<ol>
+<li>
+<p>性能需求收集以及负载计划制定；</p>
+</li>
+<li>
+<p>录制并增强虚拟用户脚本；</p>
+</li>
+<li>
+<p>创建并定义性能测试场景；</p>
+</li>
+<li>
+<p>执行性能测试场景；</p>
+</li>
+<li>
+<p>分析测试报告。</p>
+</li>
+</ol>
+<p>图2清晰地描述了这5个阶段的先后顺序，以及需要LoadRunner各模块发挥作用的部分。接下来，我和你详细聊聊每个阶段的具体工作，以及关键的技术细节。</p>
+<p><img src="https://static001.geekbang.org/resource/image/e8/94/e8e58ca14e80346be38291cf84bf2394.png" alt="" /></p>
+<center>图2 使用LoadRunner完成企业级后端性能测试的典型流程与步骤</center>
+<h2>阶段1：性能需求收集以及负载计划制定</h2>
+<p>其实，无论是进行什么类型的测试，你的第一步工作都是要根据测试目的明确测试的具体需求。企业级的后端性能测试，当然也不例外。</p>
+<p>一般情况下，企业级后端性能测试的具体需求，主要包含以下内容：</p>
+<ul>
+<li><strong>系统整体的并发用户数</strong>。比如，高峰时段会有10万用户同时在线；</li>
+<li><strong>并发用户业务操作的分布情况</strong>。比如，20%的用户在做登录操作，30%的用户在做订单操作，其他50%的用户在做搜索操作；</li>
+<li><strong>单一业务操作的用户行为模式</strong>。比如，两个操作之间的典型停留时间，完成同一业务的不同操作路径等；</li>
+<li><strong>并发用户高峰期的时间分布规律</strong>。比如，早上8点会有大量用户登录系统，晚上6点后用户逐渐退出；</li>
+<li><strong>达到最高峰负载的时间长度</strong>。比如，并发用户从0增长到10万花费的总时间；</li>
+<li>…</li>
+</ul>
+<p>完成这些点的测试，其实并不复杂。你只要按照这个已经明确的需求，开发后续的测试脚本、设计性能测试场景就可以了。</p>
+<p>但是，如果你想要成长为更资深的性能测试工程师，或者已经是性能测试的设计者、资深的性能测试工程师了，那么你就需要全程参与到这些需求的获取和确定中。</p>
+<p>其实，在我看来，获取这些测试需求时性能测试中最难的两个工作之一。另一个最难的工作是，测试结果分析与性能问题定位。而其他类似性能测试脚本开发、场景设计等工作看起来很有技术含量，但实际都是一些相对机械性的重复工作。</p>
+<p>那为什么获取测试需求难做呢？因为绝大多数情况下没人会明确告诉你具体的性能需求。</p>
+<p>对于软件的功能测试来说，如果需求不明确，你可以直接求助于产品经理。</p>
+<p>而对性能测试需求来讲，产品经理通常无法准确告诉你用户的各个业务操作所占的百分比，也无法告诉你准确的用户行为模式。产品经理能做的，往往是给出定性描述，然后需要你去计算或者根据过往经验得到具体的定量需求。所以，我们经常会听到产品经理对性能测试人员说：“你是性能专家，你来告诉我性能需求”。</p>
+<p>那么，对于性能测试设计人员来说，到底如何获得这个明确的性能需求呢？说到这里，你应该明白了这是一个非常复杂的话题，因为测试目的不同，所用的方法也各不相同。所以，在这次分享中，我也只是可以给你准备一个实际的测试案例，和你分享获取具体测试需求的思考方式。</p>
+<p>还记得我在第29篇文章<a href="https://time.geekbang.org/column/article/14832">《聊聊性能测试的基本方法与应用领域》</a>中介绍的医院体检的例子吗？假设，产品经理对医院体检的性能要求是“每天支持完成8000个体检”，这个需求看似很具体，但是要转化成实际可操作的性能测试需求，还需要再细化。</p>
+<p><strong>首先，你要明确这里的“每天”是否指的是24小时</strong>。显然，这取决于产品本身的属性。比如，产品是为单一时区的用户提供服务，还是要面向全球所有时区的用户。那么，根据体检中心的属性，你很容易就可以确定“每天”一定是指8小时的工作时间。因为，体检中心一定是在一个确定的时区，并且不会24小时营业。</p>
+<p><strong>然后，你明确了这个8小时后，那么原始需求是不是可以转化为“每小时支持完成1000个体检”？</strong></p>
+<p>如果按照这个套路设计后续的性能测试的话，你会发现即使测试顺利完成，并且各项性能指标都达标了，但是一旦上线后，系统还是很有可能被压垮。因为实际情况是，验血往往需要空腹，所以上午往往是体检中心的高峰时段，体检者会在上午集中涌入体检中心。也就是说，这8000个体检并不是平均分布在8小时内完成的，而是有明显的高峰时段。</p>
+<p><strong>最后，你可以采用80/20原则对高峰时段的用户负载进行建模</strong>，比如80%的体检（6400个）是发生在上午20%的时间（96分钟）里。当然，为了使模型更接近真实的情况，你还应该分析历史数据，然后对该模型做进一步的修正，这也是目前被普遍采用的方法。</p>
+<p>另外，在得到了负载模型后，性能测试设计人员往往还会在此基础上加入一定的负载冗余，比如在峰值的基础上再额外放大20%，以增强系统上线后稳定运行的信心。</p>
+<p>通过上面这个分析过程，你可以认识到，性能测试需求的定义与计划非常复杂，牵涉到项目的方方面面，不可能通过阅读一两篇文章就快速掌握这一技能，需要不断地沉淀在实战中获得的经验。</p>
+<p>制订了性能测试计划后，接下来你就需要根据性能计划中涉及的用户业务操作来开发性能测试的脚本了。比如，前面提到“20%的用户在做登录操作，30%的用户在做订单操作，剩下50%的用户在做搜索操作”，接下来你需要分别开发“用户登录”“下订单”和“搜索”这三个虚拟用户脚本。</p>
+<p>在LoadRunner中，开发虚拟用户脚本的工作主要是基于录制后再修改的方式完成的。其中，录制由Virtual UserGenerator基于协议完成，录制后的修改主要是实现参数化、建立关联、建立事务、加入必要的检查点以及加入思考时间。</p>
+<p>所以，我会在下次分享时，和你详细讨论这四部分工作的作用，以及具体如何完成。同时，我还会和你分享，企业级服务器端性能测试的后四个阶段如何实现。</p>
+<h2>总结</h2>
+<p>今天我和你讨论的主题是，如何基于LoadRunner实现企业级服务器端性能测试。</p>
+<p>首先，我用一个“人肉”测试的流程类比，为你介绍了LoadRunner这个工具的基本原理，并分析了Virtual User Generator、Controller（内含Load Generator模块），以及Analysis这3个模块的功能。</p>
+<p>然后，从宏观角度，我把整个性能测试过程划分成了五个阶段：性能需求收集以及负载计划制定、录制并增强虚拟用户脚本、创建并定义性能测试场景、执行性能测试场景，以及分析测试报告。</p>
+<p>在我看来，这五个阶段最难的两部分工作分别是：明确具体的性能测试需求，以及测试结果分析与性能问题定位。因为这两部分工作，要大量依赖于测试工程师的能力以及经验积累。所以，就像一名优秀的医生一样，优秀的测试工程师，需要在实际的工程项目中不断积累和总结经验。</p>
+<p>最后，我以前面文章提到过的体检中心为例，和你详细讨论了如何收集性能需求，以及制定负载计划的内容。我也解释了为什么性能测试的需求不能直接从产品经理那里获得：因为产品经理定义的性能需求层次比较高、比较抽象，要落实到实际可执行的性能测试需求往往需要分析和细化。这也是为什么获取具体的性能需求比较难的一个原因。</p>
+<h2>思考题</h2>
+<p>你在实际工作中，是如何获取并细化性能测试需求的呢？</p>
+<p>感谢你的收听，欢迎你给我留言。</p>
+<p><img src="https://static001.geekbang.org/resource/image/0f/c2/0ffe4c8cc7f61280f42c57db2ccc90c2.jpg" alt="" /></p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/4d/dd/912b52ed.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">李奋斗</span>
+                            </div>
+                            <div class="bd">图里的测试协调员，DJ打碟的既视感！😂 <br></div>
+                            <span class="time">2018-09-11 15:59</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">好像是哦😊</p>
+                                <p class="reply-time">2018-09-13 07:24</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/bc/0a/2ac3417a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">伪专家</span>
+                            </div>
+                            <div class="bd">在测试道路上践行渐远……目前的情况及行业趋势看，测试去转开发了…原因有以下方面：1:通过拉钩和Boss测试的工资越来越少，没有优势<br>2:大企业Api，Ui，全连路压测，ui兼容性，稳定性，健壮性都已成性，线上copy，防用户测试都已成型…招聘职位中什么都要有,但是实际业务及公司组织架构的影响，测试的优势更受局限…… <br></div>
+                            <span class="time">2018-09-10 08:55</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">是机遇也是挑战，这就会形成两级分化，原本的功能测试会比较尴尬，但是具有宽广知识面的技术型测试会供不应求</p>
+                                <p class="reply-time">2018-09-11 09:44</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c2/a7/1c707274.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">涅槃Ls</span>
+                            </div>
+                            <div class="bd">打卡32、准备虚拟机 安装LR 学习LR <br></div>
+                            <span class="time">2018-09-18 08:01</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c2/b8/ec758482.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Cynthia🌸</span>
+                            </div>
+                            <div class="bd">性能测试一直做的不多，所以最近看的也晕晕的，感觉还是要多实践呀！<br>不过呢，读了文章之后感觉更有方向了，比如为什么用这个工具，工具中的哪个模块是有怎样的用处，尤其是人肉测试那段类比，作者真的是好会写文章！ <br></div>
+                            <span class="time">2018-09-12 09:53</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/43/f9/6d113245.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">人心向善</span>
+                            </div>
+                            <div class="bd">loadrunner中有个说法是说并发和在线的关系大约是1:10，也就是说1个用户并发相当于10个用户同时在线，但是后来网上查了查确实是有这个并发关系，但比例不是1:10，而是在20%范围内浮动，我想向老师问下，这个是否是有依据的？谢谢！ <br></div>
+                            <span class="time">2018-11-27 08:10</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">没有依据，如果你深入理解了并发用户数和用户行为模式的含义的话，可以直接得出这个结论</p>
+                                <p class="reply-time">2018-11-29 13:21</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/2f/f4/2dede51a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">小老鼠</span>
+                            </div>
+                            <div class="bd">我们的性能是否通过的检查点为：<br>1，系统中没有内存泄漏、磁盘、CPU、网络故障<br>2，本版本获得的并发用户、容量的拐点&gt;=上次版本对应拐点的95%以内（含95%) <br></div>
+                            <span class="time">2018-10-30 16:16</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/04/ca/618d8b6e.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">jinjin</span>
+                            </div>
+                            <div class="bd">最近第一次上手性能测试，就遇到了需求不明确的情况。和老师举的体检中心的例子比较相似，我得到的需求是看一下我们的系统index完10万篇（每篇2M）的文档的性能。对于并发用户数量到底该选取多少，ramp up时间设置多少合适以及需不需要加think time都很茫然。现在只能摸着石头过河，不知道老师有什么好的建议吗？ <br></div>
+                            <span class="time">2018-09-30 14:47</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/d7/39/d7703fc1.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">annie</span>
+                            </div>
+                            <div class="bd">我们的产品类似WAF，可以应用在不同行业，但每个行业的应用场景不一样，在大版本发布前测试了TPS，吞吐量，新建连接，并发连接四个指标。后续版本测试只关注了TPS，将TPS与之前版本做对比，只要波动范围不低于10%就通过<br>但如何将测试结果的TPS指导不同行业客户部署上线，还没有找到好的方法，老师有没有思路可以指导一下呢？谢谢 <br></div>
+                            <span class="time">2018-09-16 15:31</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

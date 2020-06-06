@@ -1,0 +1,451 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.5;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x">所有最新极客时间课程请加QQ群170701297</p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                33讲无实例无真相：基于LoadRunner实现企业级服务器端性能测试的实践（下）
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/a4/75/a4cd4e500dd453084bc73bbe6fd40475.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>你好，我是茹炳晟。今天我和你分享的主题是：无实例无真相之基于LoadRunner实现企业级服务器端性能测试的实践（下）。</p>
+<p>今天，我会继续和你分享如何基于LoadRunner完成企业级服务器端的性能测试。通过我上一次的分享，你已经清楚知道了，整个性能测试过程可以分为五个阶段，并且解决了整个测试过程中最难的一部分工作，即如何获取具体的性能测试需求。</p>
+<p>现在，我们先来回顾一下，性能测试包含的五个阶段：性能需求收集以及负载计划制定、录制并增强虚拟用户脚本、创建并定义性能测试场景、执行性能测试场景，以及分析测试报告。所以，今天，我们就要解决剩下的4个阶段的问题了。</p>
+<h2>阶段2：录制并增强虚拟用户脚本</h2>
+<p>我已经在上篇文章中和你提到，完成了性能测试需求分析后，你就已经明确了要开发哪些性能测试脚本。现在，我们就一起来看看开发性能测试脚本的步骤，以及相关的技术细节。</p>
+<p>从整体角度来看，用LoadRunner开发虚拟用户脚本主要包括以下四个步骤：</p>
+<ol>
+<li>
+<p>识别被测应用使用的协议；</p>
+</li>
+<li>
+<p>录制脚本；</p>
+</li>
+<li>
+<p>完善录制得到的脚本；</p>
+</li>
+<li>
+<p>验证脚本的正确性。</p>
+</li>
+</ol>
+<p>这里需要注意的是，完善录制得到的脚本这一步，会包含大量的技术细节，也有很多对你来说可能是新概念的名词，所以我会着重讲解这一步，帮你克服性能测试道路上的这些“拦路虎”。</p><!-- [[[read_end]]] -->
+<p><strong>步骤1：识别被测应用使用的协议</strong></p>
+<p>如果你已经和系统设计、开发人员沟通过，明确知道了被测系统所采用的协议，那么你可以跳过这一步。如果还不知道具体使用的哪种协议的话，你可以使用Virtual User Generator模块自带的Protocol Advisor识别被测应用使用的协议，具体的操作方法也很简单：</p>
+<ol>
+<li>
+<p>在Virtual User Generator中依次点击File、Protocol、AdvisorAnalyze、Application，展开这些菜单。</p>
+</li>
+<li>
+<p>在打开的界面上按要求填写被测应用的信息。</p>
+</li>
+<li>
+<p>Protocol Advisor会自动运行被测系统。如果是网页应用，就会打开浏览器。</p>
+</li>
+<li>
+<p>在页面上执行一些典型的业务操作，完成这些业务操作后点击&quot;Stop Analyzing&quot;按钮停止录制。</p>
+</li>
+<li>
+<p>Protocol Advisor会根据刚才录制的内容自动分析被测应用使用的协议，并给出最终的建议。</p>
+</li>
+</ol>
+<p>接下来，你就可以使用Protocol Advisor建议的录制协议开始脚本录制工作了。如图1所示就是Protocol Advisor给出的建议录制协议界面。</p>
+<p><img src="https://static001.geekbang.org/resource/image/9a/20/9a8c760f3de2eaa1c5be274c70215920.png" alt="" /></p>
+<center>图1 Protocol Advisor给出的建议录制协议界面</center>
+<p><strong>步骤2：录制脚本</strong></p>
+<p>脚本录制的基本原理是，通过GUI界面对被测系统进行业务操作，Virtual User Generator模块在后台捕获GUI操作所触发的客户端与服务器端的所有交互，并生产基于C语言的虚拟用户脚本文件。</p>
+<p>也就是说，录制脚本的过程需要通过GUI实际执行业务操作，所以我建议你在开始录制脚本前，先多次演练需要这些GUI操作步骤，并明确知道哪些操作步骤会对服务器端发起请求。</p>
+<p>我们要知道哪些操作步骤会对服务器发起请求的原因是，要将这些操作步骤在虚拟用户脚本中封装成“事务”（Transaction）。封装为“事务”的目的是统计响应时间，因为LoadRunner中的响应时间都是以“事务”为单位的。</p>
+<p>具体的录制步骤，主要包括如下三步，</p>
+<ol>
+<li>
+<p>首先，选择Create/Edit Scripts进入Virtual User Generator创建脚本的协议选择界面。</p>
+</li>
+<li>
+<p>选择正确的协议后进入Start Recording界面，选择需要录制的应用类型，并填写应用的详细信息。如果是Web应用，Application type就应该选择Internet Application，然后选择浏览器并填写这个Web应用的URL，完成后自动打开浏览器。</p>
+</li>
+<li>
+<p>在该浏览器中执行业务操作，Virtual User Generator模块会记录所有的业务操作，并生成脚本。</p>
+</li>
+</ol>
+<p><strong>在录制脚本的过程中，我强烈建议直接对发起后端调用的操作添加事务定义，而不要等到脚本生成后再添加</strong>。因为LoadRunner脚本的可读性并不好，在录制完的脚本中添加事务定义的难度会很大。</p>
+<p>在录制过程中，直接添加事务操作也很简单，主要包括如下三步：</p>
+<ol>
+<li>
+<p>在开始执行GUI操作前，先点击图2中的“事务开始”按钮并填写事务名称；</p>
+</li>
+<li>
+<p>执行GUI操作；</p>
+</li>
+<li>
+<p>操作完成后，点击图2中的“事务结束”按钮。</p>
+</li>
+</ol>
+<p>这样你刚才执行GUI操作的脚本就会被lr_start_transaction(“事务名称”)和lr_end_transaction(“事务名称”，LR_AUTO)包围起来，也就完成了添加事务的定义。</p>
+<p><img src="https://static001.geekbang.org/resource/image/66/34/6636bbd8056a7e992239fbb3b81bf134.png" alt="" /></p>
+<center>图2 Virtual User Generator的脚本录制控制条</center>
+<p><strong>步骤3：完善录制得到的脚本</strong></p>
+<p>脚本录制，只是虚拟用户脚本开发中最简单的一步。我在上一次分享《无实例无真相：基于LoadRunner实现企业级服务器端性能测试的实践（上）》时，提到由Virtual User Generator模块录制的脚本不能直接使用，我们还需要对录制的脚本做以下处理：</p>
+<ul>
+<li>在两个事务之间加入思考时间（Think Time）；</li>
+<li>对界面输入的数据做参数化（Parameterization）操作；</li>
+<li>完成脚本的关联（Correlation）操作；</li>
+<li>加入检查点（Check Point）。</li>
+</ul>
+<p>这4步处理操作是虚拟用户脚本开发中最关键的地方，你不仅需要知道为什么要进行这些处理，更要能够完成这些处理，否则你录制的脚本无法成功回放。</p>
+<p><strong>第一，在两个事务之间加入思考时间</strong></p>
+<p>什么是思考时间呢？</p>
+<p>用户在实际使用系统时，并不会连续不断地向后端服务器发起请求，在两次发起请求之间往往会有一个时间的间隔，这个时间间隔主要来自于两个方面：</p>
+<ul>
+<li>一是，用户操作的人为等待时间，因为用户不可能像机器人那样快速地执行操作；</li>
+<li>二是，用户可能需要先在页面上填写很多信息后之后，才能提交操作，那么填写这些信息就需要花费一定的时间。</li>
+</ul>
+<p>所以，为了让虚拟用户脚本能够更真实地模拟实际用户的行为，我们就需要在两个事务之间加入一定的等待时间。这个等待时间，就是LoadRunner中的思考时间。</p>
+<p>你只要直接调用LoadRunner提供的lr_think_time()函数，就可以在两个事务之间加入思考时间。但是，这个思考时间到底设置为多少，并没有那么容易知道。思考时间往往会涉及多方面的因素，严格计算的话会非常复杂。</p>
+<p>所以，<strong>在实际项目中，一般先粗略估计一个值（比如15 s），然后在实际执行负载场景的过程中，再根据系统吞吐量调整。</strong></p>
+<p>你在后续调整思考时间时，无需逐行修改虚拟用户脚本代码，可以在Run-time Settings（运行时设置）中很方便地完成。如图3所示，Run-time Settings中支持多种方式调整思考时间。</p>
+<p><img src="https://static001.geekbang.org/resource/image/9b/9b/9bc228a755cb104b34bcc55e6e460c9b.png" alt="" /></p>
+<center>图3 通过Run-time Settings统一调整思考时间</center>
+<ul>
+<li>As recorded，代表的是直接使用lr_think_time()函数中指定的时间。</li>
+<li>Mutiply recorded think time by，代表的是在lr_think_time()函数中指定的时间基础上乘以一个数字。比如这个数字是2，那么所有的思考时间都会翻倍。</li>
+<li>Use random percentage of recorded think time，指的是使用指定思考时间范围内的随机值。例如，如果lr_think_time()函数中指定的时间是2 s，并且指定最小值为50%，最大值为200%，则实际的思考时间会取最小值1 s（2 s<em>50%）和最大值4 s（2 s</em>200%）之间的随机值。</li>
+<li>Limit think time to，指的是为思考时间设置一个上限值，只要lr_think_time()函数中指定的时间没有超过这个上限值，就按照lr_think_time()函数指定的值，如果超过了就取这个上限值作为思考时间。</li>
+</ul>
+<p><strong>第二，对界面输入的数据做参数化操作</strong></p>
+<p>数据的参数化，其实很好理解，我再给你举个例子，你马上就能明白。</p>
+<p>假设，你录制的虚拟用户脚本完成的是用户登录操作，那么由于脚本回放时需要支持多用户的并发，所以必须要把脚本中的用户名和密码独立出来，放入专门的数据文件中，然后在这个文件中提供所有可能被用到的用户名和密码。</p>
+<p>有没有感觉这个概念很熟悉，它其实和我以前介绍到的<a href="https://time.geekbang.org/column/article/11966">数据驱动的自动化测试</a>完全相同。</p>
+<p>图4给出了参数化配置的界面截图，LoadRunner支持的参数化的数据源很丰富，既可以是excel文件，也可以是数据库中的表等。</p>
+<p><img src="https://static001.geekbang.org/resource/image/41/77/414fcea000ef8a968cd25d5fbc5ee477.png" alt="" /></p>
+<center>图4 虚拟用户脚本参数化配置的界面截图</center>
+<p>这里需要特别说明的是，凡是参数文件中使用的测试数据都需要在执行性能测试前，在被测系统中事先准备好。比如，还是以用户登录的脚本为例，假定你的参数文件中提供了5000个用于并发执行的用户信息，那么这5000个用户必须是已经实际存在于系统中的，这就要求你要在开始测试前事先准备好这5000个用户。</p>
+<p>所以，参数化操作其实由两部分组成：</p>
+<ol>
+<li>
+<p>性能测试脚本和测试数据的分离；</p>
+</li>
+<li>
+<p>事先建立性能测试的数据。</p>
+</li>
+</ol>
+<p>也就是说，参数化的过程往往与性能测试数据准备密不可分。</p>
+<p><strong>第三，完成脚本的关联操作</strong></p>
+<p>关联操作，是LoadRunner虚拟用户脚本开发过程中最关键的部分，直接关系到脚本是否可以回放成功。</p>
+<p>从概念上讲，关联的主要作用是，取出前序调用返回结果中的某些动态值，传递给后续的调用。是不是听起来很拗口，不太好理解？我们来看一个具体的例子吧。</p>
+<p>假设，每次客户端连接服务器端时，服务器端都会用当前的时间戳（Time Stamp）计算CheckSum，然后将Time Stamp和CheckSum返回给客户端。然后，客户端就把Time Stamp + CheckSum的组合作为唯一标识客户端的Session ID。录制脚本时，录制得到的一定是硬编码（hardcode）的Time Stamp值和CheckSum值。</p>
+<p>图5展示了这个交互过程，录制得到Time Stamp的值是TS，而CheckSum的值是CS。</p>
+<p><img src="https://static001.geekbang.org/resource/image/f2/02/f275c421d12a323f9ddcff63a4873c02.png" alt="" /></p>
+<center>图5 关联原理图-脚本录制过程</center>
+<p>采用Time Stamp + CheckSum的组合作为Session ID的方式，在我们回放这个脚本的时候就有问题了。因为回放时，这段硬编码已经有了新的Time Stamp值和CheckSum值，并且显然与之前的值不同，所以服务器无法完成Session ID的验证，也就导致了脚本回放失败。</p>
+<p><img src="https://static001.geekbang.org/resource/image/d8/df/d8cdec2de5664b2d5b4288514c9cd4df.png" alt="" /></p>
+<center>图6 关联原理图-脚本回放过程</center>
+<p>其实，这种情况几乎存在于所有的虚拟用户脚本中，所以我们必须要解决这个问题。</p>
+<p>解决方法就是，在脚本回放的过程中，实时抓取Time Stamp值和CheckSum值，然后用实时抓取到的值替换后续需要使用这两个值的地方。这个过程就是“关联”。</p>
+<p>如图7所示，<strong>关联就是解析服务器端的返回结果，抓取新的Time Stamp值和CheckSum值，然后后续的操作都使用新抓取的值，这样脚本就能回放成功了。</strong></p>
+<p><img src="https://static001.geekbang.org/resource/image/33/8f/33675b6e6a3b008cb3ebb16af58e6a8f.png" alt="" /></p>
+<center>图7 关联原理图-使用“关联”后的脚本回放过程</center>
+<p>理解了关联操作，在脚本中处理关联就比较简单了，LoadRunner提供了功能强大的关联函数web_reg_save_param()。这个关联函数支持多种动态值的获取方式，用得最多的是基于“前序字符串匹配”加上“后续字符串匹配”的方式。其中，字符串匹配，支持正则表达式。</p>
+<p>我们一起来看个具体的例子吧。</p>
+<p>假设，服务器端返回的结果是“LB=name=timestamp value=8888.LB=name=CheckSum”，那么为了能够获取到“8888”这个动态值，我们就可以用“前序字符串=LB=name=timestamp value=”和“后续字符=.LB=name=CheckSum”来“框出” 8888”这个动态值。</p>
+<p>另外，需要特别注意的是web_reg_save_param()函数是注册型函数，必须放在获取动态值所属的请求前面，相当于先声明，后调用。</p>
+<p>更多的关联函数用法，你可以参考LoadRunner官方文档。</p>
+<p><strong>第四，加入检查点</strong></p>
+<p>检查点，类似于功能测试中的断言。但是，性能测试脚本，不像功能测试脚本那样需要加入很多的断言，往往只在一些关键步骤后加入很少量的检查点即可。这些检查点的主要作用是，保证脚本按照原本设计的路径执行。</p>
+<p>最常用的检查点函数是web_reg_find()，它的作用是通过指定左右边界的方式“在页面中查找相应的内容”。这里需要注意的是，这个函数也是注册型函数，即需要放在所检查的页面之前，否则会检查失败。更多的检查点函数以及用法也请参考LoadRunner官方文档。</p>
+<p><strong>步骤4：验证脚本的正确性</strong></p>
+<p>完成了脚本开发后，根据我的个人经验，我强烈建议你按照以下顺序检查脚本的准确性：</p>
+<ol>
+<li>
+<p>以单用户的方式，在有思考时间的情况下执行脚本，确保脚本能够顺利执行，并且验证脚本行为以及执行结果是否正确；</p>
+</li>
+<li>
+<p>以单用户的方式，在思考时间为零的情况下执行脚本，确保脚本能够顺利执行，并且验证脚本行为以及执行结果是否正确；</p>
+</li>
+<li>
+<p>以并发用户的方式，在有思考时间的情况下执行脚本，确保脚本能够顺利执行，并且验证脚本行为以及执行结果是否正确；</p>
+</li>
+<li>
+<p>以并发用户的方式，在思考时间为零的情况下执行脚本，确保脚本能够顺利执行，并且验证脚本行为以及执行结果是否正确。</p>
+</li>
+</ol>
+<p>只有上述四个测试全部通过，虚拟用户脚本才算顺利完成。</p>
+<p>至此，我们完成了第二个阶段的“录制并增强虚拟用户脚本”的工作，顺利拿到了虚拟用户脚本。那么接下来，我们就会进入第三个阶段，使用开发完成的虚拟用户脚本创建并定义性能测试场景。</p>
+<h2>阶段3：创建并定义性能测试场景</h2>
+<p>还记得我在分享《<a href="https://time.geekbang.org/column/103">工欲善其事必先利其器：后端性能测试工具原理与行业常用工具简介</a>》这个主题时，介绍过的性能测试场景的内容吗？如果有点忘记了，我建议你先回顾一下这篇文章的内容。</p>
+<p>这个阶段的工作，就是在LoadRunner Controller中设置性能测试场景。由于整个设置过程，都是基于Controller的图形用户界面的操作，本身没什么难度，所以我就不再详细展开了，如果有这方面的问题，你也可以自行百度或者给我留言。</p>
+<h2>阶段4：执行性能测试场景</h2>
+<p>完成了性能测试场景的设计与定义后，执行性能测试场景就非常简单了。</p>
+<p>这个过程一般是在LoadRunner Controller中完成。你可以通过Controller发起测试、停止测试、调整性能测试场景的各种参数，还可以监控测试的执行过程。</p>
+<h2>阶段5：分析测试报告</h2>
+<p>执行完性能测试后，LoadRunner会根据自己的标准并结合性能测试场景中定义的系统监控器指标，生成完整的测试报告。在Analysis中，不仅可以以图形化的方式显示单个指标，也可以将多个指标关联在一起进行比较分析。</p>
+<p>图8展示了使用LoadRunner Analysis展示事务平均响应时间的界面，我们可以看到图片右下角各个事务的最小响应时间、最大响应时间和平均响应时间。</p>
+<p><img src="https://static001.geekbang.org/resource/image/88/ea/88f90cc95b59e24a5c7b19848433fcea.png" alt="" /></p>
+<center>图8 性能测试报告的分析</center>
+<p>性能测试报告的分析，是一项技术含量非常高的工作。优秀的性能测试工程，通过报告中的数值以及数值之间的相互关系，就能判断出系统中可能存在的问题。这就好比医生看验血报告，经验丰富的医生可以根据验血报告对病情做出八九不离十的判断。</p>
+<p>性能测试报告的解读，需要丰富的系统架构、性能理论以及大量实战经验的积累。这个话题已经超出了我今天要分享的范围，所以我也就不再继续展开了。</p>
+<h2>总结</h2>
+<p>今天接着上一篇文章，我和你分享了企业级后端性能测试的后四个阶段的内容，包括录制并增强虚拟用户脚本、创建并定义性能测试场景、执行性能测试场景，以及分析测试报告。现在，我再为你总结一下每一个阶段的重点内容。</p>
+<p>录制并增强虚拟用户脚本，这个阶段的工作又可以分为识别被测应用使用的协议、录制脚本、完善录制得到的脚本、验证脚本的正确性四步。其中，完善录制得到的脚本这一步，涉及到了很多概念和基础知识，所以我进行了重点讲解，希望帮你克服性能测试的难点。</p>
+<p>创建并定义性能测试场景，以及执行性能测试场景，这两个阶段的工作都是在LoadRunner的Controller模块中完成的，也都比较简单。你可以参考我在《工欲善其事必先利其器：后端性能测试工具原理与行业常用工具简介》这篇文章分享的内容，完成这两个阶段的工作。</p>
+<p>分析测试报告，这个工作的技术含量非常高。深入解读性能测试报告的能力，需要丰富的系统架构、性能理论，以及大量实战经验。所以，我们需要在平时工作中，不断地丰富自己的知识体系。</p>
+<h2>思考题</h2>
+<p>你们公司的性能测试是否使用LoadRunner，在使用过程中遇到了什么难题？你们又是如何解决的呢？</p>
+<p>感谢你的收听，欢迎你给我留言。</p>
+<p><img src="https://static001.geekbang.org/resource/image/0f/c2/0ffe4c8cc7f61280f42c57db2ccc90c2.jpg" alt="" /></p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/7d/40/bdcf7fa0.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">海</span>
+                            </div>
+                            <div class="bd">老师，是否可以写一篇关于性能测试报告的分析和性能瓶颈的定位过程？ <br></div>
+                            <span class="time">2018-09-12 09:13</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">这个我之前在做大纲的时候有想过专门来个完整分析过程的文章，但是后来放弃了，主要原因是这样的文章的确可以给大海带来性能分析到位主观感受，但是最大的问题是知识点非常零碎，而且不管用什么例子都不具有代表性，而且会需要一个实际的系统以及很多log的支持，会牵涉很多敏感信息，所以最后没有成文。不过可以在留言区多多讨论</p>
+                                <p class="reply-time">2018-09-13 07:20</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Xiye</span>
+                            </div>
+                            <div class="bd">我们公司没有用Loadrunner，用得是Jmeter。在使用中，会有压力不够的问题，我们用一台机器做控制器，三台或四台机器做Agent端测试，经常一台机器超过200线程，性能就上不去了，检查发现瓶颈在于测试的Agent端。特别是我们项目转到Sprint boot架构下，这个问题就更加明显了。后来其他项目的同事推荐我们使用wrk，确实能提高了不少测试压力。 <br>对于性能测试，我觉得确实像老师说得最难的是需求的采集，计划的设计，报告的分析，其实脚本编写和工具的使用并不困难。很多时候到底需要什么样的性能测试环境，需要多大的压力，怎么样的压力场景，报告出来之后的结果是不是符合要求，这些才是最困难的。目前我也是从ResponseTime, Throughput, 服务器端的CPU, Memory, IO 来分析。老师，你觉得还有什么需要重点关注的？ <br></div>
+                            <span class="time">2018-09-13 13:31</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/7d/40/bdcf7fa0.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">海</span>
+                            </div>
+                            <div class="bd">老师所有的文章，一路看过来每次都是意犹未尽，获益良多。这么好的文章，看一遍怎么够呢！非常感谢老师的辛苦用心。 <br></div>
+                            <span class="time">2018-09-13 08:40</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c2/b8/ec758482.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Cynthia🌸</span>
+                            </div>
+                            <div class="bd">对于这篇里面提到的录制脚本等相关工作自己还是比较熟悉的。而对于性能测试的理解和整体把握上还不够成体系。<br>需要好好琢磨文章，实践，总结，实践。 <br></div>
+                            <span class="time">2018-09-12 09:56</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">性能测试系列的最后一篇文章可能会给你很多体系上的理解和帮助</p>
+                                <p class="reply-time">2018-09-13 07:15</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/bc/0a/2ac3417a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">伪专家</span>
+                            </div>
+                            <div class="bd">现在公司都用jemter，也是jemter2次开发，又叫全链路压测平台 <br></div>
+                            <span class="time">2018-09-12 09:07</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">是的，大型互联网企业特有的线上环境的全链路压测，牵涉到流量隔离，影子表，api改造，jmeter海量并发的二次开发等内容，是个专业性很高的领域</p>
+                                <p class="reply-time">2018-09-13 07:22</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/43/f9/6d113245.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">人心向善</span>
+                            </div>
+                            <div class="bd">检查点的作用说白了就是验证正确性，比如拿登录这个点来说：只有当用户成功登录系统后才会出现“welcome！admin”的这种提示，那么检查点就可以以“welcome！admin”这些信息作为check，原因就是因为只有用户登录后才会看到这个提示，不登录是看不到的！如果说页面上实在没有比较容易找到的检查点信息，可以以200 ok为检查点或者是具体返回值信息比如  返回success 0这些信息也可以，不过并不建议这样做 <br></div>
+                            <span class="time">2018-11-27 08:33</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">性能测试脚本理论上是需要每一步都加检查点的，但是实际工程中这么做的人很少，只在一些关键路径加</p>
+                                <p class="reply-time">2018-11-29 13:18</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/59/24/0443e6bd.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">落恒</span>
+                            </div>
+                            <div class="bd">有个个问题想请教一下老师：<br>有使用过LR12录制过测试脚本，录制的脚本会把所有的请求都自动生成对脚本。想问一下这些请求图片&#47;css样式url的是否会对服务器真实压测结果产生影响，是否需要删除无关的url<br> <br></div>
+                            <span class="time">2018-09-13 19:52</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c1/cb/55fef969.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Sunshine</span>
+                            </div>
+                            <div class="bd">老师可以介绍一下，如何去实现每隔10s增加100个用户的方法吗？上一篇提的一些场景不太明白如何去做。感谢🙏 <br></div>
+                            <span class="time">2018-09-13 08:38</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/d6/54/3127cab2.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">赵明月</span>
+                            </div>
+                            <div class="bd">也想看jmeter的 <br></div>
+                            <span class="time">2018-09-12 12:48</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">其实jmeter的功能相比loadrunner还是差了点的，但是由于免费，所以用的比较多，后续我们讲全链路压测的时候就会以jmeter来讲</p>
+                                <p class="reply-time">2018-09-13 07:12</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/bc/0a/2ac3417a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">伪专家</span>
+                            </div>
+                            <div class="bd">测试迷茫 <br></div>
+                            <span class="time">2018-09-12 08:47</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/bc/0a/2ac3417a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">伪专家</span>
+                            </div>
+                            <div class="bd">招聘测试一般条件都要有测试工具开发经验…测试的基础，质量保证…质量度量过程都不是关注点…测试要的基础知识点比开发还要全面…工资待遇…重视程度…从目前的招聘信息对比差距越来越大…… <br></div>
+                            <span class="time">2018-09-12 08:39</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c7/c6/35cc7c7c.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Robert小七</span>
+                            </div>
+                            <div class="bd">我看老师好像还是用的LR11，是否从这里可以看出后续jmeter是主流！LR只是利于理解 <br></div>
+                            <span class="time">2018-09-12 08:36</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">其实不完全是，lr的很多理念和方法都是比jmeter要先进很多的，当然最为概念讲解的辅助工具也可以更好的突出重点。</p>
+                                <p class="reply-time">2018-09-13 07:23</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/4a/ee/45ad0496.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">牛鬼蛇神VS魑魅魍魉</span>
+                            </div>
+                            <div class="bd">晚安 <br></div>
+                            <span class="time">2018-09-12 00:16</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,345 @@
+查看ES版本
+localhost:9200
+
+查看es的健康状态
+localhost:9200/_cat/health
+
+创建索引一个get-together，不插入数据
+PUT /get-togther
+
+查看创建的索引
+localhost:9200/_cat/indices
+
+删除索引
+DELETE /get-together
+
+新建get-together/event索引并且插入数据
+POST /get-together/event
+{
+  "name": "Elasticsearch Denver",
+  "organizer": "zhangsan",
+  "location": "zhangsan, shanxi,xian"
+}
+
+查询索引的_mapping信息
+GET /get-together/_mapping
+
+查询插入的数据
+GET /get-together/event/_search
+
+同时查询多个类型中的搜索
+GET  /get-together/group,event/_search
+
+同时查询多个索引的数据
+GET /event_20200411,event_20200412/_search
+GET /event_*/_search
+
+
+查询所有索引
+GET /_search
+
+查询结果
+{
+    "took":1,
+    "timed_out":false,
+    "_shards":{
+        "total":1,
+        "successful":1,
+        "skipped":0,
+        "failed":0
+    },
+    "hits":{
+        "total":{
+            "value":1,
+            "relation":"eq"
+        },
+        "max_score":1,
+        "hits":[
+            {
+                "_index":"get-together",
+                "_type":"event",
+                "_id":"cGOobnEBQP5futrBc8hg",
+                "_score":1,
+                "_source":{
+                    "name":"Elasticsearch Denver",
+                    "organizer":"Lee",
+                    "location":"Denver, Colorado,USA"
+                }
+            }
+        ]
+    }
+}
+
+took：请求耗时多久，单位是毫秒
+timed_out：是否有分片超时，也就是是否只返回了部分结果
+_shards：分片情况，total：1标识只有1个分片
+hits.total：返回情况，默认返回10条数据
+
+执行 populate.sh
+查询get-together所有数据
+POST /get-together/_search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+
+查询get-togther 前15条数据
+POST /get-together/_search
+{
+  "query": {
+    "match_all": {}
+  },
+  "size": 15
+}
+
+查询get-together,从第2条开始的15条数据
+POST /get-together/_search
+{
+  "query": {
+    "match_all": {}
+  },
+  "from": 1,
+  "size": 15
+}
+
+查询get-together,只返回其中的name和created_on字段
+POST /get-together/_search
+{
+  "query": {
+    "match_all": {}
+  },
+  "_source": [
+    "name",
+    "created_on"
+  ]
+}
+
+通过include 和 exclude 过滤返回的_source内容
+POST /get-together/_search
+{
+  "query": {
+    "match_all": {}
+  },
+  "_source": {
+    "include": [],
+    "exclude": []
+  }
+}
+
+排序，默认按_score取值的降序来排序
+POST /get-together/_search
+{
+  "query": {
+    "match_all": {}
+  },
+  "sort": [
+    {
+      "created_on": "asc"
+    },
+    {
+      "name": "desc"
+    },
+    "_score"
+  ]
+}
+
+查询title包含 Hadoop（模糊查询）
+POST /get-together/_search
+{
+  "query": {
+    "match": {
+      "title": "Hadoop"
+    }
+  }
+}
+
+查询包含nosql的文档
+POST /get-together/_search
+{
+  "query": {
+    "query_string": {
+      "query": "nosql"
+    }
+  }
+}
+
+查询description包含nosql
+POST /get-together/_search
+{
+  "query": {
+    "query_string": {
+	  "default_field":"description",
+      "query": "nosql"
+    }
+  }
+}
+
+查询tags包含elasticsearch的文档（精确匹配）
+POST /get-together/_search
+{
+  "query": {
+    "term": {
+      "tags": "elasticsearch"
+    }
+  }
+}
+
+查询tags包含jvm和hadoop
+POST /get-together/_search
+{
+  "query": {
+    "term": {
+      "tags": ['jvm', 'hadoop']
+    }
+  }
+}
+
+默认情况下match使用bool和OR操作符
+POST /get-together/_search
+{
+  "query": {
+    "match": {
+      "name": {
+        "query": "Elasticsearch Denver",
+        "operator": "and"
+      }
+    }
+  }
+}
+
+词组查询行为
+POST /get-together/_search
+{
+  "query": {
+    "match": {
+      "name": {
+        "query": "enterprise london",
+        "slop": 1
+      }
+    }
+  }
+}
+
+multi_match来匹配多个字段
+POST /get-together/_search
+{
+  "query": {
+    "multi_match": {
+      "query": "elasticsearch hadoop",
+      "fields": [
+        "name",
+        "description"
+      ]
+    }
+  }
+}
+
+bool 查询
+must
+should
+must_not
+
+查询 attendees 包含David
+POST /get-together/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "term": {
+            "attendees": "david"
+          }
+        }
+      ]
+    }
+  }
+}
+
+查询 attendees 包含Clint或者Andy
+POST /get-together/_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        {
+          "term": {
+            "attendees": "clint"
+          }
+        },
+        {
+          "term": {
+            "attendees": "andy"
+          }
+        }
+      ]
+    }
+  }
+}
+
+查询attendees 不包含 Michael
+POST /get-together/_search
+{
+  "query": {
+    "bool": {
+      "must_not": {
+        "term": {
+          "attendees": "Michael"
+        }
+      }
+    }
+  }
+}
+
+查询attendees包含david, attendees也包含Clint或者Andy,时间大于2013-06-30T00:00
+POST /get-together/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "term": {
+            "attendees": "david"
+          }
+        },
+        {
+          "range": {
+            "date": {
+              "gte": "2013-06-30T00:00"
+            }
+          }
+        },
+        {
+          "terms": {
+            "attendees": [
+              "clint",
+              "andy"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
+
+查询created_on在2012-06-01~2012-09-01之间的数据
+{
+  "query": {
+    "range": {
+      "created_on": {
+        "gt": "2012-06-01",
+        "lt": "2012-09-01"
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

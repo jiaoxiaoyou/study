@@ -1,0 +1,313 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.5;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x">所有最新极客时间课程请加QQ群170701297</p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                47讲用机器设计测试用例：基于模型的测试
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/91/33/91c4001b36d7a1115bfca28eba744633.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>你好，我是茹炳晟。今天我和你分享的主题是：用机器设计测试用例之基于模型的测试”。</p>
+<p>我在前面4篇文章中，和你分享的探索式测试、测试驱动开发TDD、精准测试，以及渗透测试的内容，你是否已经掌握了呢？有没有尝试将这些比较新的理念用到你的工程项目中呢？如果你在应用的过程中，遇到了任何问题，也欢迎给我留言一起讨论。</p>
+<p>那么，现在我们就正式开始测试新技术系列的最后一个话题：基于模型的测试。</p>
+<p>可以说，软件测试是一款软件产品质量的最后一道防线，是产品上线前必不可少、最重要的一个环节。每一款高质量的软件产品背后，都蕴含了大量的测试工作。而且，这些测试工作很可能是整个软件开发过程中最昂贵、劳动最密集的工作。</p>
+<p>虽说从最简单的功能性黑盒测试，到涉及定理证明的复杂测试，已经有很多种方法可以帮助我们提高测试的可靠性和有效性。但是，在设计测试用例的过程中，总还是存在着这样那样的问题，使得软件测试的结果没那么理想。</p>
+<p>为此，我们新引入了基于模型的测试，即Model-Based-Testing，简称MBT。</p>
+<p>MBT，是自动化测试的一个分支。它是将测试用例的设计依托于被测系统的模型，并基于该模型自动生成测试用例的技术。其中，这个被测系统的模型表示了被测系统行为的预期，也可以说是代表了我们对被测系统的预期。</p><!-- [[[read_end]]] -->
+<p>从质量保证的角度来看，我们可以制定测试内容，但却无法保证测试会覆盖所有可能的组合。而MBT则允许软件开发人员和测试人员，只关注建立系统的正确性以及模型的规范性，再通过专门的MBT工具根据不同的测试用例设计策略从系统模型生成可靠的测试用例。</p>
+<p>那么，MBT的原理是什么，而什么样的应用又适合进行MBT呢？接下来，我就重点为你回答这两个问题。</p>
+<h2>MBT的基本原理</h2>
+<p>MBT的基本原理是通过建立被测系统的设计模型，然后结合不同的算法和策略来遍历该模型，以此生成测试用例的设计。</p>
+<p>我用下面的一张图片，为你描述了MBT的过程：</p>
+<p><img src="https://static001.geekbang.org/resource/image/08/f9/08c3605390ca20c46b63e92f29f375f9.png" alt="" /></p>
+<center>图1 MBT的一般过程</center>
+<p>如图1所示，开发者首先根据产品需求或者说明来构建模型，然后结合测试对象生成测试用例，测试用例针对测试对象执行完之后，生成测试报告比对测试结果。</p>
+<p>接下来，我以简单的登录系统为例，和你说明如何建模。</p>
+<p>当用户访问网站时，网站需要识别用户是否已经登录：</p>
+<ul>
+<li>如果已经是登录状态，则让用户进入，结束这一分支；</li>
+<li>如果用户还没有登录，那么页面需要返回登录框给用户。用户在登录框输入用户名和密码后，由后台服务验证用户名和密码是否正确，如果通过验证，则用户登录成功，结束分支；否则，返回错误信息，并再次返回登录框供用户登录。</li>
+</ul>
+<p>根据这个逻辑，我们可以建模如下：</p>
+<p><img src="https://static001.geekbang.org/resource/image/7f/95/7fb2ceb31c81046261d59a3c2226a195.png" alt="" /></p>
+<center>图2 网站登录系统建模</center>
+<p>至此，我们就完成对这个登录系统的建模工作了。然后，我们通过具象化被测产品的需求行为，再通过工具来遍历模型中的各个路径，就可以得到我们需要的测试用例了。</p>
+<p>所以，执行MBT的过程就好比你把软件系统的设计画为了一张由节点和边构成的数据结构意义上的“图”，然后通过一定的算法（比如，深度遍历或者广度遍历）来尽可能完整覆盖图中全部的可能路径的过程。</p>
+<p>而根据被测系统的特点，我们可以创建不同类型的模型完成MBT。接下来，我们就一起看看有哪些常用的MBT模型吧。</p>
+<h2>常用模型简介</h2>
+<p>根据被测系统本身的特点，我们常用的模型主要有限状态机、状态图，以及UML三种。其中，有限状态机和状态图比较适合于用状态或者事件驱动的系统，而UML比较适合于靠业务流程驱动的系统。</p>
+<p><strong>第一，有限状态机。</strong></p>
+<p>有限状态机可以帮助测试人员根据选中的输入来评估输出，不同的输入组合对应着不同的系统状态。</p>
+<p>在登录系统这个例子中，员工在未登录时的状态是“未登录”，一旦登录成功状态就会变为“已登录”。在已登录的状态下，员工可以访问各类资源，使用系统内的工具。</p>
+<p><strong>第二，状态图。</strong></p>
+<p>状态图是有限状态机的延伸，用于描述系统的各种行为，尤其适用于复杂且实时的系统。</p>
+<p>状态图有一定数量的状态，系统的行为可以以事件的方式来驱动状态的变化。比如，缺陷管理工具中出现了缺陷，其初始状态为“new”；缺陷被开发人员修复后，就必须将其改为“Fixed”；但是，如果此时测试人员发现缺陷并未修复或者只是部分修复时，则需将状态更改为“Reopen”（重新打开）。</p>
+<p>状态图的设计方式，要求为每个不同的状态创建一个事件。</p>
+<p><strong>第三，UML。</strong></p>
+<p>UML即统一建模语言，是一种标准化的通用建模语言。UML有自己定义的图形库，里面包含了丰富的图形用以描述系统、流程等。</p>
+<p>UML可以通过创建可视化模型，来描述非常复杂的系统行为。</p>
+<p>当我们完成被测系统的建模工作后，接下来就要将模型转化为可执行的测试用例了。这个转换过程，需要借助工具来完成。</p>
+<p>因为不同领域的产品风格迥异，其使用的自动化框架和编程语言也各不相同，所以我们需要花费一些精力去寻找与自己产品匹配的MBT工具。其实，在很多情况下，我们还需要根据产品特点，去自行开发和定制工具。</p>
+<h2>MBT工具简介</h2>
+<p>这里，我为你罗列了一些常见的MBT工具，包括：BPM-X、fMBT、GraphWalker。在这里，我为你简单介绍这些工具的目的是，让你可以对MBT工具本身有个感性的认识，让你知道此类工具的应用场景和上下文。至于说如何来选择使用这些工具，这在很大程度上取决于被测系统的特点。</p>
+<p><strong>第一，BPM-X</strong></p>
+<p>BPM-X根据不同的标准（比如，语句、分支、路径、条件）从业务流程模型创建测试用例。</p>
+<p>它还可以从多个建模工具导入模型，并可以将测试用例导出到Excel、HP Quality Center等。这个工具，适用于业务流程比较清晰直观的场景。</p>
+<p><strong>第二，fMBT</strong></p>
+<p>fMBT是一组免费的、用于全自动测试生成和执行的工具，也是一组支持高水平测试自动化的实用程序和库，主要被应用在GUI测试中。</p>
+<p>fMBT包括用于多平台GUI测试的Python库，用于编辑、调试、运行和记录GUI测试脚本的工具，以及用于编辑和可视化分析测试模型和生成的测试工具。</p>
+<p><strong>第三，GraphWalker</strong></p>
+<p>GraphWalker以有向图的形式读取模型，主要支持FSM、EFSM模型。它读取这些模型，然后生成测试路径。GraphWalker除了适用于GUI测试外，更适合于多状态以及基于事件驱动的状态转换的后台系统。</p>
+<p>另外，GraphWalker还支持从有限状态机中生成测试用例。</p>
+<p>除此之外，市面上还有很多MBT测试工具，比如GSL、JSXM、MaTeLo、MBT Suite等。这里就不再一一介绍了，你可以自行百度了解它们的特点和适用场景，从而选取合适自己的工具。</p>
+<h2>MBT的优势</h2>
+<p>其实，MBT并不能算是一种新颖的测试技术，早在七八年前就已经被提了出来并且试图应用于软件产品的测试工作中。但是，MBT在很长一段时间内，却一直停留在概念阶段，主要原因是一直没有普适的工具支持，所以很少有成功实施的实际案例。同时，业界一直以来都缺乏高效的测试用例设计生成策略，所以虽然大家都能看到MBT的优势，但能在实际项目中应用执行的却是寥寥无几。</p>
+<p>与传统测试相比，MBT的优点如下：</p>
+<ol>
+<li>
+<p><strong>测试用例的维护更轻松</strong>。由于测试用例是基于被测系统的模型生成的，因此我们只需维护好模型即可，而无需关注测试用例的细节。</p>
+</li>
+<li>
+<p><strong>软件缺陷发现得更早</strong>。由于我们在构建被测系统模型的过程中，已经对被测系统有了比较全面的理解，加之要根据系统需求/说明完成建模过程，所以我们可以在早期建模时发现被测系统可能存在的明显缺陷，而不用等到执行了大量的测试用例以后才发现这些缺陷。</p>
+</li>
+<li>
+<p><strong>测试自动化的水平更高</strong>。由于MBT只需建好模型便可以自动生成测试用例，所以不再需要人工编写测试文档。而更高级的应用，甚至可以直接生成可以直接执行的自动化测试脚本。</p>
+</li>
+<li>
+<p><strong>测试覆盖率变得更高，使得彻底的测试（即：穷尽测试）成为了可能</strong>。由于我们需要做的只是正确、详尽地用模型描述被测系统，而生成测试用例完全由MBT工具实现，所以这就避免了人工设计测试用例时的思维局限性，能够有效地提高测试覆盖率，让彻底的测试变为可能。<br />
+当然，是否有必要开展彻底的测试还是要由风险决定。这里的风险指的是，由于漏测导致产品问题对业务的影响程度。MBT只是从技术上提供了可能性。</p>
+</li>
+<li>
+<p><strong>基于模型间接维护测试用例的方式更高效</strong>。在传统测试中，如果被测系统的流程或者功能发生了变化，我们需要耗费大量的人力和时间成本，去重新设计与之匹配的测试用例。而在MBT中，我们只需要更新被测系统的模型即可，剩下的测试用例生成工作可以由MBT工具自动完成。</p>
+</li>
+</ol>
+<h2>MBT的劣势</h2>
+<p>虽然MBT相对于传统测试有很多优点，但它也不是完美的测试方案。在实际开展MBT时，我们往往需要应对很多挑战，并克服很多困难。所以，到现在为止，MBT并没有被广泛使用于软件测试领域。</p>
+<p>在这里，我总结了开展MBT的三大难点：</p>
+<ol>
+<li>
+<p><strong>学习成本较高</strong>。MBT要求开发人员和测试人员都精通建模，这就需要一定的培训成本，需要让开发人员去学习测试的技能，让测试人员去学习建模概念。这其中还牵涉到建模工具的选择，以及学习等成本。</p>
+</li>
+<li>
+<p><strong>使用MBT的初期投资较大</strong>。在很多情况下，我们并不能找到适合自己产品的建模工具，而需要自行创建MBT工具。<br />
+在自行定制MBT工具时，我们要考虑到这个工具必须是可扩展的，并且能够处理复杂的测试逻辑，提供足够高的测试覆盖率，因此刚开始的工具建设就需要花费大量时间和精力。<br />
+更糟糕的情况是，当工具建好后，我们却发现它并不能满足所有的建模需求，因此还要在建模的同时对工具进行微调。而，这种微调工作的难度，也比较大。</p>
+</li>
+<li>
+<p><strong>早期根据模型生成测试用例的技术并不是非常成熟</strong>。很多时候只是根据图论的算法来遍历模型，这就会导致生成的很多测试用例在业务上根本没有任何实际意义，也因此阻碍了MBT在实际项目中的落地。<br />
+不过好在近一两年来，基于人工智能（AI）生成测试用例的概念不断成熟，所以将基于AI的测试用例生成和MBT相结合，将会是接下来的一个发展方向。</p>
+</li>
+</ol>
+<p>总的来说，MBT和传统测试各有优劣。所以，测试的方法多种多样，MBT只是其中的一种。</p>
+<p>如果一个应用的任何组件都可以通过模型来模拟、通过驱动程序来驱动，并可以通过测试结果来比较的话，那么这个应用就是MBT的最佳候选者。</p>
+<p>如果我们的产品特征符合开展MBT的要求，并且团队各方面的条件都支持使用MBT时，我们便可以尝试用这种方法来改革我们的测试方式。尤其是将MBT结合基于AI的测试用例生成技术，将可以大大加速MBT产业应用的步伐。</p>
+<p>但是，不管是否采用MBT，开发人员或测试人员在接触到一款软件产品时，首先都会有一个心理建模的过程，自己先去理解并在脑中勾勒出系统的功能结构和流程。其实，这些内容很容易就可以转换成实际的模型，也就为MBT创造了条件。</p>
+<h2>总结</h2>
+<p>今天，我和你分享了MBT的基本概念和方法。</p>
+<p>MBT是一种基于被测系统的模型，由工具自动生成测试用例的软件测试技术。所以，这也就决定了MBT相对于传统测试技术可以在测试用例维护、软件缺陷发现时机、测试自动化水平，以及测试覆盖率等方面有其独到的优势。</p>
+<p>但同时，这也使得MBT相对于传统软件测试，在初期阶段投入较大，学习应用的成本较高。也正因为如此，MBT概念虽然已经提出了七八年的时间，但却并没有被广泛应用于软件测试领域。</p>
+<p>所以，关于是否要在自己的项目中开展MBT，我们需要综合考虑项目本身的特点和人员的技术水平，以此决定是否有必要开展MBT。</p>
+<h2>思考题</h2>
+<p>假如你要在项目中开展MBT，你会如何判断你的项目是否适合采用MBT，以及你认为会遇到哪些问题可能会阻碍MBT的开展呢？</p>
+<p>感谢你的收听，欢迎你给我留言一起讨论。</p>
+<p><img src="https://static001.geekbang.org/resource/image/0f/c2/0ffe4c8cc7f61280f42c57db2ccc90c2.jpg" alt="" /></p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/0b/34/f41d73a4.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">王盛武</span>
+                            </div>
+                            <div class="bd">类似于BPM <br></div>
+                            <span class="time">2018-12-11 17:45</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/2f/f4/2dede51a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">小老鼠</span>
+                            </div>
+                            <div class="bd">对于unhappy的路径，MBT会涉及到吗？ <br></div>
+                            <span class="time">2018-12-01 13:26</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/c1/50/ce45f6b7.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Alice</span>
+                            </div>
+                            <div class="bd">MBT只是生成测试用例吗？ <br></div>
+                            <span class="time">2018-10-30 17:21</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/d2/54/3fa394b4.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">无 心</span>
+                            </div>
+                            <div class="bd">以前有听过UML建模，但是没有执行过，可以很细致的画出模型 <br></div>
+                            <span class="time">2018-10-23 22:57</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c6/4f/0c215abf.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">红娟</span>
+                            </div>
+                            <div class="bd">脑洞大开，第一次听说MBT概念 <br></div>
+                            <span class="time">2018-10-22 15:20</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/62/14/1a219456.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">꧁༺Eve Pan༻꧂</span>
+                            </div>
+                            <div class="bd">第一次接触MBT概念，以往项目有画过uml业务流，用于测试用例，但是从来没有用过具体的MBT工具。 <br></div>
+                            <span class="time">2018-10-19 21:37</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/d0/98/1c838cb8.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">小北</span>
+                            </div>
+                            <div class="bd">学习到了新的思路，受教了。 <br></div>
+                            <span class="time">2018-10-16 23:27</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eqwqU1R58VSRVYRQV1OyDefCtOv7FoZwhwOIDHmJTmCFzIPGevqeZVbiaJzVARabY0uV7UibXXHibgqA/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">birdzb</span>
+                            </div>
+                            <div class="bd">请问老师，图 2 网站登录系统建模，这个图里“登录页面”到“账号正确”之间的那个向下↓旁边的NO怎么理解？ <br></div>
+                            <span class="time">2018-10-16 23:01</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c3/a9/aa5a5d8b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">朝如青丝暮成雪</span>
+                            </div>
+                            <div class="bd">这些软件使用起来非常的不便，感觉无从下手 <br></div>
+                            <span class="time">2018-10-16 11:16</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/a0/8b/28bf8eeb.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">鱼贯而过</span>
+                            </div>
+                            <div class="bd">我们研究生时期常做模型检测，将模型检测认为是不同于软件测试的一种方法。再扩大一些，模型检测属于形式化方法的一种，确实是门槛高，成本高，只有关系生命的大型软件，比如飞机上的关键软件，才需要形式化方法 <br></div>
+                            <span class="time">2018-10-15 18:25</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c2/a7/1c707274.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">涅槃Ls</span>
+                            </div>
+                            <div class="bd">打卡47 <br></div>
+                            <span class="time">2018-10-15 08:14</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

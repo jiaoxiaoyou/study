@@ -1,0 +1,428 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.5;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x">所有最新极客时间课程请加QQ群170701297</p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                23讲知其然知其所以然：聊聊API自动化测试框架的前世今生
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/6b/19/6b7f7a214c7b4d2dec2206cd9f569f19.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>你好，我是茹炳晟，今天我和你分享的主题是“知其然知其所以然：聊聊API自动化测试框架的前世今生”。</p>
+<p>在上一篇文章中，我以一个简单的Restful API为例，分别介绍了cURL和Postman的使用方法，相信你已经对API测试有个感性认识了。</p>
+<p>但是，我们不能仅仅停留在感性认识的层面，还需要熟悉并掌握这些测试方法，完成相应的API测试工作。所以，也就有了我今天分享的主题，希望可以通过对API自动化测试框架发展的介绍，让你理解API测试是如何一步一步地发展成今天的样子，以“知其所以然”的方式加深你对API自动化测试的理解。</p>
+<p>接下来，我将会遵循由简入繁的原则，为你介绍API测试框架，以发现问题然后解决问题的思路为主线，展开今天的分享。</p>
+<h2>早期的基于Postman的API测试</h2>
+<p>早期的API测试，往往都是通过类似Postman的工具完成的。但是，由于这类工具都是基于界面操作的，所以有以下两个问题亟待解决：</p>
+<ol>
+<li>
+<p>当需要频繁执行大量的测试用例时，基于界面的API测试就显得有些笨拙；</p>
+</li>
+<li>
+<p>基于界面操作的测试难以与CI/CD流水线集成。</p>
+</li>
+</ol>
+<p>所以，我们迫切需要一套可以基于命令行执行的API测试方案。这样，API测试可以直接通过命令行发起，与CI/CD流水线的整合也就方便得多了。</p><!-- [[[read_end]]] -->
+<h2>基于Postman和Newman的API测试</h2>
+<p>于是就出现了集成Postman和Newman的方案，然后再结合Jenkins就可以很方便地实现API测试与CI/CDl流水线的集成。Newman其实就是一个命令行工具，可以直接执行Postman导出的测试用例。</p>
+<p>用Postman开发调试测试用例，完成后通过Newman执行，这个方案看似很完美。但是在实际工程实践中，测试场景除了简单调用单个API以外，还存在连续调用多个API的情况。</p>
+<p>此时，往往会涉及到多个API调用时的数据传递问题，即下一个API调用的参数可能是上一个API调用返回结果中的某个值。另外，还会经常遇到的情况是，API调用前需要先执行一些特定的操作，比如准备测试数据等。</p>
+<p>因此，对于需要连续调用多个API并且有参数传递的情况，Postman+Newman似乎就不再是理想的测试方案了。</p>
+<h2>基于代码的API测试</h2>
+<p>为了解决这个问题，于是就出现了基于代码的API测试框架。比较典型的是，基于Java的OkHttP和Unirest、基于Python的http.client和Requests、基于NodeJS的Native和Request等。</p>
+<p>小型的互联网企业，往往会根据自己的业务需求，选用这些成熟的API测试框架。</p>
+<p>但是，对于中大型的互联网企业，一般都会自己开发更适合自身业务上下文的API测试框架，比如eBay，我们为了实现代码化的API测试，开发了自己的HttpClient，后期为了使API测试的代码更简洁易懂，就基于Rest-Assured封装了全新的API测试框架。</p>
+<p>这种根据公司业务上下文开发实现的API测试框架，在使用上有很多优点，而且灵活性也很好，主要体现在以下几个方面：</p>
+<ol>
+<li>
+<p>可以灵活支持多个API的顺序调用，方便数据在多个API之间传递，即上一个API调用返回结果中的某个字段值可以作为后续API调用的输入参数；</p>
+</li>
+<li>
+<p>方便在API调用之前或者之后执行额外的任意操作，可以在调用前执行数据准备操作，可以在调用后执行现场清理工作等；</p>
+</li>
+<li>
+<p>可以很方便地支持数据驱动测试，这里的数据驱动测试概念和GUI测试中的数据驱动测试完全相同，也就是可以将测试数据和测试代码分离解耦；</p>
+</li>
+<li>
+<p>由于直接采用了代码实现，所以可以更灵活地处理测试验证的断言（Assert）；</p>
+</li>
+<li>
+<p>原生支持命令行的测试执行方式，可以方便地和CI/CD工具做集成。</p>
+</li>
+</ol>
+<p>这里我给出了一段伪代码示例，用于展示如何用代码实现一个简单的API测试。</p>
+<p><img src="https://static001.geekbang.org/resource/image/be/6f/be4e9d0cf1442e89831629f3f5727c6f.png" alt="" /></p>
+<center>图1 基于代码的API测试的伪代码示例</center>
+<ul>
+<li>
+<p>代码的第1-12行，创建了CreateUserAPI类，其中包含了endpoint、操作方法PUT、InlineParam和Param的设置，并且构建了对应的request对象；</p>
+</li>
+<li>
+<p>代码的第14-19行，是测试的主体函数。这段函数的逻辑是这样的：</p>
+<ul>
+<li>首先，构建CreateUserAPI的对象；</li>
+<li>然后，用CreateUserAPI对象的buildRequest方法结合输入参数构建request对象；</li>
+<li>接着，通过request对象的request()方法发起了API调用；</li>
+<li>最后，验证response中的状态码是不是200。</li>
+</ul>
+</li>
+</ul>
+<p>在这段伪代码中，有以下几点需要你特别注意：</p>
+<ol>
+<li>
+<p>代码中“CreateUserAPI的父类RestAPI”“_buildRequest()方法”“request()方法”“addInlineParam()方法”等，都是由API测试框架提供的。</p>
+</li>
+<li>
+<p>为了简化代码，这里并没有引入数据驱动的data provider。但在实际项目中，代码第14行的测试输入参数，往往来自于data provider，即由数据驱动的方式提供测试输入数据。</p>
+</li>
+<li>
+<p>由于测试过程完全由代码实现，所以可以很方便的在测试执行前后增加任意的额外步骤。比如，需要在CreateUser前增加数据创建的步骤时，只需要在代码第15行前直接添加就可以了。</p>
+</li>
+<li>
+<p>这里的例子只有一个API调用，当需要多个API顺序调用时，直接扩展testCreateUser方法即可，两个API之间的数据传递可以通过上一个API返回的response.XXXX完成。</p>
+</li>
+</ol>
+<p>通过这段伪代码，我们可以看到，虽然基于代码的API测试灵活性很好，也可以很方便地和CI/CD集成，但是也引入了一些新的问题，比如：</p>
+<ul>
+<li>对于单个API测试的场景，工作量相比Postman要大得多；</li>
+<li>对于单个API测试的场景，无法直接重用Postman里面已经积累的Collection。</li>
+</ul>
+<p>在实际工程中，这两个问题非常重要，而且必须要解决。因为公司管理层肯定无法接受相同工作的工作量直线上升，同时原本已经完成的部分无法继续使用，所以自动化生成API测试代码的技术也就应运而生了。</p>
+<h2>自动生成API测试代码</h2>
+<p>自动生成API测试代码是指，基于Postman的Collection生成基于代码的API测试用例。</p>
+<p>其实，在上一篇文章<a href="https://time.geekbang.org/column/article/13421">《从0到1：API测试怎么做？常用API测试工具简介》</a>最后的部分，我已经提到过Postman工具本身已经支持将Collection转化成测试代码，但如果直接使用这个功能的话，还有两个问题需要解决：</p>
+<ol>
+<li>
+<p>测试中的断言（assert）部分不会生成代码，也就是说测试代码的生成只支持发起request的部分，而不会自动生成测试验证点的代码；</p>
+</li>
+<li>
+<p>很多中大型互联网企业都是使用自己开发的API测试框架，那么测试代码的实现就会和自研API测试框架绑定在一起，显然Postman并不支持这类代码的自动生成。</p>
+</li>
+</ol>
+<p>鉴于以上两点，理想的做法是自己实现一个代码生成工具，这个工具的输入是Postman中Collection的JSON文件，输出是基于自研API框架的测试代码，而且同时会把测试的断言一并转化为代码。</p>
+<p><strong>这个小工具实现起来并不复杂，其本质就是解析Collection JSON文件的各个部分，然后根据自研API框架的代码模板实现变量替换。</strong> 具体来讲，实现过程大致可以分为以下三步：</p>
+<ul>
+<li>首先，根据自研API框架的代码结构建立一个带有变量占位符的模板文件；</li>
+<li>然后，通过JSON解析程序，按照Collection JSON文件的格式定义去提取header、method等信息；</li>
+<li>最后，用提取得到的具体值替换之前模板文件中的变量占位符，这样就得到了可执行的自研框架的API测试用例代码。</li>
+</ul>
+<p>有了这个工具后，我建议你的工作模式（Working Model）可以转换成这样：</p>
+<ul>
+<li>对于Postman中已经累积的Collection，全部由这个工具统一转换成基于代码的API测试用例；</li>
+<li>开发人员继续使用Postman执行基本的测试，并将所有测试用例保存成Collection，后续统一由工具转换成基于代码的API测试用例；</li>
+<li>对于复杂测试场景（比如，顺序调用多个API的测试），可以组装由工具转换得到的API测试用例代码，完成测试工作。</li>
+</ul>
+<p>如图2所示，就是一个组装多个由工具转换得到的API测试用例代码的例子。其中，代码第3行的类“CreateUserAPI”和第10行的类“BindCreditCardAPI”的具体代码就可以通过工具转换得到。</p>
+<p><img src="https://static001.geekbang.org/resource/image/8c/e9/8cc97f6e1459aac8aedbb14ab8bec4e9.png" alt="" /></p>
+<center>图2  多个API顺序调用的测试用例代码</center>
+<p>至此，基于代码的API测试发展得算是比较成熟了，但在实际应用过程中还有一个痛点一直未被解决，那就是测试验证中的断言，也是我接下来要和你一起讨论的话题。</p>
+<h2>Response结果发生变化时的自动识别</h2>
+<p>在实际的工程项目中，开发了大量的基于代码的API测试用例后，你会发现一个让人很纠结的问题：到底应该验证API返回结果中的哪些字段？</p>
+<p>因为你不可能对返回结果中的每一个字段都写assert，通常情况下，你只会针对关注的几个字段写assert，而那些没写assert的字段也就无法被关注了。</p>
+<p>但对API测试来说，有一个很重要的概念是后向兼容性（backward compatibility）。API的后向兼容性是指，发布的新API版本应该能够兼容老版本的API。</p>
+<p>后向兼容性除了要求API的调用参数不能发生变化外，还要求不能删减或者修改返回的response中的字段。因为这些返回的response会被下游的代码使用，如果字段被删减、改名或者字段值发生了非预期的变化，那么下游的代码就可能因为无法找到原本的字段，或者因为字段值的变化而发生问题，从而破坏API的后向兼容性。</p>
+<p>所以，我们迫切需要找到一个方法，既可以不对所有的response字段都去写assert，又可以监测到response的结构以及没有写assert的字段值的变化。</p>
+<p>在这样的背景下，诞生了“Response结果变化时的自动识别”技术。也就是说，即使我们没有针对每个response字段都去写assert，我们仍然可以识别出哪些response字段发生了变化。</p>
+<p>具体实现的思路是，在API测试框架里引入一个内建数据库，推荐采用非关系型数据库（比如MongoDB），然后用这个数据库记录每次调用的request和response的组合，当下次发送相同request时，API测试框架就会自动和上次的response做差异检测，对于有变化的字段给出告警。</p>
+<p>你可能会说这种做法也有问题，因为有些字段的值每次API调用都是不同的，比如token值、session ID、时间戳等，这样每次的调用就都会有告警。</p>
+<p>但是这个问题很好解决，现在的解决办法是通过规则配置设立一个“白名单列表”，把那些动态值的字段排除在外。</p>
+<h2>总结</h2>
+<p>为了让你可以更好地理解今天的API测试框架，我从其发展历程的角度进行了分析：</p>
+<p>早期的基于Postman的API测试在面临频繁执行大量测试用例，以及与CI/CD流水线整合的问题时，显得心有余而力不足。为此，基于命令行的API测试实践，也就是Postman+Newman，具有很好的灵活性，解决了这两个问题。</p>
+<p>但是，Postman+Newman的测试方案，只能适用于单个API调用的简单测试场景，对于连续调用多个API并涉及到参数传递问题时，这个方案就变得不那么理想和完美了。随后，API测试就过渡到了基于代码的API测试阶段。</p>
+<p>一些小型企业，则往往会选择适合自己业务的成熟API测试框架。中大型的互联网企业，一般都会根据自己的业务上下文，在成熟API测试框架的基础上封装自己的API测试框架，提升测试效率和灵活性。</p>
+<p>但是，不管是采用现成的还是自己去开发API测试框架，都会遇到测试用例开发效率低下，以及无法直接重用Postman中积累的Collection的问题，为此我分享了两个比较好用的方法，也就是：自动生成API测试代码和Response结果变化的自动识别，并给出了这两个方法的实现思路。</p>
+<p>希望我分享的这些内容，可以帮你解决在实际测试项目中遇到的问题。</p>
+<h2>思考题</h2>
+<p>目前，基于代码的API测试框架已经比较成熟了，所以在此基础上又出现了基于配置文件的API测试框架，比如典型的HttpRunner，在此类API测试框架的支持下，测试用例本身往往就是纯粹的配置文件了。你是否有接触过这类API测试框架，对此又有什么看法呢？</p>
+<p>欢迎你给我留言。</p>
+<p><img src="https://static001.geekbang.org/resource/image/0f/c2/0ffe4c8cc7f61280f42c57db2ccc90c2.jpg" alt="" /></p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/8c/95/14d4d0eb.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">sylan215</span>
+                            </div>
+                            <div class="bd">确实，Postman 作为自测工具或者开发之间的接口对接，还是很方便的，但是涉及批量每日回归执行，或者同一个接口的多参数验证等，稍微有点不方便，这应该也是那么的代码级 API 测试框架出现的原因吧。<br>相对于自动生成 API 测试代码，我更倾向于配置文件的方式，毕竟通过工具把 JSON 转换为自己需要的格式，说到底也是配置文件而已，只是还要增加一个转换的过程。<br>Response 结果发生变化时的自动识别，这个很赞，也给我提供了一些思路，目前我都是只校验不变的部分，这样会有覆盖不全的情况，后面我也会考虑这种自适应的实现。<br><br>以上，欢迎沟通交流，公众号「sylan215」<br><br> <br></div>
+                            <span class="time">2018-08-20 00:28</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/30/f0/a892c936.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Martin 龚平</span>
+                            </div>
+                            <div class="bd">用postman转python或者java测试脚本还是太慢了，而且需要一定编程技能，感觉已经是上一代了，我现在根据httprunner的yml的脚本规则，加上一些开源的组件，做了一个web页面可以进行代理抓包，测试人员无论从web页面还是app操作只要设置代理过来，就可以看到自己的所有请求，然后选择想自动化的请求，后台自动转成测试脚本，再在管理界面上通过拖拽等性质组装成自动化测试集，并可以执行调试、定时任务等。这样的自动化程度基本对编程技能降到了最低，而且生成测试脚本的成本比上一代低了很多 <br></div>
+                            <span class="time">2018-09-07 12:31</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">非常好的实践，其实这个我们也有在做，基于httprunner基本没有代码工作量，全部基于yaml或json的配置，而且就像你说的是通过har直接转换json或者yaml，结合locust还可以直接做性能测试。</p>
+                                <p class="reply-time">2018-09-11 10:05</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c2/b8/ec758482.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Cynthia🌸</span>
+                            </div>
+                            <div class="bd">感觉本篇对我最有用的，就是Response结果发生变化时的自动识别这块啊！自己在项目中遇到过类似的问题，虽然采取了一定的措施，但是没有想到作者这个解决方案。准备顺着作者的思路捋一捋，看看把他具体实现一下。 <br></div>
+                            <span class="time">2018-08-21 20:02</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">哈哈，这的确是个很好的方法，非常值得落地</p>
+                                <p class="reply-time">2018-08-27 08:33</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/4c/b0/f22017b0.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">楚耳</span>
+                            </div>
+                            <div class="bd">老师 能具体讲下在框架中如何实现  可以灵活支持多个 API 的顺序调用，方便数据在多个 API 之间传递<br><br>，即上一个 API 调用返回结果中的某个字段值可以作为后续 API 调用的输入参数 这个需求吗 讲下设计思路 <br></div>
+                            <span class="time">2018-09-13 11:12</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Geek_9db07d</span>
+                            </div>
+                            <div class="bd">有了api自动化集成测试平台，还要代码生成工具有啥用，restassured其实也是在httpclient上封装的，他不仅能发请求，还能断言 <br></div>
+                            <span class="time">2018-12-01 23:04</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">农夫山泉</span>
+                            </div>
+                            <div class="bd">问下老师，现在用python3写接口自动化，用哪个框架最好 <br></div>
+                            <span class="time">2018-10-29 16:29</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/2f/f4/2dede51a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">小老鼠</span>
+                            </div>
+                            <div class="bd">在中小型公司有无必要引入了response 变化工具吗 <br></div>
+                            <span class="time">2018-10-27 16:33</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c7/c6/35cc7c7c.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Robert小七</span>
+                            </div>
+                            <div class="bd">现在项目都是手工测试，如何将手工测试和接口测试相结合？也就是测试同学既要做手工也要做自动化如何开展！ <br></div>
+                            <span class="time">2018-10-25 07:46</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/da/88/09ccab4a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">颜瑞</span>
+                            </div>
+                            <div class="bd">在框架的选择上，茹老师也提了一个开放性问题，Rest-Assured和HttpRunner哪个更合适。其实我也一直在犹豫，自己封装接口，对各个产品线上测试人员有编码的能力要求，另外框架的开发还是需要一定工作量的，HttpRunner少了这些编码成本。HttpRunner还没开始用，疑惑点在于数据准备和环境清理能否在这个框架里面实现，考虑到一些数据准备需要插表，是不是从扩展性和兼容性上讲，企业还是自己开发一套API测试框架的好？茹老师有什么建议么？ <br></div>
+                            <span class="time">2018-10-24 12:56</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/cc/9c/ec71155f.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">胖虫子</span>
+                            </div>
+                            <div class="bd">做过个rf的接口测试，但有时想想觉得接口的测试没啥大意义，现在接口正常不正常都能监控 <br></div>
+                            <span class="time">2018-10-17 09:00</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/11/5a/9d808df4.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">yinyin</span>
+                            </div>
+                            <div class="bd">能否根据接口文档定义的各个参数的类型，以及接口之间的潜逃关系，加上测试数据，自动生成测试用例和测试脚本呢?现在我们正在考虑这种方法，还不确定是否可行，特别是在结果断言上，或许也要采取老师说的这种方法。 <br></div>
+                            <span class="time">2018-09-05 13:52</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c2/a7/1c707274.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">涅槃Ls</span>
+                            </div>
+                            <div class="bd">打卡23，努力学习API测试 <br></div>
+                            <span class="time">2018-08-28 08:05</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c0/bc/c49e1eaa.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">静静张</span>
+                            </div>
+                            <div class="bd">老师你好，基于配置文件的api测试，和将数据外化到文件是一回事吗？ <br></div>
+                            <span class="time">2018-08-25 15:31</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">不是一回事，基于配置的api测试，是不需要写任何代码的，测试用例本身就是配置文件，api框架会去解析配置文件并发起调用，典型的框架是httprunner</p>
+                                <p class="reply-time">2018-08-27 08:18</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/0f/46/68cda336.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Yaoqi😀</span>
+                            </div>
+                            <div class="bd">loadrunner怎么没有提及，也可以做api啊 <br></div>
+                            <span class="time">2018-08-22 09:14</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">loadrunner主要是做性能测试的，当然也可以用来做api测试，但lr的强项和关注点是性能，后面讲性能测试的时候会详细介绍</p>
+                                <p class="reply-time">2018-08-27 08:30</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/e8/cc/fa46064e.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">TJJ</span>
+                            </div>
+                            <div class="bd">有转换postman用例的开源代码吗？ <br></div>
+                            <span class="time">2018-08-20 13:04</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/af/3d/28b61e6b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">假装乐</span>
+                            </div>
+                            <div class="bd">测试脚本用java比较痛苦，语法太麻烦了 <br></div>
+                            <span class="time">2018-08-20 06:54</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c5/25/72b513db.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">向日葵盛開の夏天</span>
+                            </div>
+                            <div class="bd">使用过robotframework进行API测试，一个API测试都需要填写较长的表单，用起来感觉很复杂，冗余，在公司内部也不好做推广。目前，我还是比较喜欢用fiddler+jmeter，感觉使用起来还是蛮方便的，jmeter还可以集成到Jenkins下。对于老师说的自己封装API测试框架，很可惜，待的公司都项目较多的有很多的接口，自己封装API测试工程量太大，都没有实施的。 <br></div>
+                            <span class="time">2018-08-20 06:12</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

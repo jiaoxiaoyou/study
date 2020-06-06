@@ -1,0 +1,145 @@
+1.创建索引
+curl -XPUT http://127.0.0.1:9200/test/
+2. 插入数据
+
+Linux 
+curl -H "Content-Type: application/json" -XPUT http://127.0.0.1:9200/test/user/1 -d '{"name":"jack","age":28}'
+
+Windows下执行以上语句会报：
+{"error":{"root_cause":[{"type":"mapper_parsing_exception","reason":"failed to parse"}],"type":"mapper_parsing_exception","reason":"failed to parse","caused_by":{"type":"not_x_content_exception","reason":"Compressor detection can only be called on some xcontent bytes or compressed xcontent bytes"}},"status":400} 
+
+Windows
+curl -H "Content-Type: application/json" -XPUT http://127.0.0.1:9200/test/user/1 -d "{"""name""":"""jack""","""age""":28}"
+curl -H "Content-Type: application/json" -XPUT http://127.0.0.1:9200/test/user/2 -d "{"""name""":"""lucy""","""age""":28}"
+curl -H "Content-Type: application/json" -XPOST http://127.0.0.1:9200/test/user/ -d "{"""name""":"""zhangsan""","""age""":23}"
+curl -H "Content-Type: application/json" -XPOST http://127.0.0.1:9200/test/user/ -d "{"""name""":"""lisi""","""age""":25}"
+curl -H "Content-Type: application/json" -XPOST http://127.0.0.1:9200/test/user/ -d "{"""name""":"""wangwu""","""age""":30}"
+curl -H "Content-Type: application/json" -XPOST http://127.0.0.1:9200/test/user/3/?op_type=create -d "{"""name""":"""wangmazi""","""age""":30}"
+curl -XGET "http://127.0.0.1:9200/test/user/3/_source=name&pretty"
+
+
+DSL
+http://127.0.0.1:9200/test/user/4/_create
+{
+    "name": "aa",
+    "age": 31
+}
+
+
+http://127.0.0.1:9200/test/user/_search
+{"query":{"match":{"name":"aa"}}}
+
+创建索引
+PUT  
+http://127.0.0.1:9200/test2
+
+插入数据
+POST	
+http://127.0.0.1:9200/test2/user/1
+{
+    "name": "aa",
+    "a": 1
+}
+
+查询多个索引的数据
+GET
+http://127.0.0.1:9200/_mget
+{
+    "docs": [
+        {
+            "_index": "test",
+            "_type": "user",
+            "_id": 2,
+            "_source": "name"
+        },
+        {
+            "_index": "test2",
+            "_type": "user",
+            "_id": 1
+        }
+    ]
+}
+
+查询一个索引的多条数据
+GET
+http://127.0.0.1:9200/test/user/_mget
+{
+    "docs": [
+        {
+            "_id": 1
+        },
+        {
+            "_id": 2
+        }
+    ]
+}
+或者
+{
+    "ids": ["1","2"]
+}
+
+
+查询数据是否存在，只返回结果不返回数据
+HEAD
+http://127.0.0.1:9200/test/user/1
+
+更新信息
+POST
+http://127.0.0.1:9200/test2/user/1/_update
+{
+    "doc": {
+        "name": "bb",
+        "age": 31
+    }
+}
+
+删除某条数据
+DELETE
+http://127.0.0.1:9200/test/user/4
+
+查看删除的数据
+GET
+http://127.0.0.1:9200/test/user/4
+
+查看集群节点健康状态
+http://localhost:9200/_cluster/health?pretty
+
+分片只能在创建索引时指定，创建之后无法修改分片
+
+创建索引带mapping
+POST
+http://localhost:9100/test3/user
+{"test3":{"mappings":{"user":{"properties":{"name":{"type":"text"}}}}}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

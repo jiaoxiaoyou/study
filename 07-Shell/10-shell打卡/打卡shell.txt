@@ -1,0 +1,189 @@
+1. 新建一个shell，保存为1.sh
+进入 /var/目录，查看这个目录下的所有文件，并查看当前路径，查看目录大小， 查看目录下每个文件大小
+vim 1.sh
+cd /var/ ; ls ; pwd ; du -sh ; du -sh *
+:wq
+
+2. 给1.sh赋可执行权限
+chmod u+x 1.sh
+
+shell文件执行的四种方式：
+1. 执行1.sh
+bash 1.sh
+
+1. bash 2.sh
+新建2.sh,不修改权限直接执行，执行完回到当前目录
+
+2. ./2.sh
+新建2.sh, 不修改权限直接运行，提示权限不够，必须有可执行权限
+
+1、2会产生新的子进程
+
+3. source 2.sh
+在/root执行2.sh 执行完pwd 发现当前是/tmp
+
+4. . 2.sh
+
+59、管道和管道符
+
+cat anac.cfg | more
+cat | ps -f
+
+
+管道符是把第一条命令的结果传给第二条，并且给第一条和第二条建立两个子进程，使用内建命令的时候不会传给父进程
+使用管道符尽量规避内建命令
+
+echo 123 | cat | cmd
+
+60、重定向
+
+输入重定向符号"<"
+read var < /path/to/a/file
+
+输出重定向符号">" ">>" "2>" "&>"
+echo 123 > /path/to/a/file
+
+">" 清空文件中已有的内容
+">>" 在文件已有内容中追加
+"2>" 错误的输出到文件中
+"&>" 正确错误都会输出
+
+echo 123 > 1.txt
+echo 456 > 1.txt
+echo 789 >> 1.txt
+nocmd 2> error.log
+ls &> all.log
+
+vim 3.sh
+#!/bin/bash
+
+cat > /home/a.sh <<EOF
+echo "hello bash"
+EOF
+
+61、变量
+
+变量名的命名规则：
+字母、数字、下划线
+不以数字开头
+
+变量名=变量值
+a=123
+使用let为变量赋值
+let a=10+20
+将命令赋值给变量
+l=ls
+将命令结果赋值给变量，使用$()或者``
+letc=$(ls -l /etc)
+变量值有空格等特殊字符可以包含在""或''中
+
+cmd1=`ls /root`
+cmd2=$(ls /root/)
+string1='hello bash'
+echo $string1
+
+61、变量引用及作用范围
+变量的引用
+${变量名}称作变量的引用
+echo ${变量名}查看变量的值
+${变量名}在部分情况下可以省略为 $变量名
+
+string1="hello bash"
+echo ${string1}
+echo $string1
+echo $string123
+echo ${string1}23
+
+变量的作用范围
+变量的作用范围是当前shell
+a=1
+bash
+echo $a
+a=2
+exit
+echo $a
+
+demo_var1='hello subshell'
+vi 4.sh
+#!/bin/bash
+# test echo
+echo $demo_var1
+chmod u+x 4.sh
+子进程
+bash 4.sh
+./4.sh
+source 4.sh
+. 4.sh
+
+export demo_var1
+unset demo_var1
+
+63、环境变量、预定义变量与位置变量
+
+系统环境变量
+每个shell打开都可以获得到的变量
+set和env命令
+$?  上一条是否正确执行 0 为正确执行成功
+$$ 当前进程的pid
+$0	当前的进程名称
+$PATH
+$PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin:root/
+对当前终端和子shell生效
+
+当前终端提示符
+$PS1
+位置变量
+$1 $2 …… $n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

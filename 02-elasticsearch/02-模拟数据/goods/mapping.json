@@ -1,0 +1,22 @@
+{
+  "settings" : {
+    "number_of_shards" : 2,
+    "number_of_replicas" : 1,
+  "mappings" : {
+    "_source" : {
+      "enabled" : true
+    },
+    "properties" : {
+      "relationship_type": {
+        "type": "join",
+        "relations" : {
+          "group": "fruit"
+        }
+      },
+      "created_on" : {
+        "type" : "date",
+        "format" : "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd"
+      } 
+    }
+  }
+}

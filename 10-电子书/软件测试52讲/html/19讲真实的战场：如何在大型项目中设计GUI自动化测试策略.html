@@ -1,0 +1,280 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.5;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x">所有最新极客时间课程请加QQ群170701297</p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                19讲真实的战场：如何在大型项目中设计GUI自动化测试策略
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/9a/74/9a8c864ff0bd7baddbfbf8537bcc9e74.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>在前面的文章中，我介绍过GUI自动化测试的页面对象模型和业务流程封装等相关知识，也提到过大型全球化电商网站的GUI自动化测试，那如何把已经学到的GUI测试理论知识用到大型全球化电商网站的测试中呢？</p>
+<p>今天，我的分享就从“实战”这个角度展开，带你看看实际的大型全球化电商网站的GUI自动化测试如何开展。这场实战，我将从以下两个方面展开：</p>
+<ol>
+<li>
+<p>测试策略如何设计？这一点，我会根据亲身经历的实际项目，和你探讨GUI测试的分层测试策略。</p>
+</li>
+<li>
+<p>测试用例脚本如何组织？需要注意的是，对于这个问题，我不是要和你讨论测试用例的管理，而是要讨论测试用脚本的管理。比如，当需要组装上层的端到端（E2E）测试时，如何才能最大程度地重用已有的页面对象以及业务流程（business flow）。</p>
+</li>
+</ol>
+<p>如果你所在的企业或者项目正在大规模开展GUI测试，并且准备使用页面对象模型以及业务流程封装等最佳实践的话，那么，你很可能会遇到本文所描述的问题并且迫切需要相应的解决办法。</p>
+<h2>大型全球化电商网站的前端模块划分</h2>
+<p>在正式讨论大型全球化电商网站的GUI自动化测试策略设计之前，我先简单介绍一下电商网站的前端架构，为避免过多的技术细节引起不必要的干扰，我只会概要性地介绍与GUI自动化测试密切相关的部分。</p><!-- [[[read_end]]] -->
+<p>由于大型全球化电商网站的业务极其庞大，所以前端架构也要按照不同的业务模块来划分，比如用户管理模块、商户订单管理模块、商户商品管理模块等等。</p>
+<p>当然由于这些前端模块都会使用项目自己封装的组件库，比如自定义开发的列表组件、登录组件、信用卡组件等，我们通常会把自定义开发的这些所有组件都放在一个“公共组件库”中，为前端模块提供依赖。</p>
+<p>所以，从代码库（Repository）的角度来看，各个前端模块都有各自独立的代码库，除此之外还会有一个公共组件的代码库。</p>
+<h2>大型全球化电商网站的GUI自动化测试策略设计</h2>
+<p>了解了大型全球化电商网站前端模块的划分后，我们再来看看它的GUI自动化测试策略是如何设计的。</p>
+<p>总体来看，对大型网站来讲，GUI自动化测试往往应该做得比较轻量级，而不应该把大量的功能测试，以及功能的组合测试放在GUI自动化测试中，正如我在第11篇文章<a href="https://time.geekbang.org/column/article/11462">《互联网产品的测试策略应该如何设计？》</a>中谈到的，GUI测试通常只覆盖最核心且直接影响主营业务流程的E2E场景。</p>
+<p>但同时，GUI的验证一定不是在系统全部完成后才真正开展的，也应该是分阶段、分层次来设计制定测试策略的，那么接下来我也将会按照自底向上的顺序分层次介绍GUI自动化的测试策略。</p>
+<p><span class="orange">首先，要从前端组件的级别来保证质量，也就是需要对那些自定义开发的组件进行完整全面的测试。</span></p>
+<p>公共组件库会被很多上层的前端模块依赖，它的质量将直接影响这些上层模块的质量，所以我们往往会对这些公共组件进行严格的单元测试。最常用的方案是：基于Jest开展单元测试，并考量JavaScript的代码覆盖率指标。</p>
+<p>Jest是由Facebook发布的，是一个基于Jasmine的开源JavaScript单元测试框架，是目前主流的JavaScript单元测试方案。</p>
+<p>完成单元测试后，往往还会基于被测控件构建专用的测试页面，在页面层面再次验证控件相关的功能和状态。这部分测试工作也需要采用自动化的形式实现，具体的做法是：</p>
+<ol>
+<li>
+<p>先构建一个空页面，并加入被测控件，由此可以构建出一个包含被测控件的测试页面，这个页面往往被称为Dummy Page；</p>
+</li>
+<li>
+<p>从黑盒的角度出发，在这个测试页面上通过手工和自动化的方式操作被测控件，并验证其功能的正确性。</p>
+</li>
+</ol>
+<p>对于自动化的部分，需要基于GUI自动化测试框架开发对应的测试用例。这些测试用例，往往采用和GUI E2E一样的测试框架，也是从黑盒的角度来对被测控件做功能验证。</p>
+<p><span class="orange">其次，每一个前端模块，都会构建自己的页面对象库，并且在此基础上封装开发自己的业务流程脚本。这些业务流程的脚本，可以组装成每个前端模块的测试用例。</span></p>
+<p>以用户管理模块为例，测试用例的组装过程如下：</p>
+<ul>
+<li>首先，把用户管理模块中涉及到的所有页面，比如登录页面、用户注册页面等，按照页面对象模型的要求写成Page类；</li>
+<li>然后，利用这些Page类封装业务流程脚本，比如用户登录流程，用户注册流程等；</li>
+<li>最后，在GUI测试用例脚本中，调用封装好的业务流程脚本构成该模块的GUI测试用例。</li>
+</ul>
+<p>在这个阶段，测试用例需要完整覆盖该模块的所有业务逻辑以及相关的功能测试点，但是并不会实现所有测试用例的自动化。</p>
+<p><strong>自动化测试用例的原则，通常是：优先选取业务关键路径以及Happy Path作为自动化测试的范围。在资源充裕的情况下，我们希望这个阶段的自动化率可以达到70%-80%。</strong> 所以，前端模块的质量保证主要依赖这部分测试。</p>
+<p>如果你比较细心，一定还记得我在之前的文章中有提到过，“GUI的自动化测试往往只覆盖最核心且直接影响主营业务流程的E2E场景“，并且”GUI测试遵循“手工测试为主，自动化为辅”的策略，而这里又建议说理想的自动化率应该达到70%~80%，是不是有点前后矛盾的感觉。</p>
+<p>其实，这是两个层面的测试，这里70%-80%的GUI自动化覆盖率是针对模块级别的要求；而“自动化测试为辅，手工为主，以及只覆盖核心业务场景”针对的是系统级别的E2E测试。这里容易引起混淆的点是模块测试和系统级别E2E测试都是属于GUI自动化测试的范畴。</p>
+<p><span class="orange">最后，组合各个前端模块，并站在终端用户的视角，以黑盒的方式使用网站的端到端（E2E）测试。</span> 这部分的测试主要分为两大部分：</p>
+<ul>
+<li>一部分是，通过探索式测试的方法手工执行测试，目标是尽可能多地发现新问题；</li>
+<li>另一部分是，通过GUI自动化测试执行基本业务功能的回归测试，保证网站核心业务相关的所有功能的正确性。</li>
+</ul>
+<p>虽然这部分端到端GUI测试用例的绝对数量不多，往往是几百个的规模，但是对于保证最终网站的质量却起着非常关键的作用。</p>
+<p>可以这样说，如果这些端到端的GUI自动化测试用例100%通过，那么上线后基本业务功能的质量就不会有大问题。所以，这部分测试工作的重要性不言而喻。</p>
+<p>那么，<strong>接下来的问题是，应该由谁来开发这部分端到端的GUI自动化测试用例呢？</strong></p>
+<p>每个前端模块都会有对应的Scrum团队，他们会负责开发该模块的页面对象模型、业务流程脚本以及测试用例。而端到端的GUI自动化测试不隶属于任何一个Scrum团队。</p>
+<p>这种情况下，最好的做法就是：成立一个专门的测试团队，负责这种系统级别的GUI测试。这样的团队，往往被称为E2E测试团队。</p>
+<p>很显然，如果由E2E团队从无到有地开发这部分GUI自动化测试的脚本，效率低下。而且，这部分测试会涉及很多前端模块，当各个前端模块的需求、业务流程以及页面实现有任何变动时，E2E团队都很难做到及时更新。</p>
+<p>所以，<strong>解决这个问题的最佳实践就是：E2E团队应该尽可能地利用各个模块已有的页面对象和业务流程脚本，组装端到端的GUI测试。</strong></p>
+<p>这样一方面最大程度地减少了重复工作，另一方面可以把各个模块的变更及时反映到端到端的GUI测试中，因为端到端的GUI测试用例是直接调用各个模块的页面对象和业务流程脚本，而这些页面对象和业务流程脚本都是由每个模块自己的Scrum团队维护的。</p>
+<p>而为了能够在端到端的GUI自动化测试中，复用各个模块的页面对象和业务流程脚本，我们就必须考虑的问题，也就是我今天要和你探讨的第二个话题：GUI自动化测试脚本应该如何组织？</p>
+<h2>大型全球化电商网站的GUI自动化测试脚本管理</h2>
+<p>原有的方案，不能解决端到端的GUI自动化测试复用各个模块的页面对象和业务流程脚本的问题，在不断的实践中，我总结了一个如图1所示的脚本组织结构来解决这个问题。</p>
+<p><img src="https://static001.geekbang.org/resource/image/bf/49/bf72fc0dc07739f21c3ea3de30b01049.png" alt="" /></p>
+<center>图1 大型全球化电商网站的GUI自动化测试脚本管理</center>
+<p>也就是说，将各个模块的页面对象和业务流程脚本放在各自的代码库中，并引入页面对象和业务流程脚本的版本管理机制，通常采用页面对象和业务流程脚本的版本号和开发版本号保持一致的方案。</p>
+<p>比如模块A的版本号是V1.0.0，那么对应的页面对象库和业务流程脚本的版本号也应该是V1.0.0。</p>
+<p>在端到端的GUI自动化测试脚本中，引用各个模块正确的页面对象和业务流程脚本的版本号，测试用例代码就可以直接调用模块的页面对象和业务流程脚本了。</p>
+<p>具体在测试项目中，模块版本的依赖往往是用POM来配置的，如图2展示了一个典型测试项目的POM文件中的版本依赖关系，其中引用了两个模块，appcommon模块对应的就是上文提到的“公共组件库”，而app.buy对应的就是具体依赖的前端模块。</p>
+<p>由于这只是一个示例，所以我只保留了两个依赖模块，实际的端到端GUI测试项目往往会包含大量的模块依赖。</p>
+<p><img src="https://static001.geekbang.org/resource/image/c6/e2/c6caeaafc81a517ddbe976e6d3db6de2.png" alt="" /></p>
+<center>图2  典型测试项目的POM文件中的版本依赖关系</center>
+<p>在这种管理机制下，E2E团队不需要重复开发任何的页面对象和业务流程脚本，而且可以始终保证与各个模块的最新实现同步，同时端到端的GUI测试用例脚本也会比较稳定，不会因为各个模块的改动而频繁地修改。</p>
+<p>这样一来，E2E团队就会有更多的时间和精力去设计并执行探索式测试，发现更多的潜在缺陷，形成良性循环。</p>
+<h2>总结</h2>
+<p>我从实战的角度，介绍了大型全球化电商网站GUI测试的策略设计以及测试脚本管理的问题：</p>
+<p>首先，要从前端组件的级别来保证质量，也就是需要对那些自定义开发的组件进行完整全面的测试。通常前端组件会基于Jest做比较严格的单元测试。</p>
+<p>其次，每一个前端模块，都会构建自己的页面对象库，并且在此基础上封装开发自己的业务流程脚本。这些业务流程的脚本，可以组装成每个前端模块的测试用例。</p>
+<p>最后，把各个前端模块组合在一起之后，站在终端用户的视角以黑盒的方式使用网站的端到端的测试。端到端的测试应该尽可能多地重用各个模块的页面对象库和业务流程脚本来完成。</p>
+<p>而为了能够在端到端的GUI自动化测试中，复用各个模块的页面对象和业务流程脚本，我建议的方案是：对各个前端业务模块的页面对象库和业务流程脚本，实施版本化管理机制。</p>
+<h2>思考题</h2>
+<p>你所在的公司或者项目团队，是否已经或者正计划开展E2E GUI测试？开展过程中，遇到过什么难题，你们又是如何解决的？</p>
+<p>欢迎你给我留言。</p>
+<p><img src="https://static001.geekbang.org/resource/image/0f/c2/0ffe4c8cc7f61280f42c57db2ccc90c2.jpg" alt="" /></p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/18/cc/50fa3518.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">hohofugao</span>
+                            </div>
+                            <div class="bd">用pom维护不同案例的依赖关系，但是怎么保证不同案例数据前后一致？比如登陆用户用A，后面注销用户如果数据是B呢 <br></div>
+                            <span class="time">2018-08-12 08:57</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/8c/95/14d4d0eb.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">sylan215</span>
+                            </div>
+                            <div class="bd">1. 理论上完全符合 Unit &gt; Integration &gt; E2E 的理论模型，而且很好的应用到实践，赞，不知道这套实现的投入产出比如何？目前使用过程中是否出现过什么问题？是否还有可以改进的地方？<br><br>2. 对于持续迭代的大型 web 站，看起来这套实现已经被实践验证，可以推广使用，但是目前我们这，有很多简单 web 站的修改需求，正在考虑如何提取共性关键点来推进自动化，不知茹老师在这方面是否有建议？抑或这种情况就不适合自动化……<br><br>以上，欢迎沟通交流，公众号「sylan215」 <br></div>
+                            <span class="time">2018-08-10 00:36</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">关于第一个问题，我是里面还会有很多问题，比如有些功能会同时修改多个前端模块，如何保证所有模块都升到最新版本，再比如必须要规范化各个模块的log输出，否则e2e的时候出错到底如何高效定位是哪个模块的问题... ROI的话主要看项目规模，当项目比较大的时候，尤其还需要支持全球化gui的时候，这种方式是唯一的出路。对于小项目就看自己的情况了。第二个问题其实还是要看你的项目周期，是长期的还是短期的，如果是那种一次性的项目，压根没必要自动化，如果会长期维护的话，还是建议要去做的</p>
+                                <p class="reply-time">2018-08-10 18:54</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/0b/35/2c56c29c.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">arthur</span>
+                            </div>
+                            <div class="bd">茹老师您好，我想请教几个问题：<br>1. 你们团队会写手工测试用例吗？如果写，是怎么写的呢？如果不写，回归测试完全自动化覆盖吗？还是只能熟悉功能的同学进行探索测试？<br>2. 你们测试团队人员组成是什么样的呢？测试分功能测试组，自动化测试组，E2E组，性能，安全测试组，还是测试组内的人员所有事情都需要做？<br>3. 你们组内UT是开发做还是测试做？测试会对UT评审或者review吗？覆盖率有强制要求吗？<br>期待老师解答 <br></div>
+                            <span class="time">2018-08-19 16:39</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">klxiaoqi</span>
+                            </div>
+                            <div class="bd">老师后面可不可以出python示例 <br></div>
+                            <span class="time">2018-08-15 08:33</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/2f/f4/2dede51a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">小老鼠</span>
+                            </div>
+                            <div class="bd">1、ebay是优化过的selenium 进行GUI测试还是用UTF？<br>2、你经常说大型商务网站一天两个版本。这里又说通过版本号来管理。请问一天两个版本有专门的版本号吗？若有，与自动化测试脚本通过版本号管理有关系吗？ <br></div>
+                            <span class="time">2018-10-25 22:08</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/d9/3b/8c0134be.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">丹丹兒🍥</span>
+                            </div>
+                            <div class="bd">GUI 的 E2E ，应该可以把平时积累的手工冒烟测试用例转化为自动化测试 <br></div>
+                            <span class="time">2018-08-16 13:24</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c2/a7/1c707274.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">涅槃Ls</span>
+                            </div>
+                            <div class="bd">打卡19，加油 <br></div>
+                            <span class="time">2018-08-14 08:10</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eppQqDE6TNibvr3DNdxG323AruicIgWo5DpVr6U7yZVNkbF2rKluyDfhdpgAEcYEOZTAnbrMdTzFkUw/0" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">图·美克尔</span>
+                            </div>
+                            <div class="bd">老师你说不偏向于任何语言…但我就看到基于Java的实现方式…请问版本依赖管理在python中如何实现呢 <br></div>
+                            <span class="time">2018-08-13 20:59</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/d0/05/c3873f46.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">on the way</span>
+                            </div>
+                            <div class="bd">目前公司还没有实行E2E GUI 测试 <br></div>
+                            <span class="time">2018-08-10 08:00</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">e2e是上线前最后一道防线，还是很有必要做的，哪怕不是自动化的方式</p>
+                                <p class="reply-time">2018-08-10 18:57</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

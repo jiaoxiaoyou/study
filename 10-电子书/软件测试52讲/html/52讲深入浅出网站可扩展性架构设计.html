@@ -1,0 +1,187 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.5;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x">所有最新极客时间课程请加QQ群170701297</p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                52讲深入浅出网站可扩展性架构设计
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/18/25/182c38384e392c39e9260be010017e25.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>你好，我是茹炳晟。今天我和你分享的主题是：深入浅出网站可扩展性架构设计。</p><p>在上一篇文章中，我从可伸缩性和可扩展性对应的英文术语的角度，和你分享了这两个概念的差异，并且和你详细介绍了网站的可伸缩性架构设计主要包括的内容，以及从测试人员的视角需要关注哪些点进行针对性的测试。</p><p>所以，在今天这篇文章，也是这个专栏最后一篇正文中，我会再和你详细讨论网站的可扩展性（Extensibility）架构设计。这里，我先带你一起回顾一下可扩展性的定义：</p><blockquote>
+<p>可扩展性，指的是网站的架构设计能够快速适应需求的变化，当需要增加新的功能实现时，对原有架构不需要做修改或者做很少的修改就能够快速实现新的业务需求。</p>
+</blockquote><p>从这个定义中，我们很容易就可以得出衡量网站可扩展性设计优秀与否的主要标准，就是增加新功能的时候对原有系统的影响是否足够小。</p><p>当今的商业环境决定了网站新功能开发与上线的时间周期必须非常短，如果每次添加新功能，都需要对原有系统进行大量修改，从而还会牵连出更多测试工作的话，那么你的竞争力就会被大打折扣，用一个不太恰当的比喻就是直接“输在了起跑线上”。</p><p>其实，你我都清楚添加新功能时必须要对系统进行大幅度修改的原因是，系统架构设计上的耦合性。那么，有什么“好的”架构设计方案可以使得我们添加新功能的时候，只需对原有系统做少量修改，甚至完全不需要修改吗？</p><!-- [[[read_end]]] --><p>咋一听起来，这就像“又要马儿跑，又要马儿不吃草”。但，其实不是的。我们往往可以通过架构上的设计优化来达到事半功倍的效果。</p><p>为了帮助你理解可扩展性，我先和你分享一个案例。</p><h2>网站可扩展性架构设计的案例</h2><p>假设你现在为了实时监控服务器的健康状态，需要为网站添加一个实时收集服务器端监控指标的功能，此时最直接的方案就是用代码去实现对每一个监控指标的收集，然后将所有的这些代码集成在一起形成一个可执行程序运行在服务器端后台。</p><p>这样的设计固然简单直接，而且也能实现所有的功能需求（收集各种监控指标），但是当你需要收集一个新的监控指标时，就不得不更新整个可执行程序了。如果你需要经常添加新的监控指标的话，那么这样的设计就不能满足可扩展性的要求了。</p><p><strong>我们希望的是，当增加新的监控指标的时候，原有的系统不需要做任何修改，甚至可以做到实时添加全新的监控指标</strong>。为了达到这个目的，现有的其他方案都不能满足或者不容易满足这个要求，所以我们就必须要在架构设计上做些文章了。</p><p>我们可以把对每一个监控指标的代码实现，直接打包成一个个的可执行监控子程序，比如收集CPU使用率的程序A、收集内存使用率的程序B等，然后运行在服务器后台的监控主程序通过调用这些子程序，比如程序A和B，来实现所有的监控需求。</p><p>这时，再增加新的监控指标时，原有系统就不需要做任何改动，只需要独立实现新的监控子程序，然后以配置文件的形式“告诉”主程序新添加的监控子程序的路径即可。这也就实现了系统的可扩展性。</p><p>接下来，我们再一起回到网站的可扩展性设计上来。其实，<strong>提升网站可扩展性性的核心，就是降低系统各个模块和组件之间的耦合</strong>。耦合程度越低，各个模块和组件的复用可能性就越大，系统的可扩展性也会越好。</p><p>从现在来看，实现网站可扩展性架构的主要技术手段包括事件驱动架构和微服务架构。</p><p>微服务架构从根本上改变了网站的架构形式，带来可扩展性便利的同时，还带来了很多其他优秀的特性。在微服务架构下，一个大型复杂软件系统不再由一个单体组成，而是由一系列的微服务组成。其中每个微服务可被独立开发和部署，各个微服务之间是松耦合的。每个微服务仅专注于完成一件任务，并要很好地完成该任务。</p><p>在微服务架构下，当网站需要增加新功能时，我们除了可以添加新的业务逻辑外，还可以利用原本已经存在的微服务来构建新的功能。由于服务和服务之间是相互隔离的，并且单个服务还可以被其他多个服务复用，所以系统的可扩展性会比较好。</p><p>而关于微服务架构下，测试人员应该关注的测试点，建议你参考专栏的第24篇文章<a href="https://time.geekbang.org/column/article/13581">《紧跟时代步伐：微服务模式下API测试要怎么做？》</a>中的相关内容。如果还有哪些不清楚的，你可以再自行查找更多的相关资料，或者给我留言一起讨论。</p><p>所以，在今天这篇文章中，我会和你重点分享事件驱动架构是如何提升网站的可扩展性的。</p><p>而事件驱动架构的落地靠的是消息队列，所以我会同时和你分享消息队列的内容。最后，我会再和你分享引入了消息队列后，从测试人员的角度来看会有哪些需要额外关注的点。</p><h2>事件驱动架构与消息队列</h2><p>事件驱动架构设计的出发点源于这样一个事实：如果系统的各个模块之间的协作不是通过直接的调用关系来实现的，那么系统的可扩展性就一定会更好。问题是，系统的各个模块间的协作如何才能不基于调用关系呢？</p><p>答案就是事件消息。系统各个模块之间只是通过消息队列来传输事件消息，而各模块之间并没有直接的调用关系、保持松散的耦合关系。</p><p><strong>事件驱动架构最典型的一个应用就是操作系统中常见的生产者和消费者模式，将其应用到网站设计中就是分布式消息队列。</strong></p><p>分布式消息队列同样采用了生产者和消费者模式：</p><ul>
+<li>消息的发送者负责将消息发布到消息队列中，也就是“生产者”；</li>
+<li>另外，系统中会有一个或者多个消息接收者订阅消息，订阅目的是为了获取消息并进行处理，这里的消息订阅者其实就是“消费者”。消息接收者发现消息队列中有新的消息后，就会立马对其进行处理。</li>
+</ul><p>可以看到，在这种模式下，消息的发送者和接收者之间并没有任何直接的联系，是松耦合的。它们的协作是通过消息队列这个“中间人”进行的。消息的发送者将消息发送至消息队列后，就结束了对消息的处理，而消息的接收者只是从消息队列中获取消息进行后续的处理，并不需要知道这些消息从哪里来，因此可以很方便地实现高可扩展性。</p><p>所以，采用这种模式的话，当网站需要增加新功能的时候，只要增加对应的新模块，再由对此模块感兴趣的“消费者”进行订阅，就可以实现对原有系统功能的扩展了，而对原本的系统模块本身并没有影响。</p><p>此时，消息队列的架构如图1所示。</p><p><img src="https://static001.geekbang.org/resource/image/13/93/13baedfd3f262c91ea8875b4d0080793.png" alt=""></p><center>图1 消息队列的原理图</center><p>引入了消息队列后，我们不仅可以提高系统的可扩展性，还可以再一定程度上改善网站架构的高性能、高可用性和可伸缩性。</p><ul>
+<li>从性能方面来看，消息发送者不需要等接收者实际处理完成后才返回，也就是从原本的同步处理变成了异步处理，所以用户会感知到网站性能的提升。</li>
+<li>从高可用方面来看，假如消息的接收者模块发生了短时间的故障，此时并不会影响消息发送者向消息队列中发送消息，等到消息接收者模块恢复后可以继续后续的处理，只要这段时间内消息队列本身没有被塞满而出现消息丢失的情况。从整体角度看，系统并不会感知到消息接收者模块曾经发生过短暂故障，也就相当于保证了系统的高可用。</li>
+<li>从可伸缩性方面来看，消息队列的核心其实就是一个无状态的存储。所以，当系统需要能够保留更多的消息时，我们通过简单地增加存储空间就可以实现。尤其是，大规模的电商网站来更会将消息队列扩展成为分布式消息队列集群，来实现消息队列的可伸缩性。</li>
+</ul><h2>引入消息队列后，测试人员需要额外关注的点</h2><p>现在，你应该已经掌握了消息队列的基本原理，以及在网站架构中的用法。接下来，我们再一起看看消息队列对测试的影响，以及我们在测试时需要特别关注哪些点。</p><p>这里，我把测试人员需要额外关注的点，归纳为了以下几点：</p><ul>
+<li>
+<p>从构建测试数据的角度来看，为了以解耦的方式测试系统的各个模块，我们就需要在消息队列中构造测试数据。这也是为什么很多互联网的自动化测试框架中都会集成有消息队列写入工具的主要原因。</p>
+</li>
+<li>
+<p>从测试验证的角度来看，我们不仅需要验证模块的行为，还要验证模块在消息队列中的输出是否符合预期。为此，互联网的自动化测试框架中也都会集成消息队列的读取工具。</p>
+</li>
+<li>
+<p>从测试设计的角度来看，我们需要考虑消息队列满、消息队列扩容等情况下系统功能是否符合设计预期。</p>
+</li>
+<li>
+<p>除此之外，我们还需要考虑，某台消息队列服务器宕机的情况下，丢失消息的可恢复性以及新的消息不会继续发往宕机的服务器等等。</p>
+</li>
+</ul><h2>总结</h2><p>在今天这篇文章中，我和你分享了网站架构知识中的最后一个内容：可扩展性。</p><p>可扩展性指的是网站的架构设计能够快速适应需求的变化，当需要增加新功能时，我们只要对原有架构进行少量修改，甚至不用修改就能快速实现新的业务需求。</p><p>从技术实现上来看，消息队列是实现可扩展性的重要技术手段之一。其基本核心原理是各模块之间不存在直接的调用关系，而是使用消息队列，通过生产者和消费者模式来实现模块间的协作，从而保持模块与模块间的松耦合关系。</p><p>引入消息队列后，测试数据的创建和测试结果的验证工作，都需要通过读写消息队列来完成。同时，我们还要考虑到消息队列满、消息队列扩容，以及消息队列服务器宕机情况下的系统功能验证。这几个点，就是测试人员需要额外关注的点了。</p><h2>思考题</h2><p>你在实际工作中接触过哪些种类的消息队列？在测试过程中，是否遇到过和消息队列有关的缺陷呢？</p><p>感谢你的收听，欢迎你给我留言一起讨论。</p><p><img src="https://static001.geekbang.org/resource/image/0f/c2/0ffe4c8cc7f61280f42c57db2ccc90c2.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/2f/f4/2dede51a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">小老鼠</span>
+                            </div>
+                            <div class="bd">在微服务架构中公共全局变量、常量，公共方法还存在吗？（各个模块都可能用到的)，若存在，存在于哪里？ <br></div>
+                            <span class="time">2018-12-01 15:06</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/df/20/49adfb88.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">lidb@_@</span>
+                            </div>
+                            <div class="bd">jmeter数据回收后，如何汇总成综合数据这能介绍一下吗？谢谢 <br></div>
+                            <span class="time">2018-11-15 08:45</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/d1/b1/453434dd.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Lynn</span>
+                            </div>
+                            <div class="bd">发送消息不用管返回，如何确定消息是否真正被发送，以及消息的丢失要怎么办 <br></div>
+                            <span class="time">2018-11-01 15:06</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c1/0e/a5ffc8df.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">clover</span>
+                            </div>
+                            <div class="bd">打卡52，坚持到了最后 <br></div>
+                            <span class="time">2018-11-01 13:44</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c1/0e/a5ffc8df.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">clover</span>
+                            </div>
+                            <div class="bd">打卡52，坚持到了&#39;最后 <br></div>
+                            <span class="time">2018-11-01 13:43</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c7/c6/35cc7c7c.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Robert小七</span>
+                            </div>
+                            <div class="bd">消息生产者发布消息后，返回客户端的全部是成功吗？ <br></div>
+                            <span class="time">2018-10-31 11:02</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c2/a7/1c707274.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">涅槃Ls</span>
+                            </div>
+                            <div class="bd">打卡52 <br></div>
+                            <span class="time">2018-10-31 08:01</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

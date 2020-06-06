@@ -1,0 +1,487 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.5;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x">所有最新极客时间课程请加QQ群170701297</p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                31讲工欲善其事必先利其器：前端性能测试工具原理与行业常用工具简介
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/40/a5/40a4e558700eb508a7cb1dd1b5c962a5.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>你好，我是茹炳晟。今天我和你分享的主题是：工欲善其事必先利其器之前端性能测试工具原理与行业常用工具简介”。</p>
+<p>不同于后端性能测试知识的琐碎、独立，今天我将从问答形式回到正常的分享思路上，为你介绍前端性能测试工具为。我会以一个具体网站为例，和你分析WebPagetest的用法，以及前端性能相关的主要概念与指标。</p>
+<h2>WebPagetest功能简介</h2>
+<p>WebPagetest，是前端性能测试的利器：</p>
+<ul>
+<li>可以为我们提供全方位的量化指标，包括页面的加载时间、首字节时间、渲染开始时间、最早页面可交互时间、页面中各种资源的字节数、后端请求数量等一系列数据；</li>
+<li>还可以自动给出被测页面性能优化水平的评价指标，告诉我们哪些部分的性能已经做过优化处理了，哪些部分还需要改进；</li>
+<li>同时，还能提供Filmstrip视图、Waterfall视图、Connection视图、Request详情视图和页面加载视频慢动作。</li>
+</ul>
+<p>可以说，WebPagetest为我们提供了前端页面性能测试所需要的一切，而且还是免费的。接下来，我们就通过测试一个具体的网站，实践一下它的强大功能，以及具体使用方法吧。</p>
+<h2>使用WebPagetest测试某网站的首页</h2>
+<p>那么，接下来我就以某网站首页的前端性能测试和评估为例，和你一起看看如何使用这个强大的前端性能工具。</p><!-- [[[read_end]]] -->
+<p><strong>首先，访问WebPagetest的主页“<a href="http://www.webpagetest.org/%E2%80%9D">http://www.webpagetest.org/”</a> ，也就是工具的使用界面。</strong></p>
+<ol>
+<li>
+<p>将被测页面的地址填写到被测Website URL栏中；</p>
+</li>
+<li>
+<p>选择测试发起的地域（Test Location）以及你希望使用的浏览器，这里我选择了美国旧金山、Chrome浏览器。</p>
+</li>
+</ol>
+<p>WebPagetest在全球各大洲的很多国家和地区都有自己的测试代理机，这些测试代理机可能是虚拟机，也可能是真机，还有很多是建立在Amazon EC2上的云端机器。另外，WebPagetest除了支持各种浏览器以外，还支持主流的Android设备和Apple设备。</p>
+<p><strong>然后，选择需要模拟的网络情况</strong>。这里我选择了有线网络Cable，当然你也可以根据你的测试要求选择各种3G或者4G移动网络。</p>
+<p><strong>接着，在Repeat View中选择“First View and Repeat View”</strong>。这是一个很关键的选项。我们知道当使用浏览器访问网站时，第一次打开一个新的网页往往会很慢，而第二次打开通常就会快很多，这是因为浏览器端会缓存很多资源。这个选项的意思就是既要测试第一次打开页面的前端性能（First View），也要测试在有缓存情况下重复打开的前端性能（Repeat View）。</p>
+<p><strong>最后，点击“Start Test”发起测试</strong>。最终的测试设置界面，如图1所示。由于全球所有的用户会共享这些散布在各地的测试代理机，所以发起测试后，一般情况下我们的测试并不会被立即执行，而是会进入排队系统。当然，WebPagetest界面会清楚地告诉你排在第几位。</p>
+<p><img src="https://static001.geekbang.org/resource/image/34/76/34dd44a44b1344dfa66ab9f4b6bb6276.png" alt="" /></p>
+<center>图1 WebPagetest的测试执行界面</center>
+<p>测试执行完成后，我们会看到如图2所示的测试结果页面。这个页面包含非常多的信息，接下来我会一一解读这些信息，同时跟你分享前端性能指标相关的概念。</p>
+<p><img src="https://static001.geekbang.org/resource/image/6d/bd/6d886a2474f9dee528ee825574e601bd.png" alt="" /></p>
+<center>图2 WebPagetest的测试结果页面</center>
+<h2>前端性能评估结果评分</h2>
+<p>图2右上角的性能评估结果栏，列出了主要性能评估项目的评分。可以看到“First Byte Time”“Keep-alive Enabled”和“Compress Transfer”三项的评分都是A级，说明这三项做得比较好。但是，“Compress Images”“Cache static content”和“Effective use of CDN”的评分比较差，是需要优化的部分。</p>
+<p>那么，接下来我们就看看这六项前端性能指标分别代表什么涵义。</p>
+<p><strong>第一，First Byte Time</strong></p>
+<p>First Byte Time，指的是用户发起页面请求到接收到服务器返回的第一个字节所花费的时间。这个指标反映了后端服务器处理请求、构建页面，并且通过网络返回所花费的时间。</p>
+<p>本次测试的结果，首次打开页面（First View）花费的时间是999 ms，重复打开页面（Repeat View）花费的时间是860 ms。这两个指标都在1 s以下，所以WebPagetest给出了A级的评分。</p>
+<p><strong>第二，Keep-alive Enabled</strong></p>
+<p>页面上的各种资源（比如，图片、JavaScript、CSS等）都需要通过链接Web服务器来一一获取，与服务器建立新链接的过程往往比较耗费时间，所以理想的做法是尽可能重用已经建立好的链接，而避免每次使用都去创建新的链接。</p>
+<p>Keep-alive Enabled就是，要求每次请求使用已经建立好的链接。它属于服务器上的配置，不需要对页面本身进行任何更改，启用了Keep-alive通常可以将加载页面的时间减少40%~50％，页面的请求数越多，能够节省的时间就越多。</p>
+<p>如图3所示，本次测试的结果显示，所有的请求都复用了同一个链接，所以WebPagetest也给出了A级的评分。</p>
+<p><img src="https://static001.geekbang.org/resource/image/26/f5/267f522f142b768accbb0d7c5deacaf5.png" alt="" /></p>
+<center>图3 Keep-alive Enabled的统计结果</center>
+<p><strong>第三，Compress Transfer</strong></p>
+<p>如果将页面上的各种文本类的资源，比如Html、JavaScript、CSS等，进行压缩传输，将会减少网络传输的数据量，同时由于JavaScript和CSS都是页面上最先被加载的部分，所以减小这部分的数据量会加快页面的加载速度，同时也能缩短First Byte Time。</p>
+<p>为文本资源启用压缩通常也是服务器配置更改，无需对页面本身进行任何更改。</p>
+<p>如图4所示，本次测试结果显示，这个网站绝大多数的文本类资源都通过GZip进行了压缩，所以WebPagetest也给出了A级的评分。但是第13和第20项的两个资源并没有被压缩，报告中显示如果这两个资源也经过压缩，将可以减少额外的24.3KB的数据传输量。</p>
+<p><img src="https://static001.geekbang.org/resource/image/be/d5/be73f00359e0907b4a19c01bb11d9ed5.png" alt="" /></p>
+<center>图4 Compress Transfer的统计结果</center>
+<p><strong>第四，Compress Images</strong></p>
+<p>为了减少需要网络传输的数据量，图像文件也需要进行压缩处理。显然本次测试结果显示（图5），所有的JPEG格式图片都没有经过必要的压缩处理，并且所有的JPEG格式图片都没有使用渐进式JPEG（Progressive JPEG）技术，所以WebPagetest给出了D级的评分。</p>
+<p>如果你不是专门做前端的工程师，可能并不知道什么是渐进式JPEG，没关系，我来简单解释一下吧。</p>
+<p>普通JPEG文件存储方式是按从上到下的扫描方式，把每一行顺序地保存在JPEG文件中。打开这个文件显示它的内容时，数据将按照存储时的顺序从上到下一行一行地被显示，直到所有的数据都被读完，就完成了整张图片的显示。</p>
+<p>如果文件较大或者网络下载速度较慢，就会看到图片是被一行一行加载的。为了更好的用户体验，渐进式JPEG技术就出现了。</p>
+<p>渐进式JPEG包含多次扫描，然后将扫描顺序存储在JPEG文件中。打开文件的过程，会先显示整个图片的模糊轮廓，随着扫描次数的增加，图片会变得越来越清晰。这种格式的主要优点是在网络较慢时，通过图片轮廓就可以知道正在加载的图片大概是什么。</p>
+<p>所以，这种技术往往被一些网站用于打开较大图片。</p>
+<p><img src="https://static001.geekbang.org/resource/image/cb/4e/cbc6fe30d01bfe4051f2061f9bf12b4e.png" alt="" /><br />
+<img src="https://static001.geekbang.org/resource/image/ed/05/ed9f9ae7384b0839b44c1d31a4e11705.png" alt="" /></p>
+<center>图5 Compress Images的统计结果</center>
+<p><strong>第五，Cache Static Content</strong></p>
+<p>一般情况下，页面上的静态资源不会经常变化，所以如果你的浏览器可以缓存这些资源，那么当重复访问这些页面时，就可以从缓存中直接使用已有的副本，而不需要每次向Web服务器请求资源。这种做法，可以显著提高重复访问页面的性能，并减少Web服务器的负载。</p>
+<p>如图6所示，本次测试结果显示，被测网站有超过一半的静态资源没有被浏览器缓存，每次都需要从Web服务器端获取，所以WebPagetest给出了F级的评分。</p>
+<p><img src="https://static001.geekbang.org/resource/image/9d/e1/9d24087763ae50ea4ff90a1cd04b7be1.png" alt="" /><br />
+<img src="https://static001.geekbang.org/resource/image/bf/e8/bfcc9f3aaebd5ec59d711736823124e8.png" alt="" /></p>
+<center>图6 Cache Static Content的统计结果</center>
+<p><strong>第六，Effective use of CDN</strong></p>
+<p>首先，我来解释一下什么是CDN。</p>
+<p>CDN是内容分发网络的缩写，其基本原理是采用各种缓存服务器，将这些缓存服务器分布到用户访问相对集中的地区的网络供应商机房内，当用户访问网站时，利用全局负载技术将用户的访问指向距离最近的、工作正常的缓存服务器上，由缓存服务器直接响应用户请求。</p>
+<p>理解了什么是CDN后，我们再一起来看一下本次测试中CDN的使用情况。如图7所示，显然本次被测网站绝大多数的资源并没使用CDN。也许是由于本次发起测试的机器是在美国旧金山，而旧金山可能并不是该网站的目标市场，所以它并没有在这里的CDN上部署资源。</p>
+<p><img src="https://static001.geekbang.org/resource/image/7b/15/7b7522032fa4996f7c2f76f63c4c1815.png" alt="" /></p>
+<center>图7 CDN使用的统计结果</center>
+<h2>其他前端性能指标解读</h2>
+<p><img src="https://static001.geekbang.org/resource/image/22/c9/228e66ac2fa08026bfaeb3defff139c9.png" alt="" /></p>
+<center>图8 WebPagetest测试显示的前端性能指标</center>
+<p>现在，我们再回过头来看看如图8所示的表格，这个表格包含了很多的前端性能指标，大多数指标，我们可以从字面上很容易理解其含义，比如Load Time、First Byte、Requests等，我就不再赘述了。</p>
+<p>但是，Start Render、First Interactive和Speed Index这三个指标，相对较难理解，所以我会简单为你解释一下。</p>
+<p><strong>第一，Start Render</strong></p>
+<p>Start Render，指的是浏览器开始渲染的时间，从用户角度看就是在页面上看到第一个内容的时间。该时间决定了用户对页面加载快慢的的第一直观印象，这个时间越短用户会感觉页面速度越快，这样用户也会有耐心去等待其他内容的展现。如果这个时间过长，则用户会在长时间内面对一个空白页面后，失去耐心。</p>
+<p>理论上讲，Start Render时间主要由三部分组成，分别是“发起请求到服务器返回第一个字节的时间（也就是First Byte时间）”“从服务器加载HTML文档的时间”，以及“HTML文档头部解析完成所需要的时间”，因此<strong>影响Start Render时间的因素就包括服务器响应时间、网络传输时间、HTML文档的大小以及HTML头中的资源使用情况。</strong></p>
+<p>本次测试中，第一次打开网页的Start Render时间是5 s，而第二次打开网页的Start  Render时间是1.83 s。理想的Start Render时间并没有严格的标准，一般来情况下，这个值最好不要大于3 s，所以这个网站还可以再优化一下这个指标。</p>
+<p>优化的基本思路是先找出时间到底花在了哪里，由于第二次的结果还是比较理想，所以可以从首次资源加载的角度找出突破口。</p>
+<p><strong>第二，First Interactive</strong></p>
+<p>First Interactive，可以简单地理解为最早的页面可交互时间。页面中可交互的内容，包括很多种类，比如点击一个链接、点击一个按钮都属于页面可交互的范畴。First Interactive时间的长短对用户体验的影响十分重要，决定着用户对页面功能的使用，这个值越短越好。</p>
+<p>为了使这个值尽可能得小，我们通常会采取以下措施：</p>
+<ul>
+<li>只有页面控件内容渲染出来了，才有可能进行交互，所以First Interactive依赖于Start Render时间。</li>
+<li>尽量将交互控件的代码放置在HTML BODY的前部，让其尽早加载。</li>
+<li>尽早做JavaScript的初始化和绑定，目前大多数做法有两种，一是在DOM Ready中做所有JavaScript的初始化和功能绑定，二是在页面底部做JavaScript的初始化和功能绑定。</li>
+</ul>
+<p>这两种方式的优点在于简单，不需要关注具体DOM结点的位置；缺点则在于初始化的时间太晚。因此，<strong>应该将JavaScript的初始化提前到相关DOM元素建立起来后进行，例如将初始化的操作直接放在元素之后进行，这样就可以使控件尽可能早地变成可交互状态。</strong></p>
+<p>本次测试中，第一次打开网页的First Interactive时间是7.788 s，而第二次打开网页的First Interactive时间是略大于1.686 s的某个值。理想的First Interactive时间也没有严格的标准，一般情况下，这个值最好不要大于5 s，所以这个网站还可以根据上面的三条措施再优化一下这个指标。</p>
+<p><strong>第三，Speed Index</strong></p>
+<p>严格来说，Speed Index是通过微积分定义的。我们理解起来会比较困难，所以在这里我们和你只做定性的讨论。</p>
+<p>通常，影响网页性能体验的一个重要指标是页面打开时间。打开时间越短，其体验越好。但是，当存在两个打开时间完全相同的网站A和B时，其中网站A的打开过程是逐渐渲染页面完成的，而网站B的打开过程则是空白了一段时间后在短时间内完成页面渲染完成的。</p>
+<p>毫无疑问，网站A的用户体验一定好于B。Speed Index就是用来衡量这种体验的，通常来讲，它的值越小越好。</p>
+<p>本次测试中，第一次打开网页的Speed Index是8036，而第二次打开网页的Speed Index是2373。</p>
+<h2>WebPagetest实际使用中需要解决的问题</h2>
+<p>讨论到这里，你是不是觉得WebPagetest是一个很强大的免费工具，但是如果想要在实际工程项目中全面推行该工具的话，还需要解决两个问题。</p>
+<p><strong>第一个问题是，如果被测网站部署在公司内部的网络中，那么处于外网的WebPagetest就无法访问这个网站，也就无法完成测试</strong>。要解决这个问题，你需要在公司内网中搭建自己的私有WebPagetest以及相关的测试发起机。具体如何搭建，你可以参考<a href="https://github.com/WPO-Foundation/webpagetest-docs/blob/master/user/Private%20Instances/README.md">WebPagetest官网的建议</a>，这里我就不再继续展开了。</p>
+<p><strong>第二个问题是，用WebPagetest执行前端测试时，所有的操作都是基于界面操作的，不利于与CI/CD的流水线集成</strong>。要解决这个问题，就必须引入WebPagetest API  Wrapper。</p>
+<p>WebPagetest API Wrapper是一款基于Node.js，调用了WebPagetest提供的API的命令行工具。也就是说，你可以利用这个命令行工具发起基于WebPagetest的前端性能测试，这样就可以很方便地与CI/CD流水线集成了。具体的使用步骤如下：</p>
+<ol>
+<li>
+<p>通过“npm install webpagetest -g”安装该命令行工具；</p>
+</li>
+<li>
+<p>访问https://www.webpagetest.org/getkey.php获取你的WebPagetest API Key；</p>
+</li>
+<li>
+<p>使用“webpagetest test -k API-KEY 被测页面URL”发起测试，该调用是异步操作，会立即返回，并为你提供一个testId；</p>
+</li>
+<li>
+<p>使用“webpagetest status testId”查询测试是否完成；</p>
+</li>
+<li>
+<p>测试完成后，就可以通过“webpagetest results testId”查看测试报告，但是你会发现测试报告是个很大的JSON文件，可读性较差；</p>
+</li>
+<li>
+<p>通过“npm install webpagetest-mapper -g”安装webpagetest-mapper工具，这是为了解决测试报告可读性差的问题，将WebPagetest生成的JSON文件格式的测试报告转换成为HTML文件格式；</p>
+</li>
+<li>
+<p>使用“Wptmap -key API-KEY --resultIds testId --output ./test.html”将JSON文件格式的测试结果转换成HTML格式。</p>
+</li>
+</ol>
+<h2>总结</h2>
+<p>今天，我使用WebPagetest测试了一个具体网站的前端性能。在解读这个测试报告的同时，我和你分享了几个重要的前端性能指标，以及如何提升这些指标，最终达到优化网站用户体验的目的。</p>
+<p>虽然，WebPagetest是一款免费的、功能强大的前端性能测试工具，但是用于实际测试项目时，往往还存在两个方面的问题，我给你分析了这两个问题出现的原因，以及如何解决这两个问题，以达到更高效地完成前端性能测试的目的。</p>
+<h2>思考题</h2>
+<p>除了我今天介绍的WebPagetest外，前端测试工具还有YSlow等。你还在工作中接触过哪些前端性能测试工具，它们各自有什么特点呢？</p>
+<p>感谢收听，欢迎你给我留言。</p>
+<p><img src="https://static001.geekbang.org/resource/image/0f/c2/0ffe4c8cc7f61280f42c57db2ccc90c2.jpg" alt="" /></p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">llyl</span>
+                            </div>
+                            <div class="bd">对于局域网的网页webpage就不支持了，怎么测试局域网网页的性能呢？ <br></div>
+                            <span class="time">2018-09-07 09:52</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">可以在公司内网搭建webpagetest，文章最后已经提到了这块</p>
+                                <p class="reply-time">2018-09-11 10:05</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/13/fd/8550713b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">心情不错</span>
+                            </div>
+                            <div class="bd">老师您好，我想请问如果某些页面需要登录才能访问到，用您介绍的工具怎么测试呢？ <br></div>
+                            <span class="time">2018-09-21 18:28</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/3a/b1/b5c7bdfc.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">木易</span>
+                            </div>
+                            <div class="bd">webpagetest该网站是需要特殊的操作吗？我的页面能打开，但是输入url及配置完相应的设置后，点击&lt;start test&gt;,会显示如下的提示:Failed recaptcha validation. Please go back and try submitting your test again 。也不会有老师文章里的相应结果 <br></div>
+                            <span class="time">2018-09-07 15:27</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">url中是否有非法字符？</p>
+                                <p class="reply-time">2018-09-11 10:01</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/19/00/a7f4cde8.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">dean不闷</span>
+                            </div>
+                            <div class="bd">请问一下h5的性能，有什么好的方案吗 <br></div>
+                            <span class="time">2018-09-07 21:16</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">你指的测试方案还是优化方案？</p>
+                                <p class="reply-time">2018-09-11 09:46</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/a0/f0/3fda6b8a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">陈子文</span>
+                            </div>
+                            <div class="bd">网站一直提示：Failed recaptcha validation. Please go back and try submitting your test again，是不能用了吗 <br></div>
+                            <span class="time">2018-12-12 18:07</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">木然</span>
+                            </div>
+                            <div class="bd">老师您好，我想请问如果某些页面需要登录才能访问到，用您介绍的工具怎么测试呢？目前登陆后的url拷进去后测试的都是登录页面 <br></div>
+                            <span class="time">2018-10-15 14:16</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">天天向⬆️</span>
+                            </div>
+                            <div class="bd">移动端native性能测试有好的工具推荐吗？ <br></div>
+                            <span class="time">2018-09-20 15:07</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/90/51/2b9c5302.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">汪龙龙</span>
+                            </div>
+                            <div class="bd">老师讲解的太棒了，请问集成webpagetest的时候，怎么判断statusCode的状态去进行下一步操作？ <br></div>
+                            <span class="time">2018-09-19 18:32</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c5/10/c0e61c5a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">一池浮萍</span>
+                            </div>
+                            <div class="bd">老师，请教下您，native app是不是麻烦一些，比如，ios用instrument统计性能，但是这个不好持续集成，另外页面渲染时间，可能需要代码插桩 <br></div>
+                            <span class="time">2018-09-16 07:42</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/26/e4/fe8e5163.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Laura张远园</span>
+                            </div>
+                            <div class="bd">本文是说明前端性能测试，所针对的对象是我们的网页代码、配置在前端的显示性能，并依据这些性能对网页代码、配置进行优化。<br>但是不是有些指标主要优化部分并不在于网页代码?如静态内容，网页缓存，这些主要在于浏览器功能;cdn是更多在于配置、后台部分。 <br></div>
+                            <span class="time">2018-09-14 07:23</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c2/a7/1c707274.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">涅槃Ls</span>
+                            </div>
+                            <div class="bd">打卡31，前端性能测试 <br></div>
+                            <span class="time">2018-09-13 08:07</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c2/b8/ec758482.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Cynthia🌸</span>
+                            </div>
+                            <div class="bd">WebPagetest！之前真的没有接触过这个工具。打算找一块时间来跟着操作实践一下，才能理解的更深入。 <br></div>
+                            <span class="time">2018-09-12 09:49</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">是的，可以找一个世纪网站练练手，入门使用还是很快的，而且可以帮助理解前端性能的很多概念</p>
+                                <p class="reply-time">2018-09-13 07:16</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/19/00/a7f4cde8.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">dean不闷</span>
+                            </div>
+                            <div class="bd">h5的测试方案：） <br></div>
+                            <span class="time">2018-09-11 16:30</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/bc/79/02223776.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">@VV@</span>
+                            </div>
+                            <div class="bd">测试结果展示跟你的不一样，有什么设置吗？右上角就没有综合评分 <br></div>
+                            <span class="time">2018-09-11 14:55</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">换一个测试发起的location，有些地域的确没有综合评分</p>
+                                <p class="reply-time">2018-09-13 07:24</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/d6/54/3127cab2.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">赵明月</span>
+                            </div>
+                            <div class="bd">有用，哪天接触前端测试了，可以用用 <br></div>
+                            <span class="time">2018-09-10 17:52</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">我介绍的这款工具使用来讲还是很方便的，值得一试</p>
+                                <p class="reply-time">2018-09-11 09:41</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/7c/16/38c07a04.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">_CountingStars</span>
+                            </div>
+                            <div class="bd">puppteer之类的开源软件应该也可以获取这些数据  <br></div>
+                            <span class="time">2018-09-08 09:15</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">是的，可以的</p>
+                                <p class="reply-time">2018-09-11 09:45</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/f7/2a/0b1152cf.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">张扬</span>
+                            </div>
+                            <div class="bd">求老师介绍web APP 性能测试方法 <br></div>
+                            <span class="time">2018-09-07 21:52</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">后面会有两篇专门来讲这个，基于loadrunner</p>
+                                <p class="reply-time">2018-09-11 09:45</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/d0/05/c3873f46.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">on the way</span>
+                            </div>
+                            <div class="bd">很实用<br>最近公司正在做前端性能优化。下午试了一把，觉得拿公司的实践。<br>最好可以推行CI&#47;CD <br></div>
+                            <span class="time">2018-09-07 17:45</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">可以集成cicd，文章的最后也提供了相应的工具，值得一试</p>
+                                <p class="reply-time">2018-09-11 09:47</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/c3/c8/2b0a5dc2.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Bellaandtang</span>
+                            </div>
+                            <div class="bd">官网输入测试网址一直提示重试，是需要翻墙吗？ <br></div>
+                            <span class="time">2018-09-07 15:43</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">应该不需要的，换个时间试试，本地不要加代理</p>
+                                <p class="reply-time">2018-09-11 09:51</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

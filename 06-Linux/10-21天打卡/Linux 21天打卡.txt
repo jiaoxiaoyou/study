@@ -1,0 +1,320 @@
+Linux 21天打卡
+
+
+1227作业 答案
+
+命令 cd
+
+1. 如何进入上级目录
+cd ..
+2. 如何进入当前用户主目录
+cd ~
+3. 如何进入上两级目录
+cd ../..
+4. 进入当前目录命令
+cd .
+5. 如何进入目录 /usr/isTester
+cd /usr/isTester
+
+
+1228作业答案参考 ，
+
+命令 mv
+
+
+1. 移动一个文件夹（isTester文件夹，移动到/APP/www目录）
+mv ~/isTester/ /APP/www
+
+2. 移动一个文件（isTester.ini  移动到/APP/www目录）
+mv isTester.ini  /APP/www
+
+3. 当前目录istester.tar.gz 移动到 /usr/ido 目录，并重命名为istester1228.tar.gz
+mv isTester.tar.gz /usr/ido/
+
+4. 移动文件到上级目录
+mv isTester.tar.gz ../
+
+5. 一条命令，移动两个文件 isTester.tar idoxu.tar 到目录 /APP/www
+mv isTester.tar idoxu.tar  -t /APP/www
+
+
+1229作业 答案 ，
+
+命令  cp
+复制当前目录部署包isTester.tar.gz 到备份目录/APP/www/bak 目录
+cp isTester.tar.gz /APP/www/bak
+
+复制文件夹 isTester 到部署目录 /APP/www
+cp -r isTester/ /APP/www
+
+
+1230作业 答案 ，
+
+
+mkdir
+在目录/APP/www 下，
+cd /APP/www 
+1）新建一个文件夹 isTester
+mkdir isTester
+2）新建三个文件夹 isTester1 isTester2 isTester3
+mkdir isTester1 isTester2 isTester3
+3）新建一个多层级文件夹 idoxu/20181230/01
+mkdir -p idoxu/20181230/01
+
+
+1231作业 答案 ，
+命令 history 
+1）查看历史命令执行记录 
+history 
+2）查看命令mkdir 的历史执行记录 
+history | grep mkdir 
+3）执行历史记录中，序号为178的命令 
+!178
+
+
+20190101作业 答案 ，
+
+命令 tail
+1）实时刷新log
+tail -f isTester.log
+2）实时刷新最新500条log
+tail -500f isTester.log
+
+
+
+20190102作业 答案 ，
+
+命令 tar
+
+压缩一个文件 isTester.ini 
+tar -cvf isTester.tar isTester.ini 
+
+压缩多个文件 isTester.ini  readme.ini
+tar -cvf all.tar isTester.ini readme.ini
+
+压缩文件夹  isTester/
+tar -cvf isTester.tar isTester/
+
+将当前目录，所有jpg文件打包成isTesterjpg.tar
+tar -cvf isTesterjpg.tar *.jpg
+
+将当前目录，所有jpg文件打包成isTesterjpg.tar.gz
+tar -zcvf isTesterjpg.tar.gz *.jpg
+
+解压 isTesterjpg.tar
+tar -xvf isTesterjpg.tar
+
+解压 isTesterjpg.tar.gz
+tar -zxvf isTesterjpg.tar.gz
+
+
+20190103作业 答案 ，
+
+命令 ls
+列出当前目录中所有的子目录和文件。
+ls
+列出目录下的所有文件（包含隐**件）
+ls -a
+列出文件的详细信息（包括权限、所有者、文件大小等）
+ls -l
+列出当前目录中所有以“isTester”开头的详细内容
+ls -l isTester*
+
+
+20190104作业 答案 ，
+
+命令 ps
+查看所有进程
+ps -A
+查看java进程
+ps -ef|grep java
+显示所有进程信息，连同命令行
+ps -ef
+
+
+20190105作业 答案 ，
+
+命令 top
+显示进程信息
+top
+监控每个逻辑CPU的状况
+top  ，按 1
+高亮显示当前运行进程
+top ，按 b
+显示 完整命令
+top ，按 c
+退出top程序
+按 q
+
+
+20190107作业 答案 ，
+
+命令 wget
+Linux系统中的wget是一个下载文件的工具，对于Linux用户是必不可少的工具
+
+包地址 http://www.python.org/ftp/python/3.3.0/Python-3.3.0.tgz
+
+下载Python安装包
+wget http://www.python.org/ftp/python/3.3.0/Python-3.3.0.tgz
+
+下载Python安装包，存储名为python.tgz
+wget -O python.tgz http://www.python.org/ftp/python/3.3.0/Python-3.3.0.tgz
+
+下载Python安装包，后台形式下载
+wget -b http://www.python.org/ftp/python/3.3.0/Python-3.3.0.tgz
+
+
+20190108作业 答案 ，
+
+命令 find
+
+注：
+find命令，非常强大，也非常实用，分两次完成，今日第一次 。
+给大家布置的作业，是比较实用的几个场景 。
+
+
+在/root/isTester 目录及其子目录下面查找名字为isTester.ini的文件 
+find /root/isTester/ -name isTester.ini
+
+在当前目录及其子目录中查找任何扩展名为“ini”的文件
+find . -name "*.ini"
+
+在/root/isTester目录下查找更改时间在5日以内的文件 
+find /root/isTester/ -mtime +5
+
+在/root/isTester目录下查找更改时间在3日以前的文件
+find /root/isTester/ -mtime -3
+
+在/root/isTester目录下查找所有的目录
+find /root/isTester -type d
+
+在/root/isTester目录下查找所有的文件
+find /root/isTester/ -type f
+
+
+20190109作业 答案 ，
+
+继续find 
+find命令，非常强大，也非常实用，分两次完成，今日第一次 。
+给大家布置的作业，是比较实用的几个场景 。
+
+
+
+在当前目录，所有的普通文件中搜索istester这个词
+find ./ -type f |xargs grep "istester"
+
+在当前目录，删除1天以内的所有东西 
+find ./ -mtime -1 -print | xargs rm -rf
+
+在当前目录，删除10天以前的所有东西（实操的时候，需谨慎，确保在自己建的目录内，别把系统目录删了…）
+find ./ -mtime +10 -print | xargs rm -rf
+
+删除文件大小为零的文件
+find ./ -size 0 | xargs rm -rf
+
+
+20190110作业 答案 ，
+
+命令 rm
+rm是常用的命令，该命令的功能为删除目录/文件（可同时删除，多个文件 / 多个目录）
+当然，这也是一个非常危险的命令，建议少用（比如经常出现的误操作 rm * -rf 此命令慎用）
+
+所以，把这个命令，放在第15天，降低风险
+
+删除/root/isTester/目录下的文件isTester.ini （系统会询问是否删除）
+rm /root/isTester/isTester.ini
+
+强行删除/root/isTester/目录下的文件isTester.ini（直接删除，系统不会提示）
+rm -f /root/isTester/isTester.ini
+
+删除/root/isTester/目录下的所有.log文件
+rm -f /root/isTester/*.log
+
+
+20190111作业 答案 ，
+
+文件操作命令
+创建文件，你知道有哪几个命令 ？（写出至少两种方式）  
+1)touch isTester.ini  
+2)vi isTester.md
+3)echo ‘only test’  > isTester.cc
+4)cp isTester.ini isTester666.ini
+5)ls > isTester_fileList.txt
+
+同时创建文件 isTester6.ini idoxu.ini
+touch isTester6.ini idoxu.ini
+
+同时创建30个文件  isTester001.ini  - isTester030.ini
+touch istester{001..030}.ini
+
+更改文件 isTester.ini时间为当前时间
+touch isTester.ini
+
+
+20190112 作业 ，
+
+查看文件
+
+命令参考：
+#cat  由第一行开始显示档案内容 
+#tac  从最后一行开始显示，可以看出 tac 是 cat 的倒着写
+#more 一页一页的显示档案内容 
+#less 与 more 类似，但是比 more 更好的是，他可以往前翻页
+#head 只看头几行 
+#tail 只看尾巴几行 
+#nl   显示的时候，顺道输出 行号
+
+作业：
+查看文件 isTester.ini的内容
+Cat isTester.ini
+看文件 isTester.ini前20行内容
+cat isTester.ini
+看文件 isTester.ini最后30行内容
+显示文件isTester.ini 的第10至20行的内容
+倒序显示文件isTester.ini 前10行的内容
+显示文件isTester.ini 前10行的内容，并显示行号
+
+
+
+1）查看文件 isTester.ini的内容 
+cat isTester.ini 
+2）看文件 isTester.ini前20行内容 
+head -n 20 isTester.ini 
+3）看文件 isTester.ini最后30行内容 
+tail -n 30 isTester.ini 
+4）显示文件isTester.ini 的第10至20行的内容 
+head -n 20 isTester.ini | tail -n 10 
+5）倒序显示文件isTester.ini 前10行的内容 
+tac isTester.ini | head -n 10 
+6）显示文件isTester.ini 前10行的内容，并显示行号 
+nl isTester.ini | head -n 10
+
+
+
+
+1）Linux下安装scp命令（假设是centos服务器，命令用yum）
+yum install openssh-clients
+
+2）从Linux服务器192.168.1.22 拷贝文件 isTester.ini 到你当前操作的服务器
+scp root@192.168.1.22:/root/isTester.ini /root
+
+3）从Linux服务器192.168.1.22 拷贝目录 isTester/ 到你当前操作的服务器
+scp -r root@192.168.1.22:/root/isTester.ini /root
+
+延伸思考：如果是把「当前操作的服务器」的文件拷贝到远程服务器呢 ？
+scp isTester.ini root@192.168.1.22:/root
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
